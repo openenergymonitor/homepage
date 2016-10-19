@@ -1,0 +1,81 @@
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<body>
+
+  <div style="background-color:#fff">
+    <div class="container" style="text-align:left; padding:10px;">
+      <div class="oemheading">
+      <span style="color:#777">Open</span>EnergyMonitor</div>
+    </div>
+  </div>
+
+  <div style="background-color:#44b3e2">
+    <div class="container" style="height:42px">
+
+    </div>
+  </div>
+
+  <div class="container" style="background-color:#fff">
+
+    <div class="row" >
+      <div class="inner" >
+
+        <h2>EmonTH</h2>
+        <img class="productimg" src="emonth.png" >
+
+<p>The emonTH is an open-source, battery powered, Temperature and Humidity monitoring wireless node.</p>
+
+<p>It's been designed to be an easy to deploy tool for monitoring building / room temperature and humidity.</p>
+
+<p>Using the ATmega328 the emonTH runs standard Arduino sketches and is easy to customise and upload code using the Arduino IDEand a USB to UART cable.</p>
+
+<p>The data from the emonTH is transmitted via wireless (433/868Mhz) to an emonBase web-connected base-station (we recommend a Raspberry Pi with an RFM69Pi) which then posts the data onto an emoncms server (e.g. emoncms.org) for logging, processing and graphing. The room temperature and humidity data can be used to inform a heating control system, feed into a building performance model or simply for general interest!</p>
+
+<h3>Features</h3>
+
+<ul>
+    <li>Microcontroller: ATmega328</li>
+    <li>Radio: RFM69CW / RFM12B</li>
+    <li>Sensors: DHT22 (temperature & Humidity) / DS18B20 (temperature) sensor options</li>
+    <li>Power: 2 x AA from on-board holder, LTC3525 3.3V DC-DC boost converter to extend battery life</li>
+    <li>Battery life: 7-36 months depending on sensor choice DHT22 / DS18B20 years expected, see blog post 1 and blog post 2</li>
+    <li>New version emonTH V1.5 (May 2015): RF node ID DIP switch selector</li>
+</ul>
+
+<p><b>DHT 22 Temperature & Humidity Sensor</b></p>
+
+<ul>
+    <li>Power supply 3.3-6V DC</li>
+    <li>Output signal digital signal via single-bus</li>
+    <li>Sensing element Polymer capacitor</li>
+    <li>Operating range humidity 0-100%RH; temperature -40~80Celsius</li>
+    <li>Accuracy humidity +-2%RH(Max +-5%RH); temperature <+-0.5Celsius</li>
+    <li>Resolution or sensitivity humidity 0.1%RH; temperature 0.1Celsius</li>
+    <li>Repeatability humidity +-1%RH; temperature +-0.2Celsius</li>
+    <li>Humidity hysteresis +-0.3%RH</li>
+    <li>Long-term Stability +-0.5%RH/year</li>
+    <li>Sensing period Average: 2s</li>
+    <li>Independent sensor test report</li>
+</ul>
+
+<h3>Open Hardware</h3>
+
+<p>The emonTH  is open hardware with the designs released under the Creative Commons Attribution-ShareAlike 3.0 Unported License. The schematics and board files can be viewed and downloaded from the openenergymonitor github hardware repository here:</p>
+
+<p>https://github.com/openenergymonitor/Hardware/tree/master/emonTH</p>
+
+<h3>Firmware examples</h3>
+
+<p>EmonTx Shield Arduino example code can be found on github here:</p>
+
+<p>https://github.com/openenergymonitor/emonTH</p>
+
+      </div>
+      <div style="clear:both"></div>
+
+    </div>
+  </div>
+</body>
