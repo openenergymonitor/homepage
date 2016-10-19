@@ -20,23 +20,23 @@ date_default_timezone_set('Europe/London');
 require "core.php";
 $path = get_application_path();
 
-$q = "home.html";
+$q = "home";
 if (isset($_GET['q'])) $q = $_GET['q'];
 
 $format = "html";
 $themed = true;
 $content = "Sorry page not found";
 
-if ($q=="home.html") $themed = false;
-
-
+if ($q=="home") $themed = false;
 
 $filename_parts = explode(".",$q);
+
 if (count($filename_parts)==2)
     $doc_ext = $filename_parts[count($filename_parts)-1];
+    
 if (count($filename_parts)==1) {
-    $doc_ext = "html";
-    $q .= ".".$doc_ext;
+    if (file_exists("pages/$q.html")) { $doc_ext = "html"; $q = "$q.html"; } 
+    if (file_exists("pages/$q.md")) { $doc_ext = "md"; $q = "$q.md"; }
 }
     
 if (file_exists("pages/".$q)) {
