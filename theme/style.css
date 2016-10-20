@@ -1,5 +1,5 @@
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'helvetica', sans-serif;
   margin:0;
   padding:0;
   background-color:WhiteSmoke;
@@ -56,23 +56,23 @@ a:hover {
 }
 
 .emoncmsappimg {
-  float:right; 
+  float:right;
   width:250px
 }
 
 .oemheading {
-  color:#0699fa; 
-  font-size:20px; 
-  font-weight:bold; 
-  font-family:Arial;
+  color:#0699fa;
+  font-size:20px;
+  font-weight:bold;
+  font-family:Ubuntu;
 }
 
 .oemheading2 {
-  color:#fff; 
-  padding-top:100px; 
+  color:#fff;
+  padding-top:100px;
   padding-bottom:20px;
-  /*font-weight:bold; */
-  /*font-family:Arial;*/
+  font-weight:bold; 
+
 }
 
 .column,
@@ -86,7 +86,7 @@ a:hover {
 .b4dsc {width:100%; height:130px}
 
 .productimg {
-  float:right; 
+  float:right;
   width:100%;
   margin-left:20px;
   margin-bottom:20px;
@@ -100,13 +100,13 @@ a:hover {
   .emoncmsappimg {
     width:200px
   }
-  
-  .oemheading { font-size:52px; } 
+
+  .oemheading { font-size:52px; }
   .oemheading2 { padding-top:50px; font-size:52px; }
-  
+
   .b4img {width:50%}
   .b4dsc {width:50%; float:right}
-  
+
   .productimg {
     margin-left:0px;
   }
@@ -116,21 +116,21 @@ a:hover {
   .container {
     width: 600px;
   }
-  
+
   .box2 { width:50%; }
   .box3 { width:33%; }
   .box4 { width:25%; }
-  
+
   .productimg {
     width:250px;
   }
 }
-    
+
 @media (min-width: 800px) and (max-width: 1080px) {
   .container {
     width: 800px;
   }
-  
+
   .emoncmsappimg {
     width:200px
   }
@@ -138,7 +138,7 @@ a:hover {
   .box2 { width:50%; }
   .box3 { width:33%; }
   .box4 { width:25%; }
-  
+
   .productimg {
     width:350px;
   }
@@ -148,11 +148,11 @@ a:hover {
   .container {
     width: 1080px;
   }
-  
+
   .box2 { width:50%; }
   .box3 { width:33%; }
   .box4 { width:25%; }
-  
+
   .productimg {
     width:450px;
   }
@@ -169,4 +169,3 @@ ul {
 li {
     padding-bottom:8px;
 }
-
