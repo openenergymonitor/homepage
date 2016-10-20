@@ -6,7 +6,6 @@ Source code is released under the GNU Affero General Public License.
 See COPYRIGHT.txt and LICENSE.txt.
 
 ---------------------------------------------------------------------
-OpenEnergyMonitor VirtualSmartGrid - Open source virtual smart grid renewable energy aggregation and sharing concept with a focus on carbon metrics.
 
 Part of the OpenEnergyMonitor project:
 http://openenergymonitor.org

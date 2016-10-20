@@ -96,7 +96,7 @@ a:hover {
 }
 
 .oemheading {
-  color:#44b3e2;
+  color:#0699fa;
   font-size:30px;
   font-weight:bold;
   font-family:Arial;
@@ -104,8 +104,9 @@ a:hover {
 
 .oemheading2 {
   color:#fff;
-  padding-top:100px;
+  padding-top:80px;
   padding-bottom:20px;
+  font-size:45px;
 }
 
 .column,
@@ -127,8 +128,8 @@ a:hover {
     width:200px
   }
 
-  .oemheading { font-size:22px; }
-  .oemheading2 { padding-top:50px; font-size:22px; }
+  .oemheading { font-size:30px; }
+  .oemheading2 { padding-top:30px; font-size:27px; }
 
   .b4img {width:50%}
   .b4dsc {width:50%; float:right}
@@ -184,7 +185,7 @@ a:hover {
       <span style="color:#777">Open</span>EnergyMonitor</div>
     </div>
   </div>
-  <div style="background-color:#44b3e2">
+  <div style="background-color:#0699fa">
     <div class="container" style="height:42px">
 
     </div>
@@ -197,7 +198,7 @@ a:hover {
       <br><br>
       <h1 class="oemheading2">OpenEnergyMonitor</h1>
 
-      <div class="description">Open source energy monitoring for understanding energy</div>
+      <div class="description">Open source energy monitoring</div>
       <!-- <p style="color:#e2f1fa">Exploring the context of renewable energy and zero carbon, whether onsite solar or the wider grid.</p> -->
       <!-- <p style="color:#e2f1fa">Exploring the context of renewable energy and zero carbon.</p> -->
       <p style="color:#fff">Exploring the context of renewable energy and zero carbon.</p>
@@ -218,7 +219,7 @@ a:hover {
           <div style="padding:20px; background-color:rgba(0,0,0,0.3); text-align:left">
             <img class="emoncmsappimg" src="images/mysolar_app.png">
             <h3>Solar PV</h3>
-            <p>Explore solar PV generation vs consumption and optimise on-site demand matching</p>
+            <p>Explore solar PV generation vs. consumption and optimise on-site demand matching.</p>
           </div>
         </div></div>
 
@@ -228,18 +229,34 @@ a:hover {
     <div class="row">
       <div class="inner">
         <h2>OpenEnergyMonitor System</h2>
-        <p>Pre-assembled open hardware electricity, temperature and humidity monitoring units based on and compatible with the Arduino and RaspberryPi platforms.</p>
+        <p>Pre-assembled electricity, temperature and humidity monitoring units based on Arduino and Raspberry Pi platforms.</p>
       </div>
 
       <div class="column box4"><div class="inner" style="background-color:#e3e3e3">
+        <img class="b4img" src="images/emonpi.jpg">
+        <div class="b4dsc"><div class="inner">
+        <b>emonPi</b><br>
+        <div style="font-size:14px">
+          2x CT Sensor inputs<br>
+          1x VRMS input<br>
+          1x Pulse input<br>
+          6 x Temperature<br>
+          Emoncms logging<br>
+          Node-RED & openHAB<br>
+        </div>
+        </div></div>
+      </div></div>
+      
+      <div class="column box4"><div class="inner" style="background-color:#e3e3e3">
         <img class="b4img" src="images/emontx.jpg">
         <div class="b4dsc"><div class="inner">
-          <b>EmonTx</b><br>
+          <b>emonTx</b><br>
           <div style="font-size:14px">
-            4x CT Inputs<br>
-            1x ACAC Adapter<br>
+            4x CT Sensor inputs<br>
+            1x VRMS input<br>
             1x Pulse input<br>
-            DS18B20 based temperature sensing<br>
+            6 x Temperature<br>
+            Battery option <br>
           </div>
         </div></div>
       </div></div>
@@ -247,35 +264,27 @@ a:hover {
       <div class="column box4"><div class="inner" style="background-color:#e3e3e3">
         <img class="b4img" src="images/emonth.png">
         <div class="b4dsc"><div class="inner">
-          <b>EmonTH</b><br>
+          <b>emonTH</b><br>
           <div style="font-size:14px">
-            Temperature and Humidity node<br>
-            Pulse counting<br>
-            Battery operated
+            Internal temperature<br>
+            Internal humidity<br>
+            External temperature<br>
+            Pulse input<br>
+            1yr+ Battery life<br>
           </div>
-        </div></div>
-      </div></div>
-
-      <div class="column box4"><div class="inner" style="background-color:#e3e3e3">
-        <img class="b4img" src="images/emonpi.jpg">
-        <div class="b4dsc"><div class="inner">
-        <b>EmonPi</b><br>
-        <div style="font-size:14px">
-          2x CT Inputs<br>
-          1x ACAC Adapter<br>
-          1x Pulse input<br>
-          DS18B20 based temperature sensing<br>
-          <!--Local or remote data storage with Emoncms<br>-->
-        </div>
         </div></div>
       </div></div>
 
       <div class="column box4"><div class="inner" style="background-color:#e3e3e3">
         <img class="b4img" src="images/emoncms.png">
         <div class="b4dsc"><div class="inner">
-        <b>EmonCMS</b><br>
+        <b>Emoncms</b><br>
         <div style="font-size:14px">
-        Open source energy data processing, storage and visualisation.<br>Hosted service or self hostable web application.
+        Web application<br>
+        Data storage<br>
+        Data processing<br> 
+        Data visualisation<br>
+        Cloud & self-hosted<br>
         </div>
         </div></div>
       </div></div>
@@ -284,9 +293,9 @@ a:hover {
 
     </div>
   </div>
-  <div style="background-color:#44b3e2; margin-top:7px">
+  <div style="background-color:#0699fa; margin-top:7px">
     <div class="container" style="color:#fff">
-      <br><br>
+      <br>
       <div style="margin: 0 auto; width:330px; text-align:left">
         <img src="images/book.png" style="float:left; width:60px; padding-right:20px">
         <h2>OpenEnergyMonitor<br>Resources</h2>
@@ -294,21 +303,21 @@ a:hover {
       </div>
       <br>
       <div class="column box3"><div class="inner">
-        <h2>Exploring Energy</h2>
+        <h2>Energy</h2>
         <img src="images/electricity-icon-60-80h.png">
-        <p>Exploring the context of energy, renewable supply, energy efficiency and zero carbon energy systems.<br><br>
+        <p>Explore the context of energy consumption, renewable supply, efficiency and zero carbon.<br><br>
         <a href="http://lab.megni.co.uk/learn/sustainable-energy/energy/energy-101.html">Read more...</a></p>
       </div></div>
       <div class="column box3"><div class="inner">
-        <h2>Building Blocks</h2>
+        <h2>Learn</h2>
         <img src="images/buildingblocks80h.png">
-        <p>AC Power theory, CT Sensors, How to interface sensors with Arduino and design your own energy monitor.<br><br>
+        <p>How to design your own energy monitor.<br> AC theory, CT sensors, Arduino etc.<br><br>
         <a href="http://lab.megni.co.uk/learn/electricity-monitoring/ac-power-theory/introduction.md">Read more...</a></p>
       </div></div>
       <div class="column box3"><div class="inner">
         <h2>PV Diversion</h2>
         <img src="images/divert80h.png">
-        <p>How to build an open hardware PV diverter for heating water from exess solar PV energy.<br><br>
+        <p>How to build a solar PV diverter to heat water with excess energy.<br><br>
         <a href="http://lab.megni.co.uk/learn/pv-diversion/mk2/intro.html">Read more...</a></p>
       </div></div>
       <div style="clear:both"></div>

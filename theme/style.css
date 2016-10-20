@@ -42,17 +42,17 @@ body {
 
 a {
   text-decoration:none;
-  color:#44b3e2;
+  color:#0699fa;
 }
 
 a:visited {
   text-decoration:none;
-  color:#44b3e2;
+  color:#0699fa;
 }
 
 a:hover {
   text-decoration:none;
-  color:#44b3e2;
+  color:#0699fa;
 }
 
 .emoncmsappimg {
@@ -61,8 +61,8 @@ a:hover {
 }
 
 .oemheading {
-  color:#44b3e2; 
-  font-size:30px; 
+  color:#0699fa; 
+  font-size:20px; 
   font-weight:bold; 
   font-family:Arial;
 }
@@ -71,6 +71,8 @@ a:hover {
   color:#fff; 
   padding-top:100px; 
   padding-bottom:20px;
+  /*font-weight:bold; */
+  /*font-family:Arial;*/
 }
 
 .column,
@@ -99,8 +101,8 @@ a:hover {
     width:200px
   }
   
-  .oemheading { font-size:22px; } 
-  .oemheading2 { padding-top:50px; font-size:22px; }
+  .oemheading { font-size:52px; } 
+  .oemheading2 { padding-top:50px; font-size:52px; }
   
   .b4img {width:50%}
   .b4dsc {width:50%; float:right}
