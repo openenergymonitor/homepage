@@ -46,6 +46,8 @@ body {
   background-size:cover;
   min-height:300px;
   color:#fff;
+  padding: 20px;
+  text-align: left;
 }
 
 .homeenergy {
@@ -53,6 +55,8 @@ body {
   background-size:cover;
   min-height:300px;
   color:#fff;
+  padding: 20px;
+  text-align: left;
 }
 
 .zerocarbon {
@@ -93,7 +97,7 @@ a:hover {
 
 .box4 a {
   text-decoration:none;
-  color:#000;
+  color:#ffffff;
 }
 
 .box4 a:visited {
@@ -142,13 +146,15 @@ a:hover {
   max-height: 300px;
   overflow: hidden;
 }
+.box2 ul {
+  padding-left: 15px;
+}
 .box2.left {
   border-right: 3px solid #ffffff;
 }
 .box2.right {
   border-left: 3px solid #ffffff;
 }
-
 @media (max-width: 450px) {
   .container {
     width: 100%;
@@ -300,11 +306,19 @@ a:hover {
 }
 .oemDescription-inner-second {
   font-size: 20px;
-
+  margin: 5px auto;
 }
 @media (max-width: 450px) {
   .oemName-inner {
     font-size: 30px;
+  }
+  .oemDescription-inner {
+    font-size: 16px;
+    padding: 20px;
+  }
+  .oemDescription-inner-second {
+    font-size: 14px;
+    max-width: 200px;
   }
 }
 
@@ -323,11 +337,11 @@ a:hover {
 // OEM colors
 /*--------------------------------------------------------------------*/
 .oemGray {
-  color: #777777;
+  background-color: #777777;
 }
 
 .oemBlue {
-  color: #44b3e2;
+  background-color: #44b3e2;
 }
 </style>
 <body>
@@ -393,7 +407,7 @@ a:hover {
         <div class="oemDescription-inner">
           <span class="boldText">Open source monitoring for understanding energy.</span>
           <br>
-          <span class="oemDescription-inner-second">Exploring the context of renewable energy and zero carbon.</span>
+          <div class="oemDescription-inner-second">Exploring the context of renewable energy and zero carbon.</div>
         </div>
       </div>
     </div>
@@ -401,30 +415,27 @@ a:hover {
         <div class="column box2 left">
           <a href="http://guide.openenergymonitor.org/applications/home-energy">
             <div class="inner homeenergy">
-              <div style="padding:20px; background-color:rgba(0,0,0,0.3); text-align:left">
-                <img class="emoncmsappimg" src="images/myelectric_app.png">
-                <h3>Energy Use</h3>
-                <p>&#8226; How much energy do I use?
-                <br>&#8226; Compared to average home?
-                <br>&#8226; Compared to a low energy home?
-                </p>
-              </div>
-           </div>
+              <img class="emoncmsappimg" src="images/myelectric_app.png">
+              <h3>Energy Use</h3>
+              <ul>
+                <li>How much energy do I use?</li>
+                <li>Compared to average home?</li>
+                <li>Compared to a low energy home?</li>
+              </ul>
+            </div>
           </a>
         </div>
         <div class="column box2 right">
           <a href="http://guide.openenergymonitor.org/applications/solar-pv">
             <div class="inner solar">
-              <div style="padding:20px; background-color:rgba(0,0,0,0.3); text-align:left">
-                <img class="emoncmsappimg" src="images/mysolar_app.png">
-                <h3>Solar PV</h3>
-                <ul>
-                  <li>Explore solar PV generation</li>
-                  <li>Compare consumption</li>
-                  <li>Calculate on-site use</li>
-                  <li>Optimise demand matching.</li>
-                </ul>
-              </div>
+              <img class="emoncmsappimg" src="images/mysolar_app.png">
+              <h3>Solar PV</h3>
+              <ul>
+                <li>Explore solar PV generation</li>
+                <li>Compare consumption</li>
+                <li>Calculate on-site use</li>
+                <li>Optimise demand matching.</li>
+              </ul>
             </div>
           </a>
         </div>
@@ -435,11 +446,11 @@ a:hover {
     <div class="row">
       <div class="inner">
         <h2>OpenEnergyMonitor System</h2>
-        <p>Pre-assembled open-hardware electricity, temperature and humidity monitoring units based on Arduino and Raspberry Pi platforms.</p>
+        <p>Pre-assembled open-hardware electricity, temperature and humidity monitoring units based on the Arduino and Raspberry Pi platforms.</p>
       </div>
       <div class="column box4">
         <a href="http://guide.openenergymonitor.org/setup">
-          <div class="inner" style="background-color:#e3e3e3">
+          <div class="inner oemBlue">
             <img class="b4img" src="images/emonpi.jpg">
             <div class="b4dsc">
               <div class="inner">
@@ -460,7 +471,7 @@ a:hover {
       </div>
       <div class="column box4">
         <a href="https://guide.openenergymonitor.org/setup/emontx">
-          <div class="inner" style="background-color:#e3e3e3">
+          <div class="inner oemBlue">
             <img class="b4img" src="images/emontx.jpg">
             <div class="b4dsc">
               <div class="inner">
@@ -480,7 +491,7 @@ a:hover {
       </div>
       <div class="column box4">
         <a href="https://guide.openenergymonitor.org/setup/emonth">
-          <div class="inner" style="background-color:#e3e3e3">
+          <div class="inner oemBlue">
             <img class="b4img" src="images/emonth.png">
             <div class="b4dsc">
               <div class="inner">
@@ -500,7 +511,7 @@ a:hover {
       </div>
       <div class="column box4">
         <a href="https://emoncms.org">
-          <div class="inner" style="background-color:#e3e3e3">
+          <div class="inner oemBlue">
             <img class="b4img" src="images/emoncms.png">
             <div class="b4dsc">
               <div class="inner">
