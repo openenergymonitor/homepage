@@ -1,21 +1,27 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#44b3e2" />
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu:light,bold&amp;subset=Latin">
 
 <style>
-body {
-  font-family: 'helvetica', sans-serif;
 
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 100%;
   margin:0;
   padding:0;
   background-color:WhiteSmoke;
   color:#333;
   height:100%;
+  width: 100%;
   text-align:center;
 }
 
 .container {
-  margin: 0 auto;
+  box-sizing: border-box;
+  margin:0 auto;
   width:1080px;
 }
 
@@ -56,7 +62,9 @@ body {
 }
 
 .cover {
-  background-image:url("images/pass.jpg");
+  /*background-image:url("images/gwynt.jpg");*/
+  background:#ffffff url('images/gwynt.jpg') no-repeat left center;
+  /*background:#ffffff url('images/ecarsolar.jpg') no-repeat left center;*/
   /*background-attachment: fixed;*/
   background-size:cover;
 }
@@ -90,13 +98,28 @@ a:hover {
   color:#fff;
 }
 
+.box4 a {
+  text-decoration:none;
+  color:#000;
+}
+
+.box4 a:visited {
+  text-decoration:none;
+  color:#000;
+}
+
+.box4 a:hover {
+  text-decoration:none;
+  color:#333;
+}
+
 .emoncmsappimg {
   float:right;
   width:250px
 }
 
 .oemheading {
-  color:#0699fa;
+  color:#44b3e2;
   font-size:30px;
   font-weight:bold;
   font-family:Ubuntu;
@@ -177,23 +200,123 @@ a:hover {
 
 
 
+/*---------------------------------------------------------------------/
+// Topnav
+/*--------------------------------------------------------------------*/
+.oemblueBar {
+  width: 100%;
+  background-color: #44b3e2;
+  height: 42px;
+}
+#topnav {
+  	background-color: #44b3e2;
+  	height: 42px;
+  	text-align: left;
+/*    display:none; */
+}
+.oemTitle {
+  	margin: 0;
+  	padding: 0;
+  	line-height: 42px;
+    height:42px;
+    padding-left: 15px;
+    color: #ffffff;
+}
+.oemTitle-iconWrapper {
+    display:inline-block;
+    height: 100%;
+}
+.oemTitle-titleWrapper {
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+}
+.oemTitle-topLinks {
+    float: right;
+    padding-right: 15px;
+}
+  .oemTitle-topLinks a {
+       color: #ffffff;
+       font-size: 14px;
+  }
+  @media screen and (max-width: 650px) {
+      .oemTitle-topLinks {
+              display:none;}
+  }
+.oemTitle-topLinks-toplinkBox {
+    padding-left:15px;
+    display: inline-block;
+}
+.boldText {
+  font-weight: bold;
+}
+#sidebar-open {
+	margin-left: 0;
+	float: left;
+	height: 100%;
+	cursor: pointer;
+}
+
 </style>
 
 <body>
 
-  <div style="background-color:#fff">
-    <div class="container" style="text-align:left; padding:10px;">
-      <div class="oemheading">
-      <span style="color:#777">Open</span>EnergyMonitor</div>
-    </div>
-  </div>
-  <div style="background-color:#0699fa">
-    <div class="container" style="height:42px">
+<div class="oemblueBar">
+ <div class="container">
 
-    </div>
+  
+ <div id="topnav">
+    <nav>
+      <div class="oemTitle">
+        <div id="sidebar-open">
+          <div class="oemTitle-iconWrapper">
+            <i class="fa fa-bars fa-2x oemTitle-iconWrapper-icon" style="line-height:42px;"></i>
+          </div>
+       <div class="oemTitle-titleWrapper">
+            <span>
+                <span class="boldText">&nbsp;Home </span><span>| Open<span class="boldText">EnergyMonitor</span></span>
+            </span>
+          </div>
+        </div>
+        <div class="oemTitle-topLinks">
+          <div class="oemTitle-topLinks-toplinkBox">
+            <a href="https://community.openenergymonitor.org/">
+              <span class='menuLinks'>
+                <i class="fa fa-comments" aria-hidden="true"></i>&nbsp;Community
+              </span>
+            </a>
+          </div>
+          <div class="oemTitle-topLinks-toplinkBox">
+            <a href="https://shop.openenergymonitor.com/">
+              <span class='menuLinks'>
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Shop
+              </span>
+            </a>
+          </div>
+          <div class="oemTitle-topLinks-toplinkBox">
+            <a href="https://guide.openenergymonitor.org/">
+              <span class='menuLinks'>
+                <i class="fa fa-book" aria-hidden="true"></i>&nbsp;Guide
+              </span>
+            </a>
+          </div>
+          <div class="oemTitle-topLinks-toplinkBox">
+            <a href="https://learn.openenergymonitor.org/">
+              <span class='menuLinks'>
+                <i class="fa fa-mortar-board" aria-hidden="true"></i>&nbsp;Learn
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
   </div>
-  <div style="height:7px"></div>
-
+  
+ 
+</div>
+</div>
+  
+  
   <div class="container">
     <div class="inner">
     <div class="cover" style="height:400px">
@@ -209,7 +332,7 @@ a:hover {
 
     <!-- First row of boxes -->
     <div class="row">
-        <div class="column box2"><div class="inner homeenergy">
+        <div class="column box2"><a href="http://guide.openenergymonitor.org/applications/home-energy"><div class="inner homeenergy">
           <div style="padding:20px; background-color:rgba(0,0,0,0.3); text-align:left">
             <img class="emoncmsappimg" src="images/myelectric_app.png">
             <h3>Energy Use</h3>
@@ -217,18 +340,18 @@ a:hover {
             <br>&#8226 Compared to average home?
             <br>&#8226 Compared to a low energy home?</p>
           </div>
-        </div></div>
+        </div></a></div>
 
-        <div class="column box2"><div class="inner solar">
+        <div class="column box2"><a href="http://guide.openenergymonitor.org/applications/solar-pv"><div class="inner solar">
           <div style="padding:20px; background-color:rgba(0,0,0,0.3); text-align:left">
             <img class="emoncmsappimg" src="images/mysolar_app.png">
             <h3>Solar PV</h3>
             <p>&#8226 Explore solar PV generation
             <br>&#8226 Compare consumption
-            <br>&#8226 Calculate on-site use 
+            <br>&#8226 Calculate on-site use
             <br>&#8226 Optimise demand matching.</p>
           </div>
-        </div></div>
+        </div></a></div>
 
     </div>
     <div style="clear:both"></div>
@@ -239,7 +362,7 @@ a:hover {
         <p>Pre-assembled open-hardware electricity, temperature and humidity monitoring units based on Arduino and Raspberry Pi platforms.</p>
       </div>
 
-      <div class="column box4"><div class="inner" style="background-color:#e3e3e3">
+      <div class="column box4"><a href="http://guide.openenergymonitor.org/setup"><div class="inner" style="background-color:#e3e3e3">
         <img class="b4img" src="images/emonpi.jpg">
         <div class="b4dsc"><div class="inner">
         <b>emonPi</b><br>
@@ -252,9 +375,9 @@ a:hover {
           Node-RED & openHAB<br>
         </div>
         </div></div>
-      </div></div>
+      </div></a></div>
 
-      <div class="column box4"><div class="inner" style="background-color:#e3e3e3">
+      <div class="column box4"><a href="https://guide.openenergymonitor.org/setup/emontx"><div class="inner" style="background-color:#e3e3e3">
         <img class="b4img" src="images/emontx.jpg">
         <div class="b4dsc"><div class="inner">
           <b>emonTx</b><br>
@@ -266,9 +389,9 @@ a:hover {
             Battery option <br>
           </div>
         </div></div>
-      </div></div>
+      </div></a></div>
 
-      <div class="column box4"><div class="inner" style="background-color:#e3e3e3">
+      <div class="column box4"><a href="https://guide.openenergymonitor.org/setup/emonth"><div class="inner" style="background-color:#e3e3e3">
         <img class="b4img" src="images/emonth.png">
         <div class="b4dsc"><div class="inner">
           <b>emonTH</b><br>
@@ -280,9 +403,9 @@ a:hover {
             1yr+ Battery life<br>
           </div>
         </div></div>
-      </div></div>
+      </div></a></div>
 
-      <div class="column box4"><div class="inner" style="background-color:#e3e3e3">
+      <div class="column box4"><a href="https://emoncms.org"><div class="inner" style="background-color:#e3e3e3">
         <img class="b4img" src="images/emoncms.png">
         <div class="b4dsc"><div class="inner">
         <b>Emoncms</b><br>
@@ -294,13 +417,13 @@ a:hover {
         Cloud & self-hosted<br>
         </div>
         </div></div>
-      </div></div>
+      </div></a></div>
 
       <div style="clear:both"></div>
 
     </div>
   </div>
-  <div style="background-color:#0699fa; margin-top:7px">
+  <div style="background-color:#44b3e2; margin-top:7px">
     <div class="container" style="color:#fff">
       <br>
       <div style="margin: 0 auto; width:330px; text-align:left">
@@ -313,19 +436,19 @@ a:hover {
         <h2>Energy</h2>
         <img src="images/electricity-icon-60-80h.png">
         <p>Explore the context of energy consumption, renewable supply, efficiency and zero carbon.<br><br>
-        <a href="http://lab.megni.co.uk/learn/sustainable-energy/energy/energy-101.html">Read more...</a></p>
+        <a href="../learn/sustainable-energy/energy/introduction">Read more...</a></p>
       </div></div>
       <div class="column box3"><div class="inner">
         <h2>Learn</h2>
         <img src="images/buildingblocks80h.png">
         <p>How to design your own energy monitor.<br> AC theory, CT sensors, Arduino etc.<br><br>
-        <a href="http://lab.megni.co.uk/learn/electricity-monitoring/ac-power-theory/introduction.md">Read more...</a></p>
+        <a href="../learn/electricity-monitoring/ac-power-theory/introduction.md">Read more...</a></p>
       </div></div>
       <div class="column box3"><div class="inner">
         <h2>PV Diversion</h2>
         <img src="images/divert80h.png">
         <p>How to build a solar PV diverter to heat water with excess energy.<br><br>
-        <a href="http://lab.megni.co.uk/learn/pv-diversion/mk2/intro.html">Read more...</a></p>
+        <a href="../learn/pv-diversion/introduction/choosing-an-energy-diverter.md">Read more...</a></p>
       </div></div>
       <div style="clear:both"></div>
       <br><br>
@@ -333,3 +456,16 @@ a:hover {
 
   </div>
 </body>
+
+<!--
+
+
+
+
+End
+
+
+
+
+
+-->
