@@ -256,81 +256,144 @@ a:hover {
 	height: 100%;
 	cursor: pointer;
 }
+/*---------------------------------------------------------------------/
+// Cover image
+/*--------------------------------------------------------------------*/
+.oemName {
+  color: #ffffff;
+  width: 100%;
+  height: 50%;
+  display: table;
+}
+.oemName-inner {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 65px;
+  padding: 10px;
+}
+.oemDescription {
+  color: #ffffff;
+  width: 100%;
+  height: 50%;
+  display: table;
+  text-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+.oemDescription-inner {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 24px;
+  padding: 10px;
+}
+.oemDescription-inner-second {
+  font-size: 20px;
 
+}
+@media (max-width: 450px) {
+  .oemName-inner {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 800px) {
+  .oemName-inner {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1080px) {
+  .oemName-inner {
+    font-size: 50px;
+  }
+}
+/*---------------------------------------------------------------------/
+// OEM colors
+/*--------------------------------------------------------------------*/
+.oemGray {
+  color: #777777;
+}
+
+.oemBlue {
+  color: #44b3e2;
+}
 </style>
 
 <body>
+  
+<!-- Top navigation bar -->
 
 <div class="oemblueBar">
- <div class="container">
-
-  
- <div id="topnav">
-    <nav>
-      <div class="oemTitle">
-        <div id="sidebar-open">
-          <div class="oemTitle-iconWrapper">
-            <i class="fa fa-bars fa-2x oemTitle-iconWrapper-icon" style="line-height:42px;"></i>
-          </div>
-       <div class="oemTitle-titleWrapper">
-            <span>
+  <div class="container">
+    <div id="topnav">
+      <nav>
+        <div class="oemTitle">
+          <div id="sidebar-open">
+            <div class="oemTitle-iconWrapper">
+              <i class="fa fa-bars fa-2x oemTitle-iconWrapper-icon" style="line-height:42px;"></i>
+            </div>
+            <div class="oemTitle-titleWrapper">
+              <span>
                 <span class="boldText">&nbsp;Home </span><span>| Open<span class="boldText">EnergyMonitor</span></span>
-            </span>
+              </span>
+            </div>
+          </div>
+          <div class="oemTitle-topLinks">
+            <div class="oemTitle-topLinks-toplinkBox">
+              <a href="https://community.openenergymonitor.org/">
+                <span class='menuLinks'>
+                  <i class="fa fa-comments" aria-hidden="true"></i>&nbsp;Community
+                </span>
+              </a>
+            </div>
+            <div class="oemTitle-topLinks-toplinkBox">
+              <a href="https://shop.openenergymonitor.com/">
+                <span class='menuLinks'>
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Shop
+                </span>
+              </a>
+            </div>
+            <div class="oemTitle-topLinks-toplinkBox">
+              <a href="https://guide.openenergymonitor.org/">
+                <span class='menuLinks'>
+                  <i class="fa fa-book" aria-hidden="true"></i>&nbsp;Guide
+                </span>
+              </a>
+            </div>
+            <div class="oemTitle-topLinks-toplinkBox">
+              <a href="https://learn.openenergymonitor.org/">
+                <span class='menuLinks'>
+                  <i class="fa fa-mortar-board" aria-hidden="true"></i>&nbsp;Learn
+                </span>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="oemTitle-topLinks">
-          <div class="oemTitle-topLinks-toplinkBox">
-            <a href="https://community.openenergymonitor.org/">
-              <span class='menuLinks'>
-                <i class="fa fa-comments" aria-hidden="true"></i>&nbsp;Community
-              </span>
-            </a>
-          </div>
-          <div class="oemTitle-topLinks-toplinkBox">
-            <a href="https://shop.openenergymonitor.com/">
-              <span class='menuLinks'>
-                <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Shop
-              </span>
-            </a>
-          </div>
-          <div class="oemTitle-topLinks-toplinkBox">
-            <a href="https://guide.openenergymonitor.org/">
-              <span class='menuLinks'>
-                <i class="fa fa-book" aria-hidden="true"></i>&nbsp;Guide
-              </span>
-            </a>
-          </div>
-          <div class="oemTitle-topLinks-toplinkBox">
-            <a href="https://learn.openenergymonitor.org/">
-              <span class='menuLinks'>
-                <i class="fa fa-mortar-board" aria-hidden="true"></i>&nbsp;Learn
-              </span>
-            </a>
-          </div>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="inner">
+    
+    <!-- Cover image -->
+
+    <div class="cover" style="height:400px">
+      <div class="oemName">
+        <div class="oemName-inner">
+          <span>Open</span><span class="boldText">EnergyMonitor</span>
         </div>
       </div>
-    </nav>
-  </div>
-  
- 
-</div>
-</div>
-  
-  
-  <div class="container">
-    <div class="inner">
-    <div class="cover" style="height:400px">
-      <br><br>
-      <h1 class="oemheading2">OpenEnergyMonitor</h1>
-
-      <div class="description">Open source energy monitoring for understanding energy</div>
-      <!-- <p style="color:#e2f1fa">Exploring the context of renewable energy and zero carbon, whether onsite solar or the wider grid.</p> -->
-      <!-- <p style="color:#e2f1fa">Exploring the context of renewable energy and zero carbon.</p> -->
-      <p style="color:#fff">Exploring the context of renewable energy and zero carbon.</p>
+      <div class="oemDescription">
+        <div class="oemDescription-inner">
+          <span class="boldText">Open source monitoring for understanding energy.</span>
+          <br>
+          <span class="oemDescription-inner-second">Exploring the context of renewable energy and zero carbon.</span>
+        </div>
+      </div>
     </div>
-    </div>
-
+    
     <!-- First row of boxes -->
+    
     <div class="row">
         <div class="column box2"><a href="http://guide.openenergymonitor.org/applications/home-energy"><div class="inner homeenergy">
           <div style="padding:20px; background-color:rgba(0,0,0,0.3); text-align:left">
@@ -427,8 +490,7 @@ a:hover {
     <div class="container" style="color:#fff">
       <br>
       <div style="margin: 0 auto; width:330px; text-align:left">
-        <img src="images/book.png" style="float:left; width:60px; padding-right:20px">
-        <h2>OpenEnergyMonitor<br>Resources</h2>
+        <h2>Learn | OpenEnergyMonitor</h2>
         <div style="clear:both"></div>
       </div>
       <br>
