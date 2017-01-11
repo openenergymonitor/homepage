@@ -1,9 +1,10 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#44b3e2" />
+
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu:light,bold&amp;subset=Latin">
 
 <style>
 
@@ -12,7 +13,7 @@ body {
   font-size: 100%;
   margin:0;
   padding:0;
-  background-color:#ffffff;
+  background-color:#f5f5f5;
   color:#333;
   height:100%;
   width: 100%;
@@ -46,7 +47,7 @@ body {
   background-size:cover;
   min-height:300px;
   color:#fff;
-  padding: 20px;
+  /*padding: 20px;*/
   text-align: left;
 }
 
@@ -55,7 +56,7 @@ body {
   background-size:cover;
   min-height:300px;
   color:#fff;
-  padding: 20px;
+  /*padding: 20px;*/
   text-align: left;
 }
 
@@ -127,7 +128,6 @@ a:hover {
   padding-top:80px;
   padding-bottom:20px;
   font-size:45px;
-  font-family:Ubuntu;
   font-weight:bold;
 }
 
@@ -142,19 +142,22 @@ a:hover {
 .b4dsc {width:100%; height:130px}
 
 .box2 {
-  border-top: 14px solid #ffffff;
-  max-height: 300px;
+  /*border-top: 14px solid #ffffff;
+  max-height: 300px;*/
   overflow: hidden;
 }
+
 .box2 ul {
   padding-left: 15px;
 }
+/*
 .box2.left {
   border-right: 7px solid #ffffff;
 }
 .box2.right {
   border-left: 7px solid #ffffff;
-}
+}*/
+
 @media (max-width: 450px) {
   .container {
     width: 100%;
@@ -167,21 +170,22 @@ a:hover {
   .oemheading { font-size:30px; }
   .oemheading2 { padding-top:30px; font-size:27px; }
 
-  .b4img {width:50%}
+  .b4img {width:50%;}
   .b4dsc {width:50%; float:right}
   
+  /*
   .box2.left {
   border-right: none;
   }
   .box2.right {
   border-left: none;
-  }
+  }*/
 }
 
 @media (min-width: 450px) and (max-width: 800px) {
   .container {
-/*    width: 600px; */
-      width: 100%;
+      width: 600px; 
+      /*width: 100%;*/
   }
 
   .box2 { width:50%; }
@@ -190,14 +194,14 @@ a:hover {
   
   
   .box2 {
-    max-height: 320px;
+    /*max-height: 320px;*/
   }
 }
 
 @media (min-width: 800px) and (max-width: 1080px) {
   .container {
-/*    width: 800px; */
-      width: 100%;
+      width: 800px;
+      /*width: 100%;*/
   }
 
   .emoncmsappimg {
@@ -219,7 +223,7 @@ a:hover {
   .box4 { width:25%; }
 }
 
-/*.inner { margin:7px; }*/
+.inner { margin:7px; }
 
 .box3 { text-align:center; }
 /*---------------------------------------------------------------------/
@@ -290,7 +294,7 @@ a:hover {
 .oemName-inner {
   display: table-cell;
   vertical-align: middle;
-  font-size: 65px;
+  font-size: 42px;
   padding: 10px;
 }
 .oemDescription {
@@ -354,7 +358,7 @@ a:hover {
         <div class="oemTitle">
           <div id="sidebar-open">
             <div class="oemTitle-iconWrapper">
-              <i class="fa fa-bars fa-2x oemTitle-iconWrapper-icon" style="line-height:42px;"></i>
+              <i class="fa fa-bars oemTitle-iconWrapper-icon" style="line-height:42px;"></i>
             </div>
             <div class="oemTitle-titleWrapper">
               <span>
@@ -397,6 +401,8 @@ a:hover {
     </div>
   </div>
 </div>
+
+<div style="height:7px"></div>
 <div class="container">
   <div class="inner">
     <div class="cover" style="height:400px"><!-- Cover image -->
@@ -413,10 +419,12 @@ a:hover {
         </div>
       </div>
     </div>
+  </div>
+    
     <div class="row"><!-- First row of boxes -->
         <div class="column box2 left">
           <a href="http://guide.openenergymonitor.org/applications/home-energy">
-            <div class="inner homeenergy">
+            <div class="inner homeenergy"><div style="padding:20px">
               <img class="emoncmsappimg" src="images/myelectric_app.png">
               <h3>Energy Use</h3>
               <ul>
@@ -424,12 +432,12 @@ a:hover {
                 <li>Compared to average home?</li>
                 <li>Compared to a low energy home?</li>
               </ul>
-            </div>
+            </div></div>
           </a>
         </div>
         <div class="column box2 right">
           <a href="http://guide.openenergymonitor.org/applications/solar-pv">
-            <div class="inner solar">
+            <div class="inner solar"><div style="padding:20px">
               <img class="emoncmsappimg" src="images/mysolar_app.png">
               <h3>Solar PV</h3>
               <ul>
@@ -438,7 +446,7 @@ a:hover {
                 <li>Calculate on-site use</li>
                 <li>Optimise demand matching.</li>
               </ul>
-            </div>
+            </div></div>
           </a>
         </div>
     </div>
@@ -452,13 +460,13 @@ a:hover {
       </div>
       <div class="column box4">
         <a href="http://guide.openenergymonitor.org/setup">
-          <div class="inner oemBlue">
+          <div class="inner" style="background-color:#e3e3e3">
             <img class="b4img" src="images/emonpi.jpg">
             <div class="b4dsc">
-              <div class="inner">
+              <div class="inner" style="color:#333">
                 <b>emonPi</b>
                 <br>
-                <div style="font-size:14px">
+                <div style="font-size:14px; color:#333">
                   2x CT Sensor inputs<br>
                   1x VRMS input<br>
                   1x Pulse input<br>
@@ -468,18 +476,19 @@ a:hover {
                 </div>
               </div>
             </div>
+            <div style="clear:both"></div>
           </div>
         </a>
       </div>
       <div class="column box4">
         <a href="https://guide.openenergymonitor.org/setup/emontx">
-          <div class="inner oemBlue">
+          <div class="inner" style="background-color:#e3e3e3">
             <img class="b4img" src="images/emontx.jpg">
             <div class="b4dsc">
-              <div class="inner">
+              <div class="inner" style="color:#333">
                 <b>emonTx</b>
                 <br>
-                <div style="font-size:14px">
+                <div style="font-size:14px; color:#333">
                   4x CT Sensor inputs<br>
                   1x VRMS input<br>
                   1x Pulse input<br>
@@ -488,18 +497,19 @@ a:hover {
                 </div>
               </div>
             </div>
+            <div style="clear:both"></div>
           </div>
         </a>
       </div>
       <div class="column box4">
         <a href="https://guide.openenergymonitor.org/setup/emonth">
-          <div class="inner oemBlue">
+          <div class="inner" style="background-color:#e3e3e3">
             <img class="b4img" src="images/emonth.png">
             <div class="b4dsc">
-              <div class="inner">
+              <div class="inner" style="color:#333">
                 <b>emonTH</b>
                 <br>
-                <div style="font-size:14px">
+                <div style="font-size:14px; color:#333">
                   Internal temperature<br>
                   Internal humidity<br>
                   External temperature<br>
@@ -508,18 +518,19 @@ a:hover {
                 </div>
               </div>
             </div>
+            <div style="clear:both"></div>
           </div>
         </a>
       </div>
       <div class="column box4">
         <a href="https://emoncms.org">
-          <div class="inner oemBlue">
+          <div class="inner" style="background-color:#e3e3e3">
             <img class="b4img" src="images/emoncms.png">
             <div class="b4dsc">
-              <div class="inner">
+              <div class="inner" style="color:#333">
                 <b>Emoncms</b>
                 <br>
-                <div style="font-size:14px">
+                <div style="font-size:14px; color:#333">
                   Web application<br>
                   Data storage<br>
                   Data processing<br>
@@ -528,6 +539,7 @@ a:hover {
                 </div>
               </div>
             </div>
+            <div style="clear:both"></div>
           </div>
         </a>
       </div>
@@ -535,21 +547,23 @@ a:hover {
       </div>
     </div>
   </div>
+</div>
+  
   <div style="background-color:#44b3e2; margin-top:7px">
     <div class="container" style="color:#fff">
       <br>
       <div style="margin: 0 auto; width:330px; text-align:left">
-        <h2>Learn | OpenEnergyMonitor</h2>
+        <img src="images/book.png" style="float:left; width:60px; padding-right:20px">
+        <h2>Learn<br>OpenEnergyMonitor</h2>
         <div style="clear:both">
         </div>
       </div>
       <br>
       <div class="column box3">
         <div class="inner">
-          <h2>Energy</h2>
+          <h2>Sustainable Energy</h2>
           <img src="images/electricity-icon-60-80h.png">
           <p>Explore the context of energy consumption, renewable supply, efficiency and zero carbon.</p>
-          <br>
           <br>
           <a href="../learn/sustainable-energy/energy/introduction">Read more...
           </a>
@@ -557,10 +571,9 @@ a:hover {
       </div>
       <div class="column box3">
         <div class="inner">
-          <h2>Learn</h2>
+          <h2>Electricity Monitoring</h2>
           <img src="images/buildingblocks80h.png">
           <p>How to design your own energy monitor.<br> AC theory, CT sensors, Arduino etc.</p>
-          <br>
           <br>
           <a href="../learn/electricity-monitoring/ac-power-theory/introduction.md">Read more...
           </a>
@@ -572,16 +585,15 @@ a:hover {
           <img src="images/divert80h.png">
           <p>How to build a solar PV diverter to heat water with excess energy.</p>
           <br>
-          <br>
           <a href="../learn/pv-diversion/introduction/choosing-an-energy-diverter.md">Read more...
           </a>
         </div>
       </div>
-      <div style="clear:both">
-      </div>
+      <div style="clear:both"></div>
+      <br><br>
     </div>
   </div>
-</div>
+
 </body>
 
 <!--
