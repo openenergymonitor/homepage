@@ -4,13 +4,12 @@
 
 <title>Home | OpenEnergyMonitor</title>
 <link rel="shortcut icon" href="theme/favicon.ico" />
-
-
 <!-- Load font locally to enable full offline use, un comment below to load font remotely-->
 <!--<link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet" type="text/css">-->
 <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
 <link rel="stylesheet" type="text/css" href="fonts/ubuntu.css?family=Ubuntu:300">
 <link rel="stylesheet" type="text/css" href="theme/font-awesome.min.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 
 <style>
@@ -252,7 +251,6 @@ a:hover {
   	padding: 0;
   	line-height: 42px;
     height:42px;
-    padding-left: 15px;
     color: #ffffff;
 }
 .oemTitle-iconWrapper {
@@ -272,9 +270,16 @@ a:hover {
        color: #ffffff;
        font-size: 14px;
   }
+.fa-bars {
+   display: none;
+   padding-left: 15px;
+}
   @media screen and (max-width: 650px) {
       .oemTitle-topLinks {
               display:none;}
+      .fa-bars {
+              display:block;
+      }
   }
 .oemTitle-topLinks-toplinkBox {
     padding-left:15px;
@@ -387,6 +392,55 @@ a:hover {
 .inner:hover .learnpageIcons {
   border: 12px solid #44b3e2;
 }
+
+
+.dropDown a {
+  font-family: "ubuntu";
+  display: block;
+  color: #ffffff;
+  padding: 20px 20px 20px 15px;
+  
+}
+.dropDown ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
+.dropDown ul li{
+  min-width: 80vw;
+}
+.dropDown ul li a {
+  text-align: left;
+}
+.dropDown {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 0;
+    font-size: 16px;
+    background-color: #44b3e2;
+    color: #ffffff;
+    z-index: 9999;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.blackOut {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 9998;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
 </style>
 <body>
 <div class="oemblueBar"><!-- Top navigation bar -->
@@ -642,7 +696,38 @@ a:hover {
     </div>
   </div>
 
+<div class="dropDown">
+    <ul>
+        <li><a href="https://community.openenergymonitor.org">
+            <i class="fa fa-comments" aria-hidden="true"></i>&nbsp;<b>Community</b> | Open<b>EnergyMonitor</b></a></li>
+        <li><a href="https://guide.openenergymonitor.org">
+            <i class="fa fa-book" aria-hidden="true"></i>&nbsp;<b>Guide</b> | Open<b>EnergyMonitor</b></a></li>
+        <li><a href="https://guide.openenergymonitor.org/technical/resources/">
+            <i class="fa fa-list-alt" aria-hidden="true"></i>&nbsp;<b>Resources</b> | Open<b>EnergyMonitor</b></a></li>
+        <li><a href="https://blog.openenergymonitor.org">
+            <i class="fa fa-bullhorn" aria-hidden="true"></i>&nbsp;<b>Blog</b> | Open<b>EnergyMonitor</b></a></li>
+        <li><a href="https://shop.openenergymonitor.com">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;<b>Shop</b> | Open<b>EnergyMonitor</b></a></li>
+    </ul>
+</div>
+
+<div class="blackOut"></div>
+
+<script>
+$(".fa-bars").click(function() {
+  $(".dropDown").show();
+  $(".dropDown").animate({ width:'80vw' },"0.5s");
+  $(".blackOut").show();
+});
+
+$(".blackOut").click(function() {
+  $(".dropDown").animate({ width:'0' },"0.5s",function(){$(".dropDown").hide()});
+  $(".blackOut").hide();
+});
+</script>
 </body>
+
+
 
 
 
