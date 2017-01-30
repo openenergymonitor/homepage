@@ -101,6 +101,8 @@ a:hover {
   color:#e2f1fa;
 }
 
+.fa {text-shadow: 2px 2px 2px rgba(150,150,150,0.5)} //drop shadow on icons
+
 .box4 a {
   text-decoration:none;
   color:#ffffff;
