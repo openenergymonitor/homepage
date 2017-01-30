@@ -1,14 +1,16 @@
+<?php global $path; ?>
+
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#44b3e2" />
 
 <title>Home | OpenEnergyMonitor</title>
-<link rel="shortcut icon" href="theme/favicon.ico" />
+<link rel="shortcut icon" href="<?php echo $path; ?>theme/favicon.ico" />
 <!-- Load font locally to enable full offline use, un comment below to load font remotely-->
 <!--<link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet" type="text/css">-->
 <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
-<link rel="stylesheet" type="text/css" href="fonts/ubuntu.css?family=Ubuntu:300">
-<link rel="stylesheet" type="text/css" href="theme/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo $path; ?>fonts/ubuntu.css?family=Ubuntu:300">
+<link rel="stylesheet" type="text/css" href="<?php echo $path; ?>theme/font-awesome.min.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 
@@ -49,7 +51,7 @@ body {
 }
 
 .solar {
-  background-image: url("homepage/images/solar.jpg");
+  background-image: url("<?php echo $path; ?>images/solar.jpg");
   background-size:cover;
   min-height:300px;
   color:#fff;
@@ -58,7 +60,7 @@ body {
 }
 
 .homeenergy {
-  background-image: url("homepage/images/home.png");
+  background-image: url("<?php echo $path; ?>images/home.png");
   background-size:cover;
   min-height:300px;
   color:#fff;
@@ -67,13 +69,13 @@ body {
 }
 
 .zerocarbon {
-  background-image: url("homepage/images/wind.jpg");
+  background-image: url("<?php echo $path; ?>images/wind.jpg");
   background-size:cover;
   color:#fff;
 }
 
 .cover {
-  background:#ffffff url('homepage/images/gwynt.jpg') no-repeat left center;
+  background:#ffffff url("<?php echo $path; ?>images/gwynt.jpg") no-repeat left center;
   /*background:#ffffff url('images/ecarsolar.jpg') no-repeat left center;*/
   background-size:cover;
 }
@@ -517,7 +519,7 @@ a:hover {
         <div class="column box2 left">
           <a href="https://guide.openenergymonitor.org/applications/home-energy">
             <div class="inner homeenergy"><div style="padding:20px">
-              <img class="emoncmsappimg" src="homepage/images/myelectric_app.png">
+              <img class="emoncmsappimg" src="<?php echo $path; ?>images/myelectric_app.png">
               <h3>Energy Use</h3>
               <ul>
                 <li>How much energy do I use?</li>
@@ -530,7 +532,7 @@ a:hover {
         <div class="column box2 right">
           <a href="https://guide.openenergymonitor.org/applications/solar-pv">
             <div class="inner solar"><div style="padding:20px">
-              <img class="emoncmsappimg" src="homepage/images/mysolar_app.png">
+              <img class="emoncmsappimg" src="<?php echo $path; ?>images/mysolar_app.png">
               <h3>Solar PV</h3>
               <ul>
                 <li>Explore solar PV generation</li>
@@ -553,7 +555,7 @@ a:hover {
       <div class="column box4">
         <a href="https://guide.openenergymonitor.org/setup">
           <div class="inner" style="background-color:#e3e3e3">
-            <img class="b4img" src="homepage/images/emonpi.jpg">
+            <img class="b4img" src="<?php echo $path; ?>images/emonpi.jpg">
             <div class="b4dsc">
               <div class="inner" style="color:#333">
                 <b>emonPi</b>
@@ -575,7 +577,7 @@ a:hover {
       <div class="column box4">
         <a href="https://guide.openenergymonitor.org/setup/emontx">
           <div class="inner" style="background-color:#e3e3e3">
-            <img class="b4img" src="homepage/images/emontx.jpg">
+            <img class="b4img" src="<?php echo $path; ?>images/emontx.jpg">
             <div class="b4dsc">
               <div class="inner" style="color:#333">
                 <b>emonTx</b>
@@ -596,7 +598,7 @@ a:hover {
       <div class="column box4">
         <a href="https://guide.openenergymonitor.org/setup/emonth">
           <div class="inner" style="background-color:#e3e3e3">
-            <img class="b4img" src="homepage/images/emonth.png">
+            <img class="b4img" src="<?php echo $path; ?>images/emonth.png">
             <div class="b4dsc">
               <div class="inner" style="color:#333">
                 <b>emonTH</b>
@@ -617,7 +619,7 @@ a:hover {
       <div class="column box4">
         <a href="https://emoncms.org">
           <div class="inner" style="background-color:#e3e3e3">
-            <img class="b4img" src="homepage/images/emoncms.png">
+            <img class="b4img" src="<?php echo $path; ?>images/emoncms.png">
             <div class="b4dsc">
               <div class="inner" style="color:#333">
                 <b>Emoncms</b>
@@ -645,7 +647,7 @@ a:hover {
     <div class="container" style="color:#fff">
       <br>
       <div style="margin: 0 auto; width:330px; text-align:left">
-        <img src="homepage/images/book.png" style="float:left; width:60px; padding-right:20px">
+        <img src="<?php echo $path; ?>images/book.png" style="float:left; width:60px; padding-right:20px">
         <h2>Learn<br>OpenEnergyMonitor</h2>
         <div style="clear:both">
         </div>
