@@ -537,7 +537,7 @@ a:hover {
               <h3>Energy Use</h3>
               <ul>
                 <li>How much energy do I use?</li>
-                <li>Compared to average home?</li>
+                <li>Compared to an average home?</li>
                 <li>Compared to a low energy home?</li>
               </ul>
             </div></div>
