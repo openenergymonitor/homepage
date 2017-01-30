@@ -16,24 +16,21 @@
 
 <style>
 
+html, body {margin: 0; height: 100vh;}
 body {
   font-family: Ubuntu, sans-serif;
-  font-size: 100%;
-  margin:0;
   padding:0;
   background-color:#f5f5f5;
   color:#333;
-  height:100%;
   width: 100%;
   text-align:center;
 }
-
 .container {
   box-sizing: border-box;
   margin:0 auto;
   width:1080px;
+  overflow: hidden;
 }
-
 .oem {
   font-size:42px;
 }
@@ -180,7 +177,7 @@ a:hover {
 
   .b4img {width:50%;}
   .b4dsc {width:50%; float:right}
-  
+
   /*
   .box2.left {
   border-right: none;
@@ -199,8 +196,8 @@ a:hover {
   .box2 { width:50%; }
   .box3 { width:33%; }
   .box4 { width:25%; }
-  
-  
+
+
   .box2 {
     /*max-height: 320px;*/
   }
@@ -394,55 +391,50 @@ a:hover {
 .inner:hover .learnpageIcons {
   border: 12px solid #44b3e2;
 }
-
-
-.dropDown a {
-  font-family: "ubuntu";
-  display: block;
-  color: #ffffff;
-  padding: 20px 20px 20px 15px;
-  
-}
+/*---------------------------------------------------------------------/
+// Drop-down menu
+/*--------------------------------------------------------------------*/
 .dropDown ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  
 }
-.dropDown ul li{
-  min-width: 80vw;
+.dropDown ul li {
+  width: 100%;
 }
 .dropDown ul li a {
+  font-family: "ubuntu";
+  display: block;
+  color: #ffffff;
+  padding: 20px 20px 20px 40px;
   text-align: left;
+  min-width: 200px;
 }
 .dropDown {
-    position: fixed;
-    display: block;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 0;
-    font-size: 16px;
-    background-color: #44b3e2;
-    color: #ffffff;
-    z-index: 9999;
-    box-sizing: border-box;
-    overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 0;
+  font-size: 16px;
+  background-color: #44b3e2;
+  color: #ffffff;
+  z-index: 9999;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 .blackOut {
-    position: fixed;
-    display: none;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 9998;
-    overflow: hidden;
-    cursor: pointer;
+  position: fixed;
+  display: none;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 9998;
+  overflow: hidden;
+  cursor: pointer;
 }
-
-
 </style>
 <body>
 <div class="oemblueBar"><!-- Top navigation bar -->
@@ -483,6 +475,13 @@ a:hover {
               </a>
             </div>
             <div class="oemTitle-topLinks-toplinkBox">
+              <a href="https://blog.openenergymonitor.org">
+                <span class='menuLinks'>
+                  <i class="fa fa-bullhorn" aria-hidden="true"></i>&nbsp;Blog
+                </span>
+              </a>
+            </div>
+            <div class="oemTitle-topLinks-toplinkBox">
               <a href="https://learn.openenergymonitor.org">
                 <span class='menuLinks'>
                   <i class="fa fa-mortar-board" aria-hidden="true"></i>&nbsp;Learn
@@ -514,7 +513,7 @@ a:hover {
       </div>
     </div>
   </div>
-    
+
     <div class="row"><!-- First row of boxes -->
         <div class="column box2 left">
           <a href="https://guide.openenergymonitor.org/applications/home-energy">
@@ -642,7 +641,7 @@ a:hover {
     </div>
   </div>
 
-  
+
   <div style="background-color:#44b3e2; margin-top:7px">
     <div class="container" style="color:#fff">
       <br>
@@ -655,7 +654,7 @@ a:hover {
       <br>
       <div class="column box3">
         <div class="inner">
-          
+
           <a href="https://learn.openenergymonitor.org/electricity-monitoring/ac-power-theory/introduction">
           <div class='learnpageIcons'>
           <i class='fa fa-bolt fa-3x'></i>
@@ -664,12 +663,12 @@ a:hover {
           <h2>Electricity Monitoring</h2>
           <p>Learn all about the basics of electricity monitoring, from AC power theory to designing and building your own monitoring system.</p>
           </a>
-          
+
         </div>
       </div>
       <div class="column box3">
         <div class="inner">
-          
+
           <a href="https://learn.openenergymonitor.org/sustainable-energy/energy/introduction">
           <div class='learnpageIcons'>
           <i class='fa fa-globe fa-3x'></i>
@@ -682,7 +681,7 @@ a:hover {
       </div>
       <div class="column box3">
         <div class="inner">
-          
+
           <a href="https://learn.openenergymonitor.org/pv-diversion/introduction/choosing-an-energy-diverter">
           <div class='learnpageIcons'>
           <i style="padding: 10px 0 0 5px" class='fa fa-random fa-3x'></i>
@@ -693,39 +692,37 @@ a:hover {
           </a>
         </div>
       </div>
-      <div style="clear:both"></div>
-      <br><br>
     </div>
   </div>
-
 <div class="dropDown">
     <ul>
         <li><a href="https://community.openenergymonitor.org">
-            <i class="fa fa-comments" aria-hidden="true"></i>&nbsp;<b>Community</b> | Open<b>EnergyMonitor</b></a></li>
+            <i class="fa fa-comments" aria-hidden="true"></i>&nbsp;Community</a></li>
         <li><a href="https://guide.openenergymonitor.org">
-            <i class="fa fa-book" aria-hidden="true"></i>&nbsp;<b>Guide</b> | Open<b>EnergyMonitor</b></a></li>
+            <i class="fa fa-book" aria-hidden="true"></i>&nbsp;Guide</a></li>
         <li><a href="https://guide.openenergymonitor.org/technical/resources/">
-            <i class="fa fa-list-alt" aria-hidden="true"></i>&nbsp;<b>Resources</b> | Open<b>EnergyMonitor</b></a></li>
+            <i class="fa fa-list-alt" aria-hidden="true"></i>&nbsp;Resources</a></li>
         <li><a href="https://blog.openenergymonitor.org">
-            <i class="fa fa-bullhorn" aria-hidden="true"></i>&nbsp;<b>Blog</b> | Open<b>EnergyMonitor</b></a></li>
+            <i class="fa fa-bullhorn" aria-hidden="true"></i>&nbsp;Blog</a></li>
         <li><a href="https://shop.openenergymonitor.com">
-            <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;<b>Shop</b> | Open<b>EnergyMonitor</b></a></li>
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Shop</a></li>
     </ul>
 </div>
 
 <div class="blackOut"></div>
-
 <script>
 $(".fa-bars").click(function() {
-  $(".dropDown").show();
-  $(".dropDown").animate({ width:'80vw' },"0.5s");
+  $(".dropDown").animate({ width:'200px' },"0.5s");
   $(".blackOut").show();
+  $("html, body").css("overflow","hidden");
 });
 
 $(".blackOut").click(function() {
-  $(".dropDown").animate({ width:'0' },"0.5s",function(){$(".dropDown").hide()});
+  $("html, body").css("overflow","visible");
+  $(".dropDown").animate({ width:'0' },"0.5s");
   $(".blackOut").hide();
 });
+
 </script>
 </body>
 
