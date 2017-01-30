@@ -88,7 +88,7 @@ h3 {
 
 a {
   text-decoration:none;
-  color:#e2f1fa;
+  color:#ffffff;
 }
 
 a:visited {
@@ -98,7 +98,7 @@ a:visited {
 
 a:hover {
   text-decoration:none;
-  color:#fff;
+  color:#e2f1fa;
 }
 
 .box4 a {
@@ -254,30 +254,41 @@ a:hover {
 }
 .oemTitle-iconWrapper {
     display:inline-block;
+    float: left;
     height: 100%;
+    font-size: 30px;
 }
 .oemTitle-titleWrapper {
     display: inline-block;
     vertical-align: top;
+    float: left;
     height: 100%;
+    padding-left: 7px;
 }
 .oemTitle-topLinks {
     float: right;
-    padding-right: 15px;
+    padding-right: 7px;
 }
-  .oemTitle-topLinks a {
-       color: #ffffff;
-       font-size: 14px;
-  }
+.oemTitle-topLinks a {
+     color: #ffffff;
+     font-size: 16px;
+}
 .fa-bars {
    display: none;
-   padding-left: 15px;
+   padding-left: 12px;
+   cursor: pointer;
 }
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 800px) {
       .oemTitle-topLinks {
               display:none;}
       .fa-bars {
               display:block;
+      }
+      .oemTitle-titleWrapper {
+          float: right;
+          padding-right: 12px;
+          padding-left: 0;
+          font-size: 20px
       }
   }
 .oemTitle-topLinks-toplinkBox {
@@ -286,12 +297,6 @@ a:hover {
 }
 .boldText {
   font-weight: bold;
-}
-#sidebar-open {
-	margin-left: 0;
-	float: left;
-	height: 100%;
-	cursor: pointer;
 }
 /*---------------------------------------------------------------------/
 // Cover image
@@ -421,7 +426,8 @@ a:hover {
   color: #ffffff;
   z-index: 9999;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;  
 }
 .blackOut {
   position: fixed;
@@ -447,44 +453,51 @@ a:hover {
               <i class="fa fa-bars oemTitle-iconWrapper-icon" style="line-height:42px;"></i>
             </div>
             <div class="oemTitle-titleWrapper">
-              <span>
-                <span class="boldText">&nbsp;Home </span><span>| Open<span class="boldText">EnergyMonitor</span></span>
-              </span>
+              <a href="/">
+                <strong>Home </strong>| Open<strong>EnergyMonitor</strong>
+              </a>
             </div>
           </div>
           <div class="oemTitle-topLinks">
             <div class="oemTitle-topLinks-toplinkBox">
-              <a href="https://community.openenergymonitor.org">
-                <span class='menuLinks'>
-                  <i class="fa fa-comments" aria-hidden="true"></i>&nbsp;Community
-                </span>
-              </a>
-            </div>
-            <div class="oemTitle-topLinks-toplinkBox">
-              <a href="https://shop.openenergymonitor.com">
-                <span class='menuLinks'>
-                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Shop
-                </span>
-              </a>
-            </div>
-            <div class="oemTitle-topLinks-toplinkBox">
               <a href="https://guide.openenergymonitor.org">
-                <span class='menuLinks'>
+                <span class='menuLinks' title="a user guide for the OpenEnergyMonitor system">
                   <i class="fa fa-book" aria-hidden="true"></i>&nbsp;Guide
                 </span>
               </a>
             </div>
             <div class="oemTitle-topLinks-toplinkBox">
+              <a href="https://learn.openenergymonitor.org">
+                <span class='menuLinks' title="general information about energy monitoring, diversion and sustainability">
+                  <i class="fa fa-mortar-board" aria-hidden="true"></i>&nbsp;Learn
+                </span>
+              </a>
+            </div>
+            <div class="oemTitle-topLinks-toplinkBox">
+              <a href="https://guide.openenergymonitor.org/technical/resources/">
+                <span class='menuLinks' title="a definitive list of resources for OpenEnergyMonitor hardware">
+                  <i class="fa fa-list-alt" aria-hidden="true"></i>&nbsp;Resources
+                </span>
+              </a>
+            </div>
+            <div class="oemTitle-topLinks-toplinkBox">
+              <a href="https://community.openenergymonitor.org">
+                <span class='menuLinks' title="the OpenEnergyMonitor forum">
+                  <i class="fa fa-comments" aria-hidden="true"></i>&nbsp;Community
+                </span>
+              </a>
+            </div>
+            <div class="oemTitle-topLinks-toplinkBox">
               <a href="https://blog.openenergymonitor.org">
-                <span class='menuLinks'>
+                <span class='menuLinks' title="keep up with new developments at OpenEnergyMonitor">
                   <i class="fa fa-bullhorn" aria-hidden="true"></i>&nbsp;Blog
                 </span>
               </a>
             </div>
             <div class="oemTitle-topLinks-toplinkBox">
-              <a href="https://learn.openenergymonitor.org">
-                <span class='menuLinks'>
-                  <i class="fa fa-mortar-board" aria-hidden="true"></i>&nbsp;Learn
+              <a href="https://shop.openenergymonitor.com">
+                <span class='menuLinks' title="the official OpenEnergyMonitor online store">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Shop
                 </span>
               </a>
             </div>
@@ -660,7 +673,7 @@ a:hover {
           <i class='fa fa-bolt fa-3x'></i>
           <div class='iconCircle'></div>
           </div>
-          <h2>Electricity Monitoring</h2>
+          <h2>Electricity<br/> Monitoring</h2>
           <p>Learn all about the basics of electricity monitoring, from AC power theory to designing and building your own monitoring system.</p>
           </a>
 
@@ -674,7 +687,7 @@ a:hover {
           <i class='fa fa-globe fa-3x'></i>
           <div class='iconCircle'></div>
           </div>
-          <h2>Sustainable Energy</h2>
+          <h2>Sustainable<br/> Energy</h2>
           <p>Exploring the context of energy, renewable supply, energy efficiency and zero carbon energy systems.</p>
           </a>
         </div>
@@ -687,7 +700,7 @@ a:hover {
           <i style="padding: 10px 0 0 5px" class='fa fa-random fa-3x'></i>
           <div class='iconCircle'></div>
           </div>
-          <h2>PV Diversion</h2>
+          <h2>PV<br/> Diversion</h2>
           <p>Learn how to build a solar PV diverter to make use of excess energy.</p>
           </a>
         </div>
@@ -695,18 +708,20 @@ a:hover {
     </div>
   </div>
 <div class="dropDown">
-    <ul>
-        <li><a href="https://community.openenergymonitor.org">
-            <i class="fa fa-comments" aria-hidden="true"></i>&nbsp;Community</a></li>
-        <li><a href="https://guide.openenergymonitor.org">
-            <i class="fa fa-book" aria-hidden="true"></i>&nbsp;Guide</a></li>
-        <li><a href="https://guide.openenergymonitor.org/technical/resources/">
-            <i class="fa fa-list-alt" aria-hidden="true"></i>&nbsp;Resources</a></li>
-        <li><a href="https://blog.openenergymonitor.org">
-            <i class="fa fa-bullhorn" aria-hidden="true"></i>&nbsp;Blog</a></li>
-        <li><a href="https://shop.openenergymonitor.com">
-            <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Shop</a></li>
-    </ul>
+  <ul>
+    <li><a href="https://guide.openenergymonitor.org">
+      <i class="fa fa-book" aria-hidden="true"></i>&nbsp;Guide</a></li>
+    <li><a href="https://learn.openenergymonitor.org">
+      <i class="fa fa-mortar-board" aria-hidden="true"></i>&nbsp;Learn</a></li>
+    <li><a href="https://guide.openenergymonitor.org/technical/resources/">
+      <i class="fa fa-list-alt" aria-hidden="true"></i>&nbsp;Resources</a></li>
+    <li><a href="https://community.openenergymonitor.org">
+      <i class="fa fa-comments" aria-hidden="true"></i>&nbsp;Community</a></li>
+    <li><a href="https://blog.openenergymonitor.org">
+      <i class="fa fa-bullhorn" aria-hidden="true"></i>&nbsp;Blog</a></li>
+    <li><a href="https://shop.openenergymonitor.com">
+      <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Shop</a></li>
+  </ul>
 </div>
 
 <div class="blackOut"></div>
