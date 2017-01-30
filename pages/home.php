@@ -1,7 +1,7 @@
 <?php global $path; ?>
 
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <meta name="theme-color" content="#44b3e2" />
 
 <title>Home | OpenEnergyMonitor</title>
@@ -427,7 +427,7 @@ a:hover {
   z-index: 9999;
   box-sizing: border-box;
   overflow-x: hidden;
-  overflow-y: auto;  
+  overflow-y: auto;
 }
 .blackOut {
   position: fixed;
@@ -655,8 +655,8 @@ a:hover {
   </div>
 
 
-  <div style="background-color:#44b3e2; margin-top:7px">
-    <div class="container" style="color:#fff">
+  <div style="background-color:#44b3e2; margin-top:7px;">
+    <div class="container" style="color:#fff; background-color:#44b3e2;">
       <br>
       <div style="margin: 0 auto; width:330px; text-align:left">
         <img src="<?php echo $path; ?>images/book.png" style="float:left; width:60px; padding-right:20px">
