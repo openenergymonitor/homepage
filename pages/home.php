@@ -177,7 +177,7 @@ a:hover {
   .oemheading { font-size:30px; }
   .oemheading2 { padding-top:30px; font-size:27px; }
 
-  .b4img {width:50%;}
+  .b4img {width:50%; float:left}
   .b4dsc {width:50%; float:right}
 
   /*
