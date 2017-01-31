@@ -404,13 +404,15 @@ a:hover {
 .dropDown ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 20px 0 0 0;
 }
 .dropDown ul li {
   width: 100%;
 }
 .dropDown ul li a {
+  box-sizing: border-box;
   font-family: "ubuntu";
+  font-size: 20px;
   display: block;
   color: #ffffff;
   padding: 20px 20px 20px 40px;
