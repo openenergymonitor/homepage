@@ -645,7 +645,7 @@ a:hover {
                   Data storage<br>
                   Data processing<br>
                   Data visualisation<br>
-                  Cloud & self-hosted<br>
+                  Cloud or self-hosted<br>
                 </div>
               </div>
             </div>
