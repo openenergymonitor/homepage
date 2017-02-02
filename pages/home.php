@@ -523,9 +523,9 @@ a:hover {
       </div>
       <div class="oemDescription">
         <div class="oemDescription-inner">
-          <span class="boldText">Open source monitoring for understanding energy.</span>
+          <span class="boldText">Open source monitoring for understanding energy</span>
           <br>
-          <div class="oemDescription-inner-second">Exploring the context of renewable energy and zero carbon.</div>
+          <div class="oemDescription-inner-second">Exploring the context of renewable energy and zero carbon</div>
         </div>
       </div>
     </div>
