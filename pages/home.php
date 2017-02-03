@@ -93,12 +93,12 @@ a {
 
 a:visited {
   text-decoration:none;
-  color:#e2f1fa;
+  color:#ffffff;
 }
 
 a:hover {
   text-decoration:none;
-  color:#e2f1fa;
+  color:#ffffff;
 }
 
 .fa {text-shadow: 2px 2px 2px rgba(150,150,150,0.5)} //drop shadow on icons
@@ -233,76 +233,11 @@ a:hover {
 .inner { margin:7px; }
 
 .box3 { text-align:center; }
-/*---------------------------------------------------------------------/
-// Topnav
-/*--------------------------------------------------------------------*/
-.oemblueBar {
-  width: 100%;
-  background-color: #44b3e2;
-  height: 42px;
-}
-#topnav {
-  	background-color: #44b3e2;
-  	height: 42px;
-  	text-align: left;
-/*    display:none; */
-}
-.oemTitle {
-  	margin: 0;
-  	padding: 0;
-  	line-height: 42px;
-    height:42px;
-    color: #ffffff;
-}
-.oemTitle-iconWrapper {
-    display:inline-block;
-    float: left;
-    height: 100%;
-    font-size: 30px;
-}
-.oemTitle-titleWrapper {
-    display: inline-block;
-    vertical-align: top;
-    float: left;
-    height: 100%;
-    padding-left: 7px;
-}
-.oemTitle-topLinks {
-    float: right;
-    padding-right: 7px;
-}
-.oemTitle-topLinks a {
-     color: #ffffff;
-     font-size: 16px;
-}
-.fa-bars {
-   display: none;
-   padding-left: 12px;
-   cursor: pointer;
-}
-  @media screen and (max-width: 800px) {
-      .oemTitle-topLinks {
-              display:none;}
-      .fa-bars {
-              display:block;
-      }
-      .oemTitle-titleWrapper {
-          float: right;
-          padding-right: 12px;
-          padding-left: 0;
-          font-size: 20px
-      }
-  }
-.oemTitle-topLinks-toplinkBox {
-    padding-left:15px;
-    display: inline-block;
-}
-.boldText {
-  font-weight: bold;
-}
+
 /*---------------------------------------------------------------------/
 // Cover image
 /*--------------------------------------------------------------------*/
+
 .oemName {
   color: #ffffff;
   width: 100%;
@@ -360,6 +295,7 @@ a:hover {
 /*---------------------------------------------------------------------/
 // OEM colors
 /*--------------------------------------------------------------------*/
+
 .oemGray {
   background-color: #777777;
 }
@@ -371,6 +307,7 @@ a:hover {
 /*---------------------------------------------------------------------/
 // Learn icons
 /*--------------------------------------------------------------------*/
+
 .learnpageIcons {
   width: 180px;
   height: 180px;
@@ -388,6 +325,7 @@ a:hover {
 	line-height: 48px;
   border-radius: 50%;
 }
+
 .learnpageIcons i {
   display: table-cell;
   vertical-align: middle;
@@ -395,121 +333,237 @@ a:hover {
   text-shadow: none;
   color: #44b3e2;
 }
+
 .inner:hover .learnpageIcons {
   border: 12px solid #44b3e2;
 }
-/*---------------------------------------------------------------------/
-// Drop-down menu
-/*--------------------------------------------------------------------*/
-.dropDown ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 20px 0 0 0;
-}
-.dropDown ul li {
+
+/*--------------------------------------------
+    custom header...
+--------------------------------------------*/
+
+.oemblueBar {
   width: 100%;
-}
-.dropDown ul li a {
-  box-sizing: border-box;
-  font-family: "ubuntu";
-  font-size: 20px;
-  display: block;
-  color: #ffffff;
-  padding: 20px 20px 20px 40px;
-  text-align: left;
-  min-width: 200px;
-}
-.dropDown {
-  position: fixed;
   top: 0;
-  left: 0;
-  height: 100vh;
-  width: 0;
-  font-size: 16px;
+  height: 42px;
   background-color: #44b3e2;
-  color: #ffffff;
-  z-index: 9999;
-  box-sizing: border-box;
-  overflow-x: hidden;
-  overflow-y: auto;
 }
+
+@media screen and (max-width: 400px) {
+    .oemWrap {
+        display: none;
+    }
+}
+
+.fa-navicon {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    line-height: 42px;
+    position: absolute;
+    left: 0;
+    color: #ffffff;
+    padding-left: 12px;
+    z-index: 10;
+}
+
+@media screen and (max-width: 1079px) {
+    .fa-navicon {
+        display: inline-block;
+    }
+}
+
+.titleHolder {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 42px;
+    background-color: #44b3e2;
+    overflow: hidden;
+}
+
+.thisTitle {
+    display: inline-block;
+    color: #ffffff;
+    position: absolute;
+    left: 0;
+    line-height: 42px;
+    padding-left: 7px;
+    font-size: 16px;
+}
+
+.thisTitle a {
+    color: #ffffff;
+}
+
+@media screen and (max-width: 1079px) {
+    .thisTitle {
+        width: 100%;
+        position: absolute;
+        text-align: right;
+        font-size: 20px;
+        padding-left: 0;
+        
+    }
+    .thisTitle a {
+        padding-right: 12px;
+    }
+}
+
+/*--------------------------------------------
+    site links on larger screens...
+--------------------------------------------*/
+
+.navigation {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right: 0;
+    height: 42px;
+    min-width: 700px;
+    overflow: visible;
+    padding-right: 7px;
+}
+
+    .navigation ul {
+        float: right;
+        list-style-type: none;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+       
+    .navigation ul li {
+        float: left;
+        background-color: #44b3e2;
+    }
+           
+    .navigation ul li a {
+        display: block;
+        line-height: 42px;
+        font-family:"ubuntu";
+        font-size: 16px;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: #ffffff;
+    }
+
+/*--------------------------------------------
+    site links on smaller screens...
+--------------------------------------------*/
+
+.menuFreeze {
+    height: 100%;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1079px) {
+
+    .navigation {
+        position: fixed;
+        display: none;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        margin: 0;
+        width: 0;
+        font-size: 20px;
+        background-color: #44b3e2;
+        color: #ffffff;
+        z-index: 9999;
+        box-sizing: border-box;
+        overflow: auto;
+        min-width: 0;
+        padding-right: 0;
+    }
+    
+        .navigation ul {
+            list-style-type: none;
+            margin: 0;
+            padding-top: 0;
+        }
+        
+        .navigation ul li a {
+            box-sizing: border-box;
+            font-family: "ubuntu";
+            font-size: 20px;
+            display: block;
+            color: #ffffff;
+            padding: 20px 20px 20px 40px;
+            min-width: 220px;
+            text-align: left;
+        }
+        
+        .navigation ul li .fa {
+            min-width: 25px;
+        }
+}
+
+/*--------------------------------------------
+    grayed out overlay when menu is active...
+--------------------------------------------*/
+
 .blackOut {
-  position: fixed;
-  display: none;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  width: 100vw;
-  background-color: rgba(0,0,0,0.5);
-  z-index: 9998;
-  overflow: hidden;
-  cursor: pointer;
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 11;
 }
+
+/*--------------------------------------------
+    highlight active link...
+--------------------------------------------*/
+
+.actoemLink {
+    background-color: #368fb4 !important;
+}
+
+    .actoemLink a {
+        color: #ffffff !important;
+    }
+
 </style>
 <body>
 <div class="oemblueBar"><!-- Top navigation bar -->
-  <div class="container">
-    <div id="topnav">
-      <nav>
-        <div class="oemTitle">
-          <div id="sidebar-open">
-            <div class="oemTitle-iconWrapper">
-              <i class="fa fa-bars oemTitle-iconWrapper-icon" style="line-height:42px;"></i>
-            </div>
-            <div class="oemTitle-titleWrapper">
-              <a href="/">
-                <strong>Home </strong>| Open<strong>EnergyMonitor</strong>
-              </a>
-            </div>
-          </div>
-          <div class="oemTitle-topLinks">
-            <div class="oemTitle-topLinks-toplinkBox">
-              <a href="https://guide.openenergymonitor.org">
-                <span class='menuLinks' title="a user guide for the OpenEnergyMonitor system">
-                  <i class="fa fa-book" aria-hidden="true"></i>&nbsp;Guide
-                </span>
-              </a>
-            </div>
-            <div class="oemTitle-topLinks-toplinkBox">
-              <a href="https://learn.openenergymonitor.org">
-                <span class='menuLinks' title="general information about energy monitoring, diversion and sustainability">
-                  <i class="fa fa-mortar-board" aria-hidden="true"></i>&nbsp;Learn
-                </span>
-              </a>
-            </div>
-            <div class="oemTitle-topLinks-toplinkBox">
-              <a href="https://guide.openenergymonitor.org/technical/resources/">
-                <span class='menuLinks' title="a definitive list of resources for OpenEnergyMonitor hardware">
-                  <i class="fa fa-list-alt" aria-hidden="true"></i>&nbsp;Resources
-                </span>
-              </a>
-            </div>
-            <div class="oemTitle-topLinks-toplinkBox">
-              <a href="https://community.openenergymonitor.org">
-                <span class='menuLinks' title="the OpenEnergyMonitor forum">
-                  <i class="fa fa-comments" aria-hidden="true"></i>&nbsp;Community
-                </span>
-              </a>
-            </div>
-            <div class="oemTitle-topLinks-toplinkBox">
-              <a href="https://blog.openenergymonitor.org">
-                <span class='menuLinks' title="keep up with new developments at OpenEnergyMonitor">
-                  <i class="fa fa-bullhorn" aria-hidden="true"></i>&nbsp;Blog
-                </span>
-              </a>
-            </div>
-            <div class="oemTitle-topLinks-toplinkBox">
-              <a href="https://shop.openenergymonitor.com">
-                <span class='menuLinks' title="the official OpenEnergyMonitor online store">
-                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Shop
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </nav>
+<div class= "container">
+<div class="titleHolder">
+  <i class="fa fa-navicon"></i>
+    <div class="thisTitle">
+      <a href="/">
+        <strong>Home</strong>
+        <span class="oemWrap">
+        | Open<strong>EnergyMonitor</strong>
+        </span>
+      </a>
     </div>
-  </div>
+<div id="siteLinks" class="navigation">
+    <ul>
+        <li title="you are here: the homepage of OpenEnergyMonitor" class="actoemLink"><a href="https://openenergymonitor.org">
+            <i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home</a></li>
+        <li title="a user guide for the OpenEnergyMonitor system"><a href="https://guide.openenergymonitor.org">
+            <i class="fa fa-book" aria-hidden="true"></i>&nbsp;Guide</a></li>
+        <li title="general information about energy monitoring, diversion and sustainability"><a href="https://learn.openenergymonitor.org">
+            <i class="fa fa-mortar-board" aria-hidden="true"></i>&nbsp;Learn</a></li>
+        <li title="a definitive list of resources for OpenEnergyMonitor hardware"><a href="https://guide.openenergymonitor.org/technical/resources/">
+            <i class="fa fa-list-alt" aria-hidden="true"></i>&nbsp;Resources</a></li>
+        <li title="the openenergymonitor forum"><a href="https://community.openenergymonitor.org">
+            <i class="fa fa-comments" aria-hidden="true"></i>&nbsp;Community</a></li>
+        <li title="keep up with new developments at OpenEnergyMonitor"><a href="https://blog.openenergymonitor.org">
+            <i class="fa fa-bullhorn" aria-hidden="true"></i>&nbsp;Blog</a></li>
+        <li title="the official OpenEnergyMonitor online store"><a href="https://shop.openenergymonitor.com">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Shop</a></li>
+    </ul>
+</div>
+</div>
+</div>
 </div>
 
 <div style="height:7px"></div>
@@ -518,14 +572,14 @@ a:hover {
     <div class="cover" style="height:400px"><!-- Cover image -->
       <div class="oemName">
         <div class="oemName-inner">
-          <span>Open</span><span class="boldText">EnergyMonitor</span>
+          Open<strong>EnergyMonitor</strong>
         </div>
       </div>
       <div class="oemDescription">
         <div class="oemDescription-inner">
-          <span class="boldText">Open source monitoring for understanding energy.</span>
+          <strong>Open source monitoring for understanding energy</strong>
           <br>
-          <div class="oemDescription-inner-second">Exploring the context of renewable energy and zero carbon.</div>
+          <div class="oemDescription-inner-second">Exploring the context of renewable energy and zero carbon</div>
         </div>
       </div>
     </div>
@@ -698,7 +752,6 @@ a:hover {
       </div>
       <div class="column box3">
         <div class="inner">
-
           <a href="https://learn.openenergymonitor.org/pv-diversion/introduction/choosing-an-energy-diverter">
           <div class='learnpageIcons'>
           <i style="padding: 10px 0 0 5px" class='fa fa-random fa-3x'></i>
@@ -711,42 +764,45 @@ a:hover {
       </div>
     </div>
   </div>
-<div class="dropDown">
-  <ul>
-    <li><a href="https://guide.openenergymonitor.org">
-      <i class="fa fa-book" aria-hidden="true"></i>&nbsp;Guide</a></li>
-    <li><a href="https://learn.openenergymonitor.org">
-      <i class="fa fa-mortar-board" aria-hidden="true"></i>&nbsp;Learn</a></li>
-    <li><a href="https://guide.openenergymonitor.org/technical/resources/">
-      <i class="fa fa-list-alt" aria-hidden="true"></i>&nbsp;Resources</a></li>
-    <li><a href="https://community.openenergymonitor.org">
-      <i class="fa fa-comments" aria-hidden="true"></i>&nbsp;Community</a></li>
-    <li><a href="https://blog.openenergymonitor.org">
-      <i class="fa fa-bullhorn" aria-hidden="true"></i>&nbsp;Blog</a></li>
-    <li><a href="https://shop.openenergymonitor.com">
-      <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Shop</a></li>
-  </ul>
-</div>
-
-<div class="blackOut"></div>
+ <div class="blackOut"></div>
+ 
 <script>
-$(".fa-bars").click(function() {
-  $(".dropDown").animate({ width:'200px' },"0.5s");
-  $(".blackOut").show();
-  $("html, body").css("overflow","hidden");
+
+var closeStatus = false;
+
+function openButton() {
+    $("html, body").addClass("menuFreeze");
+    $(".blackOut").show();
+    $(".navigation").show();
+    $(".navigation").animate({ width:'220' },"0.5s");
+}
+
+$(".fa-navicon").click(function() {
+    openButton();
+    closeStatus = true;
 });
 
+function closeButton() {
+    $("html, body").removeClass("menuFreeze");
+    $(".blackOut").hide();
+    $(".navigation").animate({ width:'0' },"0.5s");
+}
+
 $(".blackOut").click(function() {
-  $("html, body").css("overflow","visible");
-  $(".dropDown").animate({ width:'0' },"0.5s");
-  $(".blackOut").hide();
+    closeButton();
+    closeStatus = false;
+});
+
+
+$(window).resize(function(){
+    if ($(window).width() > 1079 && closeStatus == true) {
+        if (!$("html").hasClass("mobile-device")) {
+            closeButton();
+            closeStatus = false;
+        }
+    }
 });
 
 </script>
+  
 </body>
-
-
-
-
-
-<!--End -->
