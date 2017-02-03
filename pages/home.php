@@ -577,7 +577,11 @@ a:hover {
       </div>
       <div class="oemDescription">
         <div class="oemDescription-inner">
+<<<<<<< HEAD
           <strong>Open source monitoring for understanding energy</strong>
+=======
+          <span class="boldText">Open source monitoring for understanding energy</span>
+>>>>>>> c28dd429a48b04b2e8bea1b0ab940fd00da8b214
           <br>
           <div class="oemDescription-inner-second">Exploring the context of renewable energy and zero carbon</div>
         </div>
@@ -699,7 +703,7 @@ a:hover {
                   Data storage<br>
                   Data processing<br>
                   Data visualisation<br>
-                  Cloud & self-hosted<br>
+                  Cloud or self-hosted<br>
                 </div>
               </div>
             </div>
