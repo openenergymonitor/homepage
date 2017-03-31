@@ -11,526 +11,9 @@
 <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
 <link rel="stylesheet" type="text/css" href="<?php echo $path; ?>fonts/ubuntu.css?family=Ubuntu:300">
 <link rel="stylesheet" type="text/css" href="<?php echo $path; ?>theme/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo $path; ?>theme/style.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-
-<style>
-
-html, body {margin: 0; height: 100vh;}
-body {
-  font-family: Ubuntu, sans-serif;
-  padding:0;
-  background-color:#f5f5f5;
-  color:#333;
-  width: 100%;
-  text-align:center;
-}
-.container {
-  box-sizing: border-box;
-  margin:0 auto;
-  width:1080px;
-  overflow: hidden;
-}
-.oem {
-  font-size:42px;
-}
-
-.box {
-  width:233px;
-  float:left;
-  background-color:#e3e3e3;
-  text-align:left;
-  height:300px;
-}
-
-.oem {
-  font-size:32px;
-}
-
-.solar {
-  background-image: url("<?php echo $path; ?>images/solar.jpg");
-  background-size:cover;
-  min-height:300px;
-  color:#fff;
-  /*padding: 20px;*/
-  text-align: left;
-}
-
-.homeenergy {
-  background-image: url("<?php echo $path; ?>images/home.png");
-  background-size:cover;
-  min-height:300px;
-  color:#fff;
-  /*padding: 20px;*/
-  text-align: left;
-}
-
-.zerocarbon {
-  background-image: url("<?php echo $path; ?>images/wind.jpg");
-  background-size:cover;
-  color:#fff;
-}
-
-.cover {
-  background:#ffffff url("<?php echo $path; ?>images/gwynt.jpg") no-repeat left center;
-  /*background:#ffffff url('images/ecarsolar.jpg') no-repeat left center;*/
-  background-size:cover;
-}
-
-.halfbox {
-  width:480px;
-  float:left;
-}
-
-h3 {
-  font-size:30px;
-}
-
-a {
-  text-decoration:none;
-  color:#ffffff;
-}
-
-a:visited {
-  text-decoration:none;
-  color:#ffffff;
-}
-
-a:hover {
-  text-decoration:none;
-  color:#ffffff;
-}
-
-.fa {text-shadow: 2px 2px 2px rgba(150,150,150,0.5)} //drop shadow on icons
-
-.box4 a {
-  text-decoration:none;
-  color:#ffffff;
-}
-
-.box4 a:visited {
-  text-decoration:none;
-  color:#000;
-}
-
-.box4 a:hover {
-  text-decoration:none;
-  color:#333;
-}
-
-.emoncmsappimg {
-  float:right;
-  width:250px
-}
-
-.oemheading {
-  color:#44b3e2;
-  font-size:30px;
-  font-weight:bold;
-  font-family:Ubuntu;
-}
-
-.oemheading2 {
-  color:#fff;
-  padding-top:80px;
-  padding-bottom:20px;
-  font-size:45px;
-  font-weight:bold;
-}
-
-.column,
-.columns {
-  width:100%;
-  float: left;
-  text-align:left;
-  box-sizing: border-box; }
-
-.b4img {width:100%}
-.b4dsc {width:100%; height:130px}
-
-.box2 {
-  /*border-top: 14px solid #ffffff;
-  max-height: 300px;*/
-  overflow: hidden;
-}
-
-.box2 ul {
-  padding-left: 15px;
-}
-/*
-.box2.left {
-  border-right: 7px solid #ffffff;
-}
-.box2.right {
-  border-left: 7px solid #ffffff;
-}*/
-
-@media (max-width: 450px) {
-  .container {
-    width: 100%;
-  }
-
-  .emoncmsappimg {
-    width:200px
-  }
-
-  .oemheading { font-size:30px; }
-  .oemheading2 { padding-top:30px; font-size:27px; }
-
-  .b4img {width:50%; float:left}
-  .b4dsc {width:50%; float:right}
-
-  /*
-  .box2.left {
-  border-right: none;
-  }
-  .box2.right {
-  border-left: none;
-  }*/
-}
-
-@media (min-width: 450px) and (max-width: 800px) {
-  .container {
-      width: 600px;
-      /*width: 100%;*/
-  }
-
-  .box2 { width:50%; }
-  .box3 { width:33%; }
-  .box4 { width:25%; }
-
-
-  .box2 {
-    /*max-height: 320px;*/
-  }
-}
-
-@media (min-width: 800px) and (max-width: 1080px) {
-  .container {
-      width: 800px;
-      /*width: 100%;*/
-  }
-
-  .emoncmsappimg {
-    width:200px
-  }
-
-  .box2 { width:50%; }
-  .box3 { width:33%; }
-  .box4 { width:25%; }
-}
-
-@media (min-width: 1080px) {
-  .container {
-    width: 1080px;
-  }
-
-  .box2 { width:50%; }
-  .box3 { width:33%; }
-  .box4 { width:25%; }
-}
-
-.inner { margin:7px; }
-
-.box3 { text-align:center; }
-
-/*---------------------------------------------------------------------/
-// Cover image
-/*--------------------------------------------------------------------*/
-
-.oemName {
-  color: #ffffff;
-  width: 100%;
-  height: 50%;
-  display: table;
-}
-.oemName-inner {
-  display: table-cell;
-  vertical-align: middle;
-  font-size: 42px;
-  padding: 10px;
-}
-.oemDescription {
-  color: #ffffff;
-  width: 100%;
-  height: 50%;
-  display: table;
-  text-shadow: 0 0 20px rgba(0,0,0,0.1);
-}
-.oemDescription-inner {
-  display: table-cell;
-  vertical-align: middle;
-  font-size: 24px;
-  padding: 10px;
-}
-.oemDescription-inner-second {
-  font-size: 20px;
-  margin: 5px auto;
-}
-@media (max-width: 450px) {
-  .oemName-inner {
-    font-size: 30px;
-  }
-  .oemDescription-inner {
-    font-size: 16px;
-    padding: 20px;
-  }
-  .oemDescription-inner-second {
-    font-size: 14px;
-    max-width: 200px;
-  }
-}
-
-@media (min-width: 450px) and (max-width: 800px) {
-  .oemName-inner {
-    font-size: 40px;
-  }
-}
-
-@media (min-width: 800px) and (max-width: 1080px) {
-  .oemName-inner {
-    font-size: 50px;
-  }
-}
-/*---------------------------------------------------------------------/
-// OEM colors
-/*--------------------------------------------------------------------*/
-
-.oemGray {
-  background-color: #777777;
-}
-
-.oemBlue {
-  background-color: #44b3e2;
-}
-
-/*---------------------------------------------------------------------/
-// Learn icons
-/*--------------------------------------------------------------------*/
-
-.learnpageIcons {
-  width: 180px;
-  height: 180px;
-  box-sizing: border-box;
-  border: 8px solid #44b3e2;
-  display: table;
-  background-color: #ffffff;
-  color: #ffffff;
-  box-shadow: none;
-  transition: 0.3s ease-in-out;
-  margin: 0 auto;
-	padding: 0;
-	font-size: 30px;
-	text-align: center;
-	line-height: 48px;
-  border-radius: 50%;
-}
-
-.learnpageIcons i {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  text-shadow: none;
-  color: #44b3e2;
-}
-
-.inner:hover .learnpageIcons {
-  border: 12px solid #44b3e2;
-}
-
-/*--------------------------------------------
-    custom header...
---------------------------------------------*/
-
-.oemblueBar {
-  width: 100%;
-  top: 0;
-  height: 42px;
-  background-color: #44b3e2;
-}
-
-@media screen and (max-width: 400px) {
-    .oemWrap {
-        display: none;
-    }
-}
-
-.fa-navicon {
-    display: none;
-    cursor: pointer;
-    font-size: 30px;
-    line-height: 42px;
-    position: absolute;
-    left: 0;
-    color: #ffffff;
-    padding-left: 12px;
-    z-index: 10;
-}
-
-@media screen and (max-width: 1079px) {
-    .fa-navicon {
-        display: inline-block;
-    }
-}
-
-.titleHolder {
-    position: relative;
-    top: 0;
-    width: 100%;
-    height: 42px;
-    background-color: #44b3e2;
-    overflow: hidden;
-}
-
-.thisTitle {
-    display: inline-block;
-    color: #ffffff;
-    position: absolute;
-    left: 0;
-    line-height: 42px;
-    padding-left: 7px;
-    font-size: 16px;
-}
-
-.thisTitle a {
-    color: #ffffff;
-}
-
-@media screen and (max-width: 1079px) {
-    .thisTitle {
-        width: 100%;
-        position: absolute;
-        text-align: right;
-        font-size: 20px;
-        padding-left: 0;
-        
-    }
-    .thisTitle a {
-        padding-right: 12px;
-    }
-}
-
-/*--------------------------------------------
-    site links on larger screens...
---------------------------------------------*/
-
-.navigation {
-    position: absolute;
-    display: inline-block;
-    top: 0;
-    right: 0;
-    height: 42px;
-    min-width: 700px;
-    overflow: visible;
-    padding-right: 7px;
-}
-
-    .navigation ul {
-        float: right;
-        list-style-type: none;
-        top: 0;
-        margin: 0;
-        padding: 0;
-        height: 100%;
-    }
-       
-    .navigation ul li {
-        float: left;
-        background-color: #44b3e2;
-    }
-           
-    .navigation ul li a {
-        display: block;
-        line-height: 42px;
-        font-family:"ubuntu";
-        font-size: 16px;
-        text-align: center;
-        padding-left: 10px;
-        padding-right: 10px;
-        color: #ffffff;
-    }
-
-/*--------------------------------------------
-    site links on smaller screens...
---------------------------------------------*/
-
-.menuFreeze {
-    height: 100%;
-    overflow: hidden;
-}
-
-@media screen and (max-width: 1079px) {
-
-    .navigation {
-        position: fixed;
-        display: none;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        margin: 0;
-        width: 0;
-        font-size: 20px;
-        background-color: #44b3e2;
-        color: #ffffff;
-        z-index: 9999;
-        box-sizing: border-box;
-        overflow: auto;
-        min-width: 0;
-        padding-right: 0;
-    }
-    
-        .navigation ul {
-            list-style-type: none;
-            margin: 0;
-            padding-top: 0;
-        }
-        
-        .navigation ul li a {
-            box-sizing: border-box;
-            font-family: "ubuntu";
-            font-size: 20px;
-            display: block;
-            color: #ffffff;
-            padding: 20px 20px 20px 40px;
-            min-width: 220px;
-            text-align: left;
-        }
-        
-        .navigation ul li .fa {
-            min-width: 25px;
-        }
-}
-
-/*--------------------------------------------
-    grayed out overlay when menu is active...
---------------------------------------------*/
-
-.blackOut {
-    position: fixed;
-    display: none;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(0,0,0,0.5);
-    overflow: hidden;
-    cursor: pointer;
-    z-index: 11;
-}
-
-/*--------------------------------------------
-    highlight active link...
---------------------------------------------*/
-
-.actoemLink {
-    background-color: #368fb4 !important;
-}
-
-    .actoemLink a {
-        color: #ffffff !important;
-    }
-
-</style>
 <body>
 <div class="oemblueBar"><!-- Top navigation bar -->
 <div class= "container">
@@ -569,7 +52,7 @@ a:hover {
 <div style="height:7px"></div>
 <div class="container">
   <div class="inner">
-    <div class="cover" style="height:400px"><!-- Cover image -->
+    <div class="cover" style="height:400px;background-image: url('<?php echo $path; ?>images/gwynt.jpg');"><!-- Cover image -->
       <div class="oemName">
         <div class="oemName-inner">
           Open<strong>EnergyMonitor</strong>
@@ -588,29 +71,33 @@ a:hover {
     <div class="row"><!-- First row of boxes -->
         <div class="column box2 left">
           <a href="https://guide.openenergymonitor.org/applications/home-energy">
-            <div class="inner homeenergy"><div style="padding:20px">
-              <img class="emoncmsappimg" src="<?php echo $path; ?>images/myelectric_app.png">
-              <h3>Energy Use</h3>
-              <ul>
-                <li>How much energy do I use?</li>
-                <li>Compared to an average home?</li>
-                <li>Compared to a low energy home?</li>
-              </ul>
-            </div></div>
+            <div class="inner homeenergy" style="background-image: url('<?php echo $path; ?>images/home.png');">
+              <div style="padding:20px">
+                <img class="emoncmsappimg" src="<?php echo $path; ?>images/myelectric_app.png">
+                <h3>Energy Use</h3>
+                <ul>
+                  <li>How much energy do I use?</li>
+                  <li>Compared to an average home?</li>
+                  <li>Compared to a low energy home?</li>
+                </ul>
+              </div>
+            </div>
           </a>
         </div>
         <div class="column box2 right">
           <a href="https://guide.openenergymonitor.org/applications/solar-pv">
-            <div class="inner solar"><div style="padding:20px">
-              <img class="emoncmsappimg" src="<?php echo $path; ?>images/mysolar_app.png">
-              <h3>Solar PV</h3>
-              <ul>
-                <li>Explore solar PV generation</li>
-                <li>Compare consumption</li>
-                <li>Calculate on-site use</li>
-                <li>Optimise demand matching</li>
-              </ul>
-            </div></div>
+            <div class="inner solar" style="background-image: url('<?php echo $path; ?>images/solar.jpg');">
+              <div style="padding:20px">
+                <img class="emoncmsappimg" src="<?php echo $path; ?>images/mysolar_app.png">
+                <h3>Solar PV</h3>
+                <ul>
+                  <li>Explore solar PV generation</li>
+                  <li>Compare consumption</li>
+                  <li>Calculate on-site use</li>
+                  <li>Optimise demand matching</li>
+                </ul>
+              </div>
+            </div>
           </a>
         </div>
     </div>
@@ -713,7 +200,7 @@ a:hover {
   </div>
 
 
-  <div style="background-color:#44b3e2; margin-top:7px;">
+  <div style="background-color:#44b3e2; margin-top:7px; padding: 20px;">
     <div class="container" style="color:#fff; background-color:#44b3e2;">
       <br>
       <div style="margin: 0 auto; width:330px; text-align:left">
@@ -765,6 +252,13 @@ a:hover {
     </div>
   </div>
  <div class="blackOut"></div>
+
+<footer>
+  <div class="footer-wrapper">
+    <a href="?q=about"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;About Us</a>
+    <a href="https://twitter.com/Openenergymon"><i class="fa fa-twitter"></i>&nbsp;Twitter</a>
+  </div>
+</footer>
  
 <script>
 
@@ -804,5 +298,6 @@ $(window).resize(function(){
 });
 
 </script>
+
   
 </body>

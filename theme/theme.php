@@ -4,9 +4,7 @@
 <!--<link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet">-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="<?php echo $path; ?>theme/style.css" />
-
 <body>
-
   <div style="background-color:#fff">
     <div class="container" style="text-align:left; padding:10px;">
       <div class="oemheading">

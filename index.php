@@ -33,10 +33,10 @@ if ($q=="home") {
 
 if ($q=="about") {
     $themed = false;
-    $content = view("pages/about.html", array());
+    $content = view("pages/about.php", array());
 }
 
-switch ($format) 
+switch ($format)
 {
     case "html":
         header('Content-Type: text/html');
@@ -49,5 +49,5 @@ switch ($format)
     case "text":
         header('Content-Type: text/plain');
         print $content;
-        break;        
+        break;
 }

@@ -1,21 +1,39 @@
+html, body {margin: 0; height: 100vh;}
+html {min-height: 100vh;}
 body {
-  font-family: 'Ubuntu', 'helvetica', sans-serif;
-  margin:0;
+  font-family: Ubuntu, sans-serif;
   padding:0;
-  background-color:WhiteSmoke;
+  background-color:#f5f5f5;
   color:#333;
-  height:100%;
+  width: 100%;
   text-align:center;
 }
 
-.container {
-  margin: 0 auto;
-  width:1080px;
-  text-align:left;
+footer {
+  position: relative;
+  background-color: #368fb4;
+  width: 100%;
+  height: 50px;
 }
 
-.oem {
-  font-size:42px;
+.footer-wrapper {
+  height: 100%;
+}
+
+.footer-wrapper a {
+  display: inline-block;
+  height: 100%;
+  line-height: 50px;
+  cursor: pointer;
+  margin: 0 20px 0 20px;
+  font-size: 16px;
+}
+
+.container {
+  box-sizing: border-box;
+  margin:0 auto;
+  width:1080px;
+  overflow: hidden;
 }
 
 .box {
@@ -30,29 +48,75 @@ body {
   font-size:32px;
 }
 
+.solar {
+  background-image: url("<?php echo $path; ?>images/solar.jpg");
+  background-size:cover;
+  min-height:300px;
+  color:#fff;
+  /*padding: 20px;*/
+  text-align: left;
+}
+
+.homeenergy {
+  background-image: url("<?php echo $path; ?>images/home.png");
+  background-size:cover;
+  min-height:300px;
+  color:#fff;
+  /*padding: 20px;*/
+  text-align: left;
+}
+
+.zerocarbon {
+  background-image: url("<?php echo $path; ?>images/wind.jpg");
+  background-size:cover;
+  color:#fff;
+}
+
+.cover {
+  background:#ffffff url("<?php echo $path; ?>images/gwynt.jpg") no-repeat left center;
+  /*background:#ffffff url('images/ecarsolar.jpg') no-repeat left center;*/
+  background-size:cover;
+}
+
 .halfbox {
   width:480px;
   float:left;
 }
 
-.description {
-  color: #e2f1fa;
-  font-size:22px;
+h3 {
+  font-size:30px;
 }
 
 a {
   text-decoration:none;
-  color:#44b3e2;
+  color:#ffffff;
 }
 
 a:visited {
   text-decoration:none;
-  color:#44b3e2;
+  color:#ffffff;
 }
 
 a:hover {
   text-decoration:none;
-  color:#44b3e2;
+  color:#ffffff;
+}
+
+.fa {text-shadow: 2px 2px 2px rgba(150,150,150,0.5)} //drop shadow on icons
+
+.box4 a {
+  text-decoration:none;
+  color:#ffffff;
+}
+
+.box4 a:visited {
+  text-decoration:none;
+  color:#000;
+}
+
+.box4 a:hover {
+  text-decoration:none;
+  color:#333;
 }
 
 .emoncmsappimg {
@@ -62,17 +126,17 @@ a:hover {
 
 .oemheading {
   color:#44b3e2;
-  font-size:20px;
+  font-size:30px;
   font-weight:bold;
   font-family:Ubuntu;
 }
 
 .oemheading2 {
   color:#fff;
-  padding-top:100px;
+  padding-top:80px;
   padding-bottom:20px;
+  font-size:45px;
   font-weight:bold;
-
 }
 
 .column,
@@ -85,12 +149,22 @@ a:hover {
 .b4img {width:100%}
 .b4dsc {width:100%; height:130px}
 
-.productimg {
-  float:right;
-  width:100%;
-  margin-left:20px;
-  margin-bottom:20px;
+.box2 {
+  /*border-top: 14px solid #ffffff;
+  max-height: 300px;*/
+  overflow: hidden;
 }
+
+.box2 ul {
+  padding-left: 15px;
+}
+/*
+.box2.left {
+  border-right: 7px solid #ffffff;
+}
+.box2.right {
+  border-left: 7px solid #ffffff;
+}*/
 
 @media (max-width: 450px) {
   .container {
@@ -101,34 +175,41 @@ a:hover {
     width:200px
   }
 
-  .oemheading { font-size:52px; }
-  .oemheading2 { padding-top:50px; font-size:52px; }
+  .oemheading { font-size:30px; }
+  .oemheading2 { padding-top:30px; font-size:27px; }
 
-  .b4img {width:50%}
+  .b4img {width:50%; float:left}
   .b4dsc {width:50%; float:right}
 
-  .productimg {
-    margin-left:0px;
+  /*
+  .box2.left {
+  border-right: none;
   }
+  .box2.right {
+  border-left: none;
+  }*/
 }
 
 @media (min-width: 450px) and (max-width: 800px) {
   .container {
-    width: 600px;
+      width: 600px;
+      /*width: 100%;*/
   }
 
   .box2 { width:50%; }
   .box3 { width:33%; }
   .box4 { width:25%; }
 
-  .productimg {
-    width:250px;
+
+  .box2 {
+    /*max-height: 320px;*/
   }
 }
 
 @media (min-width: 800px) and (max-width: 1080px) {
   .container {
-    width: 800px;
+      width: 800px;
+      /*width: 100%;*/
   }
 
   .emoncmsappimg {
@@ -138,10 +219,6 @@ a:hover {
   .box2 { width:50%; }
   .box3 { width:33%; }
   .box4 { width:25%; }
-
-  .productimg {
-    width:350px;
-  }
 }
 
 @media (min-width: 1080px) {
@@ -152,23 +229,304 @@ a:hover {
   .box2 { width:50%; }
   .box3 { width:33%; }
   .box4 { width:25%; }
-
-  .productimg {
-    width:450px;
-  }
 }
 
-.inner { padding:20px; }
+.inner { margin:7px; }
 
 .box3 { text-align:center; }
 
-ul {
-   font-size:14px;
+/*---------------------------------------------------------------------/
+// Cover image
+/*--------------------------------------------------------------------*/
+
+.oemName {
+  color: #ffffff;
+  width: 100%;
+  height: 50%;
+  display: table;
+}
+.oemName-inner {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 42px;
+  padding: 10px;
+}
+.oemDescription {
+  color: #ffffff;
+  width: 100%;
+  height: 50%;
+  display: table;
+  text-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+.oemDescription-inner {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 24px;
+  padding: 10px;
+}
+.oemDescription-inner-second {
+  font-size: 20px;
+  margin: 5px auto;
+}
+@media (max-width: 450px) {
+  .oemName-inner {
+    font-size: 30px;
+  }
+  .oemDescription-inner {
+    font-size: 16px;
+    padding: 20px;
+  }
+  .oemDescription-inner-second {
+    font-size: 14px;
+    max-width: 200px;
+  }
 }
 
-li {
-    padding-bottom:8px;
+@media (min-width: 450px) and (max-width: 800px) {
+  .oemName-inner {
+    font-size: 40px;
+  }
 }
-/*...........
-........
-.......*/
+
+@media (min-width: 800px) and (max-width: 1080px) {
+  .oemName-inner {
+    font-size: 50px;
+  }
+}
+/*---------------------------------------------------------------------/
+// OEM colors
+/*--------------------------------------------------------------------*/
+
+.oemGray {
+  background-color: #777777;
+}
+
+.oemBlue {
+  background-color: #44b3e2;
+}
+
+/*---------------------------------------------------------------------/
+// Learn icons
+/*--------------------------------------------------------------------*/
+
+.learnpageIcons {
+  width: 180px;
+  height: 180px;
+  box-sizing: border-box;
+  border: 8px solid #44b3e2;
+  display: table;
+  background-color: #ffffff;
+  color: #ffffff;
+  box-shadow: none;
+  transition: 0.3s ease-in-out;
+  margin: 0 auto;
+	padding: 0;
+	font-size: 30px;
+	text-align: center;
+	line-height: 48px;
+  border-radius: 50%;
+}
+
+.learnpageIcons i {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  text-shadow: none;
+  color: #44b3e2;
+}
+
+.inner:hover .learnpageIcons {
+  border: 12px solid #44b3e2;
+}
+
+/*--------------------------------------------
+    custom header...
+--------------------------------------------*/
+
+.oemblueBar {
+  width: 100%;
+  top: 0;
+  height: 42px;
+  background-color: #44b3e2;
+}
+
+@media screen and (max-width: 400px) {
+    .oemWrap {
+        display: none;
+    }
+}
+
+.fa-navicon {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    line-height: 42px;
+    position: absolute;
+    left: 0;
+    color: #ffffff;
+    padding-left: 12px;
+    z-index: 10;
+}
+
+@media screen and (max-width: 1079px) {
+    .fa-navicon {
+        display: inline-block;
+    }
+}
+
+.titleHolder {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 42px;
+    background-color: #44b3e2;
+    overflow: hidden;
+}
+
+.thisTitle {
+    display: inline-block;
+    color: #ffffff;
+    position: absolute;
+    left: 0;
+    line-height: 42px;
+    padding-left: 7px;
+    font-size: 16px;
+}
+
+.thisTitle a {
+    color: #ffffff;
+}
+
+@media screen and (max-width: 1079px) {
+    .thisTitle {
+        width: 100%;
+        position: absolute;
+        text-align: right;
+        font-size: 20px;
+        padding-left: 0;
+        
+    }
+    .thisTitle a {
+        padding-right: 12px;
+    }
+}
+
+/*--------------------------------------------
+    site links on larger screens...
+--------------------------------------------*/
+
+.navigation {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right: 0;
+    height: 42px;
+    min-width: 700px;
+    overflow: visible;
+    padding-right: 7px;
+}
+
+    .navigation ul {
+        float: right;
+        list-style-type: none;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+       
+    .navigation ul li {
+        float: left;
+        background-color: #44b3e2;
+    }
+           
+    .navigation ul li a {
+        display: block;
+        line-height: 42px;
+        font-family:"ubuntu";
+        font-size: 16px;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: #ffffff;
+    }
+
+/*--------------------------------------------
+    site links on smaller screens...
+--------------------------------------------*/
+
+.menuFreeze {
+    height: 100%;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1079px) {
+
+    .navigation {
+        position: fixed;
+        display: none;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        margin: 0;
+        width: 0;
+        font-size: 20px;
+        background-color: #44b3e2;
+        color: #ffffff;
+        z-index: 9999;
+        box-sizing: border-box;
+        overflow: auto;
+        min-width: 0;
+        padding-right: 0;
+    }
+    
+        .navigation ul {
+            list-style-type: none;
+            margin: 0;
+            padding-top: 0;
+        }
+        
+        .navigation ul li a {
+            box-sizing: border-box;
+            font-family: "ubuntu";
+            font-size: 20px;
+            display: block;
+            color: #ffffff;
+            padding: 20px 20px 20px 40px;
+            min-width: 220px;
+            text-align: left;
+        }
+        
+        .navigation ul li .fa {
+            min-width: 25px;
+        }
+}
+
+/*--------------------------------------------
+    grayed out overlay when menu is active...
+--------------------------------------------*/
+
+.blackOut {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 11;
+}
+
+/*--------------------------------------------
+    highlight active link...
+--------------------------------------------*/
+
+.actoemLink {
+    background-color: #368fb4 !important;
+}
+
+    .actoemLink a {
+        color: #ffffff !important;
+    }
