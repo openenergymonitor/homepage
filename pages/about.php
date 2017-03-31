@@ -73,7 +73,7 @@ Gwil, Glyn, Trystan, Kate, Claire, Amy:</p>
 
 <p><strong>Project founders and maintainers:</strong> Trystan Lea and Glyn Hudson.</p>
 
-<p><strong>We would like to give a special thank you to our community forum moderators:</strong> Robert Wall, Paul Burnell (pb66), Bill Thomson, Jon Murphy, Paul Reed, Eric Wouters (bidouilleur) – for all of their hard work supporting the project and helping out on the <a href="https://community.openenergymonitor.org" style="color:#44b3e2;">forums</a>.</p>
+<p><strong>We would like to give a special thank you to community forum moderators:</strong> Robert Wall, Paul Burnell (pb66), Bill Thomson, Jon Murphy, Paul Reed, Eric Wouters (bidouilleur) – for all of their hard work supporting the project and helping out on the <a href="https://community.openenergymonitor.org" style="color:#44b3e2;">forums</a>.</p>
 
 <h2>Eryri/Snowdonia</h2>
 The OpenEnergyMonitor shop is based in Eryri (Snowdonia) North Wales. We are keen climbers, walkers and mountain bikers.</p>
