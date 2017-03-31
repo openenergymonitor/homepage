@@ -31,6 +31,11 @@ if ($q=="home") {
     $content = view("pages/home.php", array());
 }
 
+if ($q=="about") {
+    $themed = false;
+    $content = view("pages/about.html", array());
+}
+
 switch ($format) 
 {
     case "html":
