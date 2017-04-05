@@ -68,13 +68,15 @@
     </div>
   </div>
 
+<h2>Applications</h2>
+
     <div class="row"><!-- First row of boxes -->
         <div class="column box2 left">
           <a href="https://guide.openenergymonitor.org/applications/home-energy">
             <div class="inner homeenergy" style="background-image: url('<?php echo $path; ?>images/home.png');">
-              <div style="padding:20px">
+              <div style="padding:20px;">
                 <img class="emoncmsappimg" src="<?php echo $path; ?>images/myelectric_app.png">
-                <h3>Energy Use</h3>
+                <h3>Building<br> Energy Use</h3>
                 <ul>
                   <li>How much energy do I use?</li>
                   <li>Compared to an average home?</li>
@@ -89,7 +91,7 @@
             <div class="inner solar" style="background-image: url('<?php echo $path; ?>images/solar.jpg');">
               <div style="padding:20px">
                 <img class="emoncmsappimg" src="<?php echo $path; ?>images/mysolar_app.png">
-                <h3>Solar PV</h3>
+                <h3>Solar PV Monitoring</h3>
                 <ul>
                   <li>Explore solar PV generation</li>
                   <li>Compare consumption</li>
@@ -103,10 +105,52 @@
     </div>
     <div style="clear:both">
     </div>
-    <br>
+
+    
+    
+        <div class="row">
+        <div class="column box2">
+          <a href="https://guide.openenergymonitor.org/applications/home-energy">
+            <div class="inner homeenergy" style="background-image: url('<?php echo $path; ?>images/leaf_openevse.jpg');">
+              <div style="padding:20px;">
+                <!--<img class="emoncmsappimg" src="<?php echo $path; ?>">-->
+                <h3>OpenEVSE<br> Car Charging</h3>
+                <ul>
+                  <li>one</li>
+                  <li>two</li>
+                  <li>three</li>
+                </ul>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="column box2">
+          <a href="https://guide.openenergymonitor.org/applications/solar-pv">
+            <div class="inner solar" style="background-image: url('<?php echo $path; ?>images/solar.jpg');">
+              <div style="padding:20px">
+                <!--<img class="emoncmsappimg" src="<?php echo $path; ?>">-->
+                <h3>Heat Pump<br> Monitoring</h3>
+                <ul>
+                  <li>one</li>
+                  <li>two</li>
+                  <li>three</li>
+                </ul>
+              </div>
+            </div>
+          </a>
+        </div>
+    </div>
+    <div style="clear:both">
+    </div>
+
+    
+    
+    
+    
+    
     <div class="row">
       <div class="inner">
-        <h2>OpenEnergyMonitor System</h2>
+        <h2>Introducing the OpenEnergyMonitor System</h2>
         <p>Pre-assembled open-hardware electricity, temperature and humidity monitoring units based on the Arduino and Raspberry Pi platforms.</p>
       </div>
       <div class="column box4">
