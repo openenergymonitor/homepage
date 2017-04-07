@@ -53,7 +53,7 @@
 		</div>
 	</div>
 <!--	<div style="height:7px"></div> -->
-	<div style="background-color: #b4e0f3">
+	<div style="background-color: #fff">
   	<div class="container">
   		<div class="inner">
   			<div class="cover" style="height:400px;background-image: url('<?php echo $path; ?>images/gwynt.jpg');    box-shadow: 2px 4px 10px #777;
@@ -130,7 +130,7 @@
   			</div>
   			<div class="column box2">
   				<a href="https://heatpumpmonitor.org/">
-  				<div class="inner solar" style="background-image: url('<?php echo $path; ?>images/heatpumpmontage.jpg');    box-shadow: 2px 4px 10px #777;
+  				<div class="inner solar" style="background-image: url('<?php echo $path; ?>images/heatpumpimage.jpg');    box-shadow: 2px 4px 10px #777;
 ">
   					<div style="padding:20px">
   						<!--<img class="emoncmsappimg" src="<?php echo $path; ?>">-->
