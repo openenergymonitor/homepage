@@ -9,34 +9,6 @@ body {
   text-align:center;
 }
 
-.learnDesc a {
-  color: #000000;
-}
-
-.learnDesc a:hover {
-  color: #000000;
-}
-
-footer {
-  position: relative;
-  background-color: #368fb4;
-  width: 100%;
-  height: 50px;
-}
-
-.footer-wrapper {
-  height: 100%;
-}
-
-.footer-wrapper a {
-  display: inline-block;
-  height: 100%;
-  line-height: 50px;
-  cursor: pointer;
-  margin: 0 20px 0 20px;
-  font-size: 16px;
-}
-
 .container {
   box-sizing: border-box;
   margin:0 auto;
@@ -56,33 +28,20 @@ footer {
   font-size:32px;
 }
 
-.solar {
-  background-image: url("<?php echo $path; ?>images/solar.jpg");
+.homeenergy, .solar, .openevse, .heatpump {
   background-size:cover;
-  min-height:300px;
+  min-height:400px;
   color:#fff;
-  /*padding: 20px;*/
-  text-align: left;
-}
-
-.homeenergy {
-  background-image: url("<?php echo $path; ?>images/home.png");
-  background-size:cover;
-  min-height:300px;
-  color:#fff;
-  /*padding: 20px;*/
   text-align: left;
 }
 
 .zerocarbon {
-  background-image: url("<?php echo $path; ?>images/wind.jpg");
   background-size:cover;
   color:#fff;
 }
 
 .cover {
-  background:#ffffff url("<?php echo $path; ?>images/gwynt.jpg") no-repeat left center;
-  /*background:#ffffff url('images/ecarsolar.jpg') no-repeat left center;*/
+  background:#ffffff no-repeat left center;
   background-size:cover;
 }
 
@@ -155,27 +114,34 @@ a:hover {
   text-align:left;
   box-sizing: border-box; }
 
-.b4img {width:100%}
-.b4dsc {width:100%; height:130px}
+.b4img {
+  width:100%;
+  min-height: 130px;
+}
+
+.b4dsc {
+  box-sizing: border-box;
+  width:100%;
+  height:130px;
+  overflow: auto;
+  padding-top: 0;
+}
+
+@media (max-width: 360px) {
+  .b4dsc li {
+    font-size: 12px;
+  }
+}
 
 .box2 {
-  /*border-top: 14px solid #ffffff;
-  max-height: 300px;*/
   overflow: hidden;
 }
 
 .box2 ul {
   padding-left: 15px;
 }
-/*
-.box2.left {
-  border-right: 7px solid #ffffff;
-}
-.box2.right {
-  border-left: 7px solid #ffffff;
-}*/
 
-@media (max-width: 450px) {
+@media (max-width: 619px) {
   .container {
     width: 100%;
   }
@@ -187,37 +153,25 @@ a:hover {
   .oemheading { font-size:30px; }
   .oemheading2 { padding-top:30px; font-size:27px; }
 
-  .b4img {width:50%; float:left}
-  .b4dsc {width:50%; float:right}
-
-  /*
-  .box2.left {
-  border-right: none;
-  }
-  .box2.right {
-  border-left: none;
-  }*/
+  .b4img {width:50%;float:left;}
+  .b4dsc {width:50%;float:right;padding-top:10px;}
 }
 
-@media (min-width: 450px) and (max-width: 800px) {
+@media (min-width: 620px) and (max-width: 799px) {
   .container {
-      width: 600px;
-      /*width: 100%;*/
+    width: 600px;
   }
 
   .box2 { width:50%; }
   .box3 { width:33%; }
   .box4 { width:25%; }
 
-
-  .box2 {
-    /*max-height: 320px;*/
-  }
+  .b4dsc {min-height:180px;}
 }
 
-@media (min-width: 800px) and (max-width: 1080px) {
+@media (min-width: 800px) and (max-width: 1079px) {
   .container {
-      width: 800px;
+    width: 100%;
       /*width: 100%;*/
   }
 
@@ -253,12 +207,14 @@ a:hover {
   height: 50%;
   display: table;
 }
+
 .oemName-inner {
   display: table-cell;
   vertical-align: middle;
   font-size: 42px;
   padding: 10px;
 }
+
 .oemDescription {
   color: #ffffff;
   width: 100%;
@@ -266,31 +222,36 @@ a:hover {
   display: table;
   text-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
+
 .oemDescription-inner {
   display: table-cell;
   vertical-align: middle;
   font-size: 24px;
   padding: 10px;
 }
+
 .oemDescription-inner-second {
   font-size: 20px;
   margin: 5px auto;
 }
+
 @media (max-width: 450px) {
   .oemName-inner {
     font-size: 30px;
   }
+  
   .oemDescription-inner {
     font-size: 16px;
     padding: 20px;
   }
+  
   .oemDescription-inner-second {
     font-size: 14px;
     max-width: 200px;
   }
 }
 
-@media (min-width: 450px) and (max-width: 800px) {
+@media (min-width: 450px) and (max-width: 799px) {
   .oemName-inner {
     font-size: 40px;
   }
@@ -301,6 +262,7 @@ a:hover {
     font-size: 50px;
   }
 }
+
 /*---------------------------------------------------------------------/
 // OEM colors
 /*--------------------------------------------------------------------*/
@@ -314,8 +276,55 @@ a:hover {
 }
 
 /*---------------------------------------------------------------------/
-// Learn icons
+// Learn
 /*--------------------------------------------------------------------*/
+
+.learnDesc {
+  width: 600px;
+  height: 100px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.learnDesc-book {
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.learnDesc-desc {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 400px;
+  vertical-align: top;
+  height: 100px;
+  padding:18px 0 10px 0;
+  overflow: auto;
+}
+
+.learnDesc-desc-header {
+  text-align: left;
+  margin: 0;
+}
+
+.learnDesc-desc p {
+  text-align: left;
+  margin:0;
+}
+
+@media (max-width: 620px) {
+  .learnDesc {
+    width: 100%;
+    height: 200px;
+  }
+  .learnDesc-desc {
+    width: 50%;
+    height: 200px;
+  }
+}
+
+.learnP {
+  padding: 0 5px 0 5px;
+}
 
 .learnpageIcons {
   width: 180px;
@@ -459,6 +468,30 @@ a:hover {
         color: #ffffff;
     }
 
+@media screen and (min-width: 1080px) {
+    .navigation ul li:nth-child(1) {
+        width: 82px;
+    }
+    .navigation ul li:nth-child(2) {
+        width: 81px;
+    }
+    .navigation ul li:nth-child(3) {
+        width: 85px;
+    }
+    .navigation ul li:nth-child(4) {
+        width: 113px;
+    }
+    .navigation ul li:nth-child(5) {
+        width: 123px;
+    }
+    .navigation ul li:nth-child(6) {
+        width: 73px;
+    }
+    .navigation ul li:nth-child(7) {
+        width: 75px;
+    }
+}
+
 /*--------------------------------------------
     site links on smaller screens...
 --------------------------------------------*/
@@ -538,3 +571,27 @@ a:hover {
     .actoemLink a {
         color: #ffffff !important;
     }
+    
+/*--------------------------------------------
+    footer...
+--------------------------------------------*/
+
+footer {
+  position: relative;
+  background-color: #368fb4;
+  width: 100%;
+  height: 50px;
+}
+
+.footer-wrapper {
+  height: 100%;
+}
+
+.footer-wrapper a {
+  display: inline-block;
+  height: 100%;
+  line-height: 50px;
+  cursor: pointer;
+  margin: 0 20px 0 20px;
+  font-size: 16px;
+}
