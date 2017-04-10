@@ -35,6 +35,18 @@ body {
   text-align: left;
 }
 
+@media (max-width: 620px) {
+  .homeenergy, .solar, .openevse, .heatpump {
+    min-height: 250px;
+  }
+}
+
+@media (min-width: 800px) {
+  .homeenergy, .solar, .openevse, .heatpump {
+    min-height: 300px;
+  }
+}
+
 .zerocarbon {
   background-size:cover;
   color:#fff;
@@ -141,6 +153,23 @@ a:hover {
   padding-left: 15px;
 }
 
+@media (max-width: 499px) {
+  .b4dsc {
+    width: 50%;
+    float: right;
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 619px) {
+  .b4dsc {
+    width: 50%;
+    float: right;
+    padding-top: 10px;
+    overflow: hidden;
+  }
+}
+
 @media (max-width: 619px) {
   .container {
     width: 100%;
@@ -154,7 +183,6 @@ a:hover {
   .oemheading2 { padding-top:30px; font-size:27px; }
 
   .b4img {width:50%;float:left;}
-  .b4dsc {width:50%;float:right;padding-top:10px;}
 }
 
 @media (min-width: 620px) and (max-width: 799px) {
@@ -314,11 +342,11 @@ a:hover {
 @media (max-width: 620px) {
   .learnDesc {
     width: 100%;
-    height: 200px;
+    height: 190px;
   }
   .learnDesc-desc {
     width: 50%;
-    height: 200px;
+    height: 190px;
   }
 }
 
