@@ -166,6 +166,7 @@ a:hover {
     width: 50%;
     float: right;
     padding-top: 10px;
+    min-height: 100%;
     overflow: hidden;
   }
 }
@@ -347,6 +348,7 @@ a:hover {
   .learnDesc-desc {
     width: 50%;
     height: 190px;
+    overflow: hidden;
   }
 }
 
