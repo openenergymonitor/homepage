@@ -66,8 +66,8 @@
 
 <h2>People</h2>
 
-<p>The Megni / OpenEnergyMonitor shop team (left to right):
-Gwil, Glyn, Trystan, Kate, Claire, Amy:</p>
+<p>The Megni / OpenEnergyMonitor shop team: (left to right)
+Gwil, Glyn, Trystan, Kate, Claire and Amy.</p>
 
 <img src="<?php echo $path; ?>images/megniteam.jpg" style="width:100%">
 
