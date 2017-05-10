@@ -56,9 +56,9 @@
 
 <p>The OpenEnergyMonitor project was founded out of a desire for open-source tools to help us relate to our use of energy, our energy systems and the challenge of sustainable energy.</p>
 
-<p>The next 20 years will see a revolution in our energy systems as we switch our energy systems away from fossil fuels to a zero carbon energy supply.</p>
+<p>The next 20 years will see a revolution in our energy systems as we switch away from fossil fuels to a zero carbon energy supply.</p>
 
-<p>By using energy monitoring, modelling and assessment tools we can take an informed approach to working out what are the best energy saving measures to apply. We can then check to ensure solutions meet their expected performance and continue to work well over time.</p>
+<p>By using energy monitoring, modelling and assessment tools we can take an informed approach to working out what are the best energy saving measures to apply. We can then use ongoing monitoring data to ensure solutions meet their expected performance over time.</p>
 
 <p>To explore the OpenEnergyMonitor energy monitoring system see the <a href="https://guide.openenergymonitor.org" style="color:#44b3e2;">Guide</a>.</p>
 <p>To learn more about our research into zero carbon energy systems see the sustainable energy section of <a href="https://learn.openenergymonitor.org" style="color:#44b3e2;">Learn</a>.</p>
