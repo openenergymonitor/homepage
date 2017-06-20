@@ -468,7 +468,7 @@ a:hover {
     top: 0;
     right: 0;
     height: 42px;
-    min-width: 700px;
+    min-width: 750px;
     overflow: visible;
     padding-right: 7px;
 }
@@ -506,10 +506,10 @@ a:hover {
         width: 81px;
     }
     .navigation ul li:nth-child(3) {
-        width: 85px;
+        width: 75px;
     }
     .navigation ul li:nth-child(4) {
-        width: 113px;
+        width: 85px;
     }
     .navigation ul li:nth-child(5) {
         width: 123px;
@@ -518,7 +518,10 @@ a:hover {
         width: 73px;
     }
     .navigation ul li:nth-child(7) {
-        width: 75px;
+        width: 113px;
+    }
+    .navigation ul li:nth-child(8) {
+        width: 87px;
     }
 }
 
@@ -563,7 +566,9 @@ a:hover {
             font-size: 20px;
             display: block;
             color: #ffffff;
-            padding: 20px 20px 20px 40px;
+            padding: 0 20px 0 40px;
+            height: 12.5vh;
+            line-height: 12.5vh;
             min-width: 220px;
             text-align: left;
         }

@@ -36,6 +36,11 @@ if ($q=="about") {
     $content = view("pages/about.php", array());
 }
 
+if ($q=="search") {
+    $themed = false;
+    $content = view("pages/search.php", array());
+}
+
 switch ($format)
 {
     case "html":

@@ -16,6 +16,63 @@
 	</script>
 </head>
 <body>
+  
+  <style>
+  
+  
+  .searchBox {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+    z-index: 99999;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .searchBox form {
+    margin: auto;
+  }
+  
+  .searchBox input[type=submit] {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #44b3e2;
+    color: #fff;
+    border: none;
+  }
+  
+  .searchBox input[type=text] {
+    padding: 10px;
+    font-size: 20px;
+    max-width: 200px;
+    border: none;
+  }
+  
+  .searchIcon {
+    cursor: pointer;
+  }
+  
+  
+  
+  </style>
+  
+  
+  <div class="searchBox">
+    <form target="_blank" id="searchform" action="http://www.google.com/cse">
+      <div>
+        <input type="hidden" name="cx" value="006198118389747886812:_nmxikw563w" />
+        <input type="hidden" name="ie" value="UTF-8" />
+        <input type="text" class="searchText" value="" name="q" id="q" autocomplete="off" />
+        <input type="submit" id="searchsubmit" name="sa" value="Search" />
+      </div>
+    </form>
+  </div>
+  
+  
 	<div class="oemblueBar">
 		<div class="container">
 			<div class="titleHolder">
@@ -38,14 +95,14 @@
 							  <i aria-hidden="true" class="fa fa-book"></i>&nbsp;Guide
 							</a>
 						</li>
+						<li title="the official OpenEnergyMonitor online store">
+							<a href="https://shop.openenergymonitor.com">
+							  <i aria-hidden="true" class="fa fa-shopping-cart"></i>&nbsp;Shop
+							</a>
+						</li>
 						<li title="general information about energy monitoring, diversion and sustainability">
 							<a href="https://learn.openenergymonitor.org">
 							  <i aria-hidden="true" class="fa fa-mortar-board"></i>&nbsp;Learn
-							</a>
-						</li>
-						<li title="a definitive list of resources for OpenEnergyMonitor hardware">
-							<a href="https://guide.openenergymonitor.org/technical/resources/">
-							  <i aria-hidden="true" class="fa fa-list-alt"></i>&nbsp;Resources
 							</a>
 						</li>
 						<li title="the openenergymonitor forum">
@@ -58,17 +115,27 @@
 							  <i aria-hidden="true" class="fa fa-bullhorn"></i>&nbsp;Blog
 							</a>
 						</li>
-						<li title="the official OpenEnergyMonitor online store">
-							<a href="https://shop.openenergymonitor.com">
-							  <i aria-hidden="true" class="fa fa-shopping-cart"></i>&nbsp;Shop
+						<li title="a definitive list of resources for OpenEnergyMonitor hardware">
+							<a href="https://guide.openenergymonitor.org/technical/resources/">
+							  <i aria-hidden="true" class="fa fa-list-alt"></i>&nbsp;Resources
 							</a>
+						</li>
+						<li title="search for something on OpenEnergyMonitor">
+							<a class="searchIcon">
+							    <i aria-hidden="true" class="fa fa-search"></i>&nbsp;Search
+						  </a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
-<div style="height:7px"></div>
+  <div style="height:7px">
+    
+  
+
+
+  </div>
 	<div style="background-color:#fff">
   	<div class="container">
   		<div class="inner">
@@ -340,7 +407,7 @@
 	<div class="blackOut"></div>
 	<footer>
 		<div class="footer-wrapper">
-			<a href="?q=about">
+			<a href="about">
 			  <i aria-hidden="true" class="fa fa-info-circle"></i>
 			  &nbsp;About Us
 			</a>
@@ -371,7 +438,7 @@
 	   closeButton();
 	   closeStatus = false;
 	});
-	$(window).resize(function(){
+	$(window).resize(function() {
 	   if ($(window).width() > 1079 && closeStatus == true) {
 	       if (!$("html").hasClass("mobile-device")) {
 	           closeButton();
@@ -379,6 +446,19 @@
 	       }
 	   }
 	});
+	$(".searchIcon").click(function() {
+	   $(".searchBox").css("display","flex");
+     $(".searchText").focus();
+	   $("html, body").addClass("menuFreeze");
+	});
+	$(".searchBox").click(function() {
+	   $(".searchBox").css("display","none");
+	   $(".searchText").blur();
+	   closeButton();
+	});
+	$(".searchBox form").click( function(event) {
+     event.stopPropagation();
+  });
 	</script>
 </body>
 </html>
