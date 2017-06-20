@@ -16,51 +16,6 @@
 	</script>
 </head>
 <body>
-  
-  <style>
-  
-  
-  .searchBox {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: rgba(0,0,0,0.8);
-    color: #fff;
-    z-index: 99999;
-    display: none;
-    cursor: pointer;
-  }
-  
-  .searchBox form {
-    margin: auto;
-  }
-  
-  .searchBox input[type=submit] {
-    cursor: pointer;
-    padding: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: #44b3e2;
-    color: #fff;
-    border: none;
-  }
-  
-  .searchBox input[type=text] {
-    padding: 10px;
-    font-size: 20px;
-    max-width: 200px;
-    border: none;
-  }
-  
-  .searchIcon {
-    cursor: pointer;
-  }
-  
-  
-  
-  </style>
-  
-  
   <div class="searchBox">
     <form target="_blank" id="searchform" action="http://www.google.com/cse">
       <div>
@@ -71,8 +26,6 @@
       </div>
     </form>
   </div>
-  
-  
 	<div class="oemblueBar">
 		<div class="container">
 			<div class="titleHolder">
@@ -131,10 +84,6 @@
 		</div>
 	</div>
   <div style="height:7px">
-    
-  
-
-
   </div>
 	<div style="background-color:#fff">
   	<div class="container">
