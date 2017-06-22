@@ -48,14 +48,14 @@
 							  <i aria-hidden="true" class="fa fa-book"></i>&nbsp;Guide
 							</a>
 						</li>
-						<li title="the official OpenEnergyMonitor online store">
-							<a href="https://shop.openenergymonitor.com">
-							  <i aria-hidden="true" class="fa fa-shopping-cart"></i>&nbsp;Shop
-							</a>
-						</li>
 						<li title="general information about energy monitoring, diversion and sustainability">
 							<a href="https://learn.openenergymonitor.org">
 							  <i aria-hidden="true" class="fa fa-mortar-board"></i>&nbsp;Learn
+							</a>
+						</li>
+						<li title="a definitive list of resources for OpenEnergyMonitor hardware">
+							<a href="https://guide.openenergymonitor.org/technical/resources/">
+							  <i aria-hidden="true" class="fa fa-list-alt"></i>&nbsp;Resources
 							</a>
 						</li>
 						<li title="the openenergymonitor forum">
@@ -68,9 +68,9 @@
 							  <i aria-hidden="true" class="fa fa-bullhorn"></i>&nbsp;Blog
 							</a>
 						</li>
-						<li title="a definitive list of resources for OpenEnergyMonitor hardware">
-							<a href="https://guide.openenergymonitor.org/technical/resources/">
-							  <i aria-hidden="true" class="fa fa-list-alt"></i>&nbsp;Resources
+						<li title="the official OpenEnergyMonitor online store">
+							<a href="https://shop.openenergymonitor.com">
+							  <i aria-hidden="true" class="fa fa-shopping-cart"></i>&nbsp;Shop
 							</a>
 						</li>
 						<li title="search for something on OpenEnergyMonitor">
@@ -357,12 +357,10 @@
 	<footer>
 		<div class="footer-wrapper">
 			<a href="about">
-			  <i aria-hidden="true" class="fa fa-info-circle"></i>
-			  &nbsp;About Us
+			  <i aria-hidden="true" class="fa fa-info-circle"></i>&nbsp;About Us
 			</a>
 			<a href="https://twitter.com/Openenergymon">
-			  <i class="fa fa-twitter"></i>
-			  &nbsp;Twitter
+			  <i class="fa fa-twitter"></i>&nbsp;Twitter
 			</a>
 		</div>
 	</footer>
@@ -397,12 +395,14 @@
 	});
 	$(".searchIcon").click(function() {
 	   $(".searchBox").css("display","flex");
+	   $(".searchText").animate({width: "200px"});
      $(".searchText").focus();
 	   $("html, body").addClass("menuFreeze");
 	});
 	$(".searchBox").click(function() {
 	   $(".searchBox").css("display","none");
 	   $(".searchText").blur();
+	   $(".searchText").css("width","0");
 	   closeButton();
 	});
 	$(".searchBox form").click( function(event) {
