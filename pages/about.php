@@ -96,7 +96,7 @@
       </div>
     </form>
   </div>
-  <div style="height:7px">
+  <div style="height:49px;top:0;">
   </div>
   <div class="container" style="text-align:left;padding:0 10px 0 10px;">
     <h2>About</h2>
