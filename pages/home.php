@@ -11,7 +11,7 @@
 	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
 	<link href="<?php echo $path; ?>fonts/ubuntu.css?family=Ubuntu:300" rel="stylesheet" type="text/css">
 	<link href="<?php echo $path; ?>theme/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link href="<?php echo $path; ?>theme/style.css?v=2" rel="stylesheet" type="text/css">
+	<link href="<?php echo $path; ?>theme/style.css?v=3" rel="stylesheet" type="text/css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
 	</script>
 </head>
@@ -26,6 +26,7 @@
 					  <span class="oemWrap">| Open<b>EnergyMonitor</b></span>
 					</a>
 				</div>
+      	<div class="blackOut"></div>
 				<div class="navigation" id="siteLinks">
 					<ul>
 						<li class="actoemLink" title="you are here: the homepage of OpenEnergyMonitor">
@@ -63,12 +64,28 @@
 							  <i aria-hidden="true" class="fa fa-shopping-cart"></i>&nbsp;Shop
 							</a>
 						</li>
+						<li title="search for something on OpenEnergyMonitor">
+							<a class="searchIcon">
+							    <i aria-hidden="true" class="fa fa-search"></i>&nbsp;Search
+						  </a>
+						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
-<div style="height:7px"></div>
+  <div class="searchBox">
+    <form target="_blank" id="searchform" action="http://www.google.com/cse">
+      <div>
+        <input type="hidden" name="cx" value="006198118389747886812:_nmxikw563w" />
+        <input type="hidden" name="ie" value="UTF-8" />
+        <input type="text" class="searchText" value="" name="q" id="q" autocomplete="off" />
+        <input type="submit" id="searchsubmit" name="sa" value="Search" />
+      </div>
+    </form>
+  </div>
+  <div style="height:49px;top:0;">
+  </div>
 	<div style="background-color:#fff">
   	<div class="container">
   		<div class="inner">
@@ -337,16 +354,13 @@
 			</div>
 		</div>
 	</div>
-	<div class="blackOut"></div>
 	<footer>
 		<div class="footer-wrapper">
-			<a href="?q=about">
-			  <i aria-hidden="true" class="fa fa-info-circle"></i>
-			  &nbsp;About Us
+			<a href="about">
+			  <i aria-hidden="true" class="fa fa-info-circle"></i>&nbsp;About Us
 			</a>
 			<a href="https://twitter.com/Openenergymon">
-			  <i class="fa fa-twitter"></i>
-			  &nbsp;Twitter
+			  <i class="fa fa-twitter"></i>&nbsp;Twitter
 			</a>
 		</div>
 	</footer>
@@ -371,7 +385,7 @@
 	   closeButton();
 	   closeStatus = false;
 	});
-	$(window).resize(function(){
+	$(window).resize(function() {
 	   if ($(window).width() > 1079 && closeStatus == true) {
 	       if (!$("html").hasClass("mobile-device")) {
 	           closeButton();
@@ -379,6 +393,21 @@
 	       }
 	   }
 	});
+	$(".searchIcon").click(function() {
+	   $(".searchBox").css("display","flex");
+	   $(".searchText").animate({width: "200px"});
+     $(".searchText").focus();
+	   $("html, body").addClass("menuFreeze");
+	});
+	$(".searchBox").click(function() {
+	   $(".searchBox").css("display","none");
+	   $(".searchText").blur();
+	   $(".searchText").css("width","0");
+	   closeButton();
+	});
+	$(".searchBox form").click( function(event) {
+     event.stopPropagation();
+  });
 	</script>
 </body>
 </html>
