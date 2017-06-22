@@ -397,10 +397,14 @@ a:hover {
 --------------------------------------------*/
 
 .oemblueBar {
+  position: fixed;
   width: 100%;
   top: 0;
   height: 42px;
   background-color: #44b3e2;
+  -webkit-box-shadow: 0 -2px 4px 2px #000;
+  -moz-box-shadow: 0 -2px 4px 2px #000;
+  box-shadow: 0 -2px 4px 2px #000;
 }
 
 @media screen and (max-width: 400px) {
@@ -418,7 +422,7 @@ a:hover {
   left: 0;
   color: #ffffff;
   padding-left: 12px;
-  z-index: 10;
+  z-index: 1;
 }
 
 @media screen and (max-width: 1079px) {
@@ -552,11 +556,11 @@ a:hover {
   font-size: 20px;
   background-color: #44b3e2;
   color: #ffffff;
-  z-index: 9999;
   box-sizing: border-box;
   overflow: auto;
   min-width: 0;
   padding-right: 0;
+  z-index: 3;
 }
 
   .navigation ul {
@@ -597,7 +601,7 @@ a:hover {
   background-color: rgba(0,0,0,0.5);
   overflow: hidden;
   cursor: pointer;
-  z-index: 11;
+  z-index: 2;
 }
 
 /*--------------------------------------------
@@ -646,7 +650,6 @@ footer {
   position: absolute;
   background-color: rgba(0,0,0,0.8);
   color: #fff;
-  z-index: 99999;
   display: none;
   cursor: pointer;
 }
@@ -663,12 +666,18 @@ footer {
   background-color: #44b3e2;
   color: #fff;
   border: none;
+  -webkit-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
 }
+
+  .searchBox input[type=submit]:hover {
+    background-color: #77c8ea;
+  }
 
 .searchBox input[type=text] {
   padding: 10px;
   font-size: 20px;
- /* max-width: 200px;*/
   border: none;
 }
 

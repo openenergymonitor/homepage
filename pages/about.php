@@ -12,7 +12,7 @@
   <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
   <link rel="stylesheet" type="text/css" href="<?php echo $path; ?>fonts/ubuntu.css?family=Ubuntu:300">
   <link rel="stylesheet" type="text/css" href="<?php echo $path; ?>theme/font-awesome.min.css" />
-  <link rel="stylesheet" type="text/css" href="<?php echo $path; ?>theme/style.css" />
+  <link rel="stylesheet" type="text/css" href="<?php echo $path; ?>theme/style.css?v=3" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
@@ -38,6 +38,7 @@
             </span>
           </a>
         </div>
+        <div class="blackOut"></div>
         <div id="siteLinks" class="navigation">
           <ul>
             <li title="you are here: the homepage of OpenEnergyMonitor" class="actoemLink">
@@ -85,6 +86,16 @@
       </div>
     </div>
   </div>
+  <div class="searchBox">
+    <form target="_blank" id="searchform" action="http://www.google.com/cse">
+      <div>
+        <input type="hidden" name="cx" value="006198118389747886812:_nmxikw563w" />
+        <input type="hidden" name="ie" value="UTF-8" />
+        <input type="text" class="searchText" value="" name="q" id="q" autocomplete="off" />
+        <input type="submit" id="searchsubmit" name="sa" value="Search" />
+      </div>
+    </form>
+  </div>
   <div style="height:7px">
   </div>
   <div class="container" style="text-align:left;padding:0 10px 0 10px;">
@@ -112,8 +123,6 @@
     <h2>Eryri/Snowdonia</h2>
     <p>The OpenEnergyMonitor shop is based in Eryri (Snowdonia) North Wales. We are keen climbers, walkers and mountain bikers.
     </p>
-  </div>
-  <div class="blackOut">
   </div>
   <footer>
     <div class="footer-wrapper">

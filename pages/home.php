@@ -11,21 +11,11 @@
 	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
 	<link href="<?php echo $path; ?>fonts/ubuntu.css?family=Ubuntu:300" rel="stylesheet" type="text/css">
 	<link href="<?php echo $path; ?>theme/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link href="<?php echo $path; ?>theme/style.css?v=2" rel="stylesheet" type="text/css">
+	<link href="<?php echo $path; ?>theme/style.css?v=3" rel="stylesheet" type="text/css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
 	</script>
 </head>
 <body>
-  <div class="searchBox">
-    <form target="_blank" id="searchform" action="http://www.google.com/cse">
-      <div>
-        <input type="hidden" name="cx" value="006198118389747886812:_nmxikw563w" />
-        <input type="hidden" name="ie" value="UTF-8" />
-        <input type="text" class="searchText" value="" name="q" id="q" autocomplete="off" />
-        <input type="submit" id="searchsubmit" name="sa" value="Search" />
-      </div>
-    </form>
-  </div>
 	<div class="oemblueBar">
 		<div class="container">
 			<div class="titleHolder">
@@ -36,6 +26,7 @@
 					  <span class="oemWrap">| Open<b>EnergyMonitor</b></span>
 					</a>
 				</div>
+      	<div class="blackOut"></div>
 				<div class="navigation" id="siteLinks">
 					<ul>
 						<li class="actoemLink" title="you are here: the homepage of OpenEnergyMonitor">
@@ -83,7 +74,17 @@
 			</div>
 		</div>
 	</div>
-  <div style="height:7px">
+  <div class="searchBox">
+    <form target="_blank" id="searchform" action="http://www.google.com/cse">
+      <div>
+        <input type="hidden" name="cx" value="006198118389747886812:_nmxikw563w" />
+        <input type="hidden" name="ie" value="UTF-8" />
+        <input type="text" class="searchText" value="" name="q" id="q" autocomplete="off" />
+        <input type="submit" id="searchsubmit" name="sa" value="Search" />
+      </div>
+    </form>
+  </div>
+  <div style="height:49px;top:0;">
   </div>
 	<div style="background-color:#fff">
   	<div class="container">
@@ -353,7 +354,6 @@
 			</div>
 		</div>
 	</div>
-	<div class="blackOut"></div>
 	<footer>
 		<div class="footer-wrapper">
 			<a href="about">
