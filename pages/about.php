@@ -17,7 +17,7 @@
 </head>
 <body>
   <div class="searchBox">
-    <form target="_blank" id="searchform" action="http://www.google.com/cse">
+    <form target="_blank" id="searchform" action="https://www.google.com/cse">
       <div>
         <input type="hidden" name="cx" value="006198118389747886812:_nmxikw563w" />
         <input type="hidden" name="ie" value="UTF-8" />
