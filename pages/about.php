@@ -16,16 +16,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
-  <div class="searchBox">
-    <form target="_blank" id="searchform" action="https://www.google.com/cse">
-      <div>
-        <input type="hidden" name="cx" value="006198118389747886812:_nmxikw563w" />
-        <input type="hidden" name="ie" value="UTF-8" />
-        <input type="text" class="searchText" value="" name="q" id="q" autocomplete="off" />
-        <input type="submit" id="searchsubmit" name="sa" value="Search" />
-      </div>
-    </form>
-  </div>
   <div class="oemblueBar">
     <div class= "container">
       <div class="titleHolder">
@@ -76,18 +66,18 @@
                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Shop
               </a>
             </li>
-						<li title="search for something on OpenEnergyMonitor">
-							<a class="searchIcon">
-							    <i aria-hidden="true" class="fa fa-search"></i>&nbsp;Search
-						  </a>
-						</li>
+	    <li title="search for something on OpenEnergyMonitor">
+	      <a class="searchIcon">
+	        <i aria-hidden="true" class="fa fa-search"></i>&nbsp;Search
+	      </a>
+	    </li>
           </ul>
         </div>
       </div>
     </div>
   </div>
   <div class="searchBox">
-    <form target="_blank" id="searchform" action="http://www.google.com/cse">
+    <form target="_blank" id="searchform" action="https://www.google.com/cse">
       <div>
         <input type="hidden" name="cx" value="006198118389747886812:_nmxikw563w" />
         <input type="hidden" name="ie" value="UTF-8" />
