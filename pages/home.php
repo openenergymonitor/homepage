@@ -302,7 +302,7 @@
 				<div class="learnDesc-desc">
 					<h2 class="learnDesc-desc-header">Learn</h2>
 					<p>
-					  More in-depth knowledge on basic principles of electricity
+					  An in-depth look at the basic principles of electricity
 					  monitoring, sustainable energy and more.
 					</p>
 				</div>

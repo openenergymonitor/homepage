@@ -1,4 +1,4 @@
-OpenEnergyMonitor font landing page 
+OpenEnergyMonitor front landing page 
 
 https://openenergymonitor.org
 
