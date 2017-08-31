@@ -195,7 +195,7 @@ a:hover {
 
 @media (min-width: 620px) and (max-width: 799px) {
   .container {
-    width: 600px;
+    width: 100%;
   }
 
   .box2 { width: 50%; }
@@ -669,6 +669,7 @@ footer {
   -webkit-transition: background-color 500ms linear;
   -ms-transition: background-color 500ms linear;
   transition: background-color 500ms linear;
+  -webkit-appearance: none;
 }
 
   .searchBox input[type=submit]:hover {
