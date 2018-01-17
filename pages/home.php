@@ -7,11 +7,11 @@
 	<meta content="#44b3e2" name="theme-color">
 	<title>Home | OpenEnergyMonitor</title>
 	<link href="<?php echo $path; ?>theme/favicon.ico" rel="shortcut icon"><!-- Load font locally to enable full offline use, un comment below to load font remotely-->
-	<!--<link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet" type="text/css">-->
+	<!--<link href="https://fonts.googleapis.com/css?family=ubuntufont:300" rel="stylesheet" type="text/css">-->
 	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
-	<link href="<?php echo $path; ?>fonts/ubuntu.css?family=Ubuntu:300" rel="stylesheet" type="text/css">
+	<link href="<?php echo $path; ?>fonts/ubuntufont.css?family=ubuntufont:300" rel="stylesheet" type="text/css">
 	<link href="<?php echo $path; ?>theme/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link href="<?php echo $path; ?>theme/style.css?v=3" rel="stylesheet" type="text/css">
+	<link href="<?php echo $path; ?>theme/style.css?v=4.1" rel="stylesheet" type="text/css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
 	</script>
 </head>
