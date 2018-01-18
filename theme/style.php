@@ -1,3 +1,36 @@
+<?php global $path; ?>
+
+<?php
+  header("Content-type: text/css; charset: UTF-8");
+
+  $oemBlue = "#44b3e2";
+  $bold = "Ubuntu-OEM-Bold";
+  $boldItalic = "Ubuntu-OEM-BoldItalic";
+  $light = "Ubuntu-OEM-Light";
+  $lightItalic = " Ubuntu-OEM-LightItalic";
+
+?>
+
+@font-face {
+  font-family: <?php echo $bold; ?>;
+  src: url(<?php echo $path; ?>../fonts/Ubuntu-OEM-Bold.ttf)
+}
+
+@font-face {
+  font-family: <?php echo $boldItalic; ?>;
+  src: url(<?php echo $path; ?>../fonts/Ubuntu-OEM-BoldItalic.ttf)
+}
+
+@font-face {
+  font-family: <?php echo $light; ?>;
+  src: url(<?php echo $path; ?>../fonts/Ubuntu-OEM-Light.ttf)
+}
+
+@font-face {
+  font-family: <?php echo $lightItalic; ?>;
+  src: url(<?php echo $path; ?>../fonts/Ubuntu-OEM-LightItalic.ttf)
+}
+
 html, body {
   margin: 0; height: 100vh;
 }
@@ -7,12 +40,16 @@ html {
 }
 
 body {
-  font-family: ubuntufont, sans-serif;
+  font-family: <?php echo $light; ?>, sans-serif;
   padding: 0;
   background-color: #ffffff;
   color: #333;
   width: 100%;
   text-align: center;
+}
+
+strong {
+  font-family: <?php echo $bold; ?>, sans-serif;
 }
 
 .container {
@@ -113,10 +150,10 @@ a:hover {
 }
 
 .oemheading {
-  color: #44b3e2;
+  color: <?php echo $oemBlue; ?>;
   font-size: 30px;
   font-weight: bold;
-  font-family: ubuntufont, sans-serif;
+  font-family:  <?php echo $light; ?>, sans-serif;
 }
 
 .oemheading2 {
@@ -166,6 +203,7 @@ a:hover {
     width: 50%;
     float: right;
     padding-top: 0;
+    height: 130px;
   }
 }
 
@@ -297,7 +335,7 @@ a:hover {
 }
 
 .oemBlue {
-  background-color: #44b3e2;
+  background-color: <?php echo $oemBlue; ?>;
 }
 
 /*---------------------------------------------------------------------/
@@ -356,7 +394,7 @@ a:hover {
   width: 180px;
   height: 180px;
   box-sizing: border-box;
-  border: 8px solid #44b3e2;
+  border: 8px solid <?php echo $oemBlue; ?>;
   display: table;
   background-color: #ffffff;
   color: #ffffff;
@@ -375,11 +413,11 @@ a:hover {
   vertical-align: middle;
   text-align: center;
   text-shadow: none;
-  color: #44b3e2;
+  color: <?php echo $oemBlue; ?>;
 }
 
 .inner:hover .learnpageIcons {
-  border: 12px solid #44b3e2;
+  border: 12px solid <?php echo $oemBlue; ?>;
 }
 
 /*--------------------------------------------
@@ -391,7 +429,7 @@ a:hover {
   width: 100%;
   top: 0;
   height: 42px;
-  background-color: #44b3e2;
+  background-color: <?php echo $oemBlue; ?>;
   -webkit-box-shadow: 0 -2px 4px 2px #000;
   -moz-box-shadow: 0 -2px 4px 2px #000;
   box-shadow: 0 -2px 4px 2px #000;
@@ -426,36 +464,71 @@ a:hover {
   top: 0;
   width: 100%;
   height: 42px;
-  background-color: #44b3e2;
+  background-color: <?php echo $oemBlue; ?>;
   overflow: hidden;
 }
 
-.thisTitle {
-  display: inline-block;
-  color: #ffffff;
+.titleIcon {
   position: absolute;
+  display: inline-block;
   left: 0;
+  height: 42px;
+  width: 42px;
+  padding: 0 0 0 7px;
+  text-align: center;
   line-height: 42px;
-  padding-left: 7px;
-  font-size: 16px;
+  color: #ffffff;
 }
 
-.thisTitle a {
+  .titleIcon i {
+    vertical-align: middle;
+    font-size: 32px;
+  }
+
+.thisTitle {
+  position: absolute;
+  display: inline-block;
+  box-sizing: border-box;
+  left: 49px;
+  right: 0;
+  height: 42px;
+  padding: 5px 0 5px 0;
+  text-align: left;
   color: #ffffff;
 }
+
+  .thisTitle a {
+    color: #ffffff;
+  }
 
 @media screen and (max-width: 1079px) {
+  .titleIcon {
+    left: auto;
+    right: 0;
+    padding: 0 7px 0 0;
+  }
+
   .thisTitle {
-    width: 100%;
-    position: absolute;
+    right: 49px;
+    left: 0;
     text-align: right;
-    font-size: 20px;
-    padding-left: 0;
   }
 
     .thisTitle a {
-      padding-right: 12px;
+      padding-right: 0;
     }
+}
+
+.thisTitle-top {
+  top: 0;
+  height: 60%;
+  font-size: 18px;
+}
+
+.thisTitle-bottom {
+  bottom: 0;
+  height: 40%;
+  font-size: 12px;
 }
 
 /*--------------------------------------------
@@ -484,13 +557,13 @@ a:hover {
 
   .navigation ul li {
     float: left;
-    background-color: #44b3e2;
+    background-color: <?php echo $oemBlue; ?>;
   }
 
   .navigation ul li a {
     display: block;
     line-height: 42px;
-    font-family: ubuntufont, sans-serif;
+    font-family:  <?php echo $light; ?>, sans-serif;
     font-size: 16px;
     text-align: center;
     padding-left: 10px;
@@ -544,7 +617,7 @@ a:hover {
   margin: 0;
   width: 0;
   font-size: 20px;
-  background-color: #44b3e2;
+  background-color: <?php echo $oemBlue; ?>;
   color: #ffffff;
   box-sizing: border-box;
   overflow: auto;
@@ -561,14 +634,14 @@ a:hover {
 
   .navigation ul li a {
     box-sizing: border-box;
-    font-family: ubuntufont, sans-serif;
+    font-family:  <?php echo $light; ?>, sans-serif;
     font-size: 20px;
     display: block;
     color: #ffffff;
-    padding: 0 20px 0 40px;
+    padding: 0 20px 0 20px;
     height: 12.5vh;
     line-height: 12.5vh;
-    min-width: 220px;
+    min-width: 180px;
     text-align: left;
   }
 
@@ -577,6 +650,19 @@ a:hover {
   }
 }
 
+@media (max-width: 1079px) and (min-height: 550px) {
+  .navigation ul li a {
+    height: 68.75px;
+    line-height: 68.75px;
+  }
+}
+
+@media (max-width: 1079px) and (max-height: 200px) {
+  .navigation ul li a {
+    height: 25px;
+    line-height: 25px;
+  }
+}
 /*--------------------------------------------
     grayed out overlay when menu is active...
 --------------------------------------------*/
@@ -653,7 +739,7 @@ footer {
   padding: 10px;
   font-size: 20px;
   font-weight: bold;
-  background-color: #44b3e2;
+  background-color: <?php echo $oemBlue; ?>;
   color: #fff;
   border: none;
   -webkit-transition: background-color 500ms linear;

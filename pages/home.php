@@ -9,9 +9,8 @@
 	<link href="<?php echo $path; ?>theme/favicon.ico" rel="shortcut icon"><!-- Load font locally to enable full offline use, un comment below to load font remotely-->
 	<!--<link href="https://fonts.googleapis.com/css?family=ubuntufont:300" rel="stylesheet" type="text/css">-->
 	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
-	<link href="<?php echo $path; ?>fonts/ubuntufont.css?family=ubuntufont:300" rel="stylesheet" type="text/css">
 	<link href="<?php echo $path; ?>theme/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link href="<?php echo $path; ?>theme/style.css?v=4.1" rel="stylesheet" type="text/css">
+	<link href="<?php echo $path; ?>theme/style.php" rel="stylesheet" type="text/css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
 	</script>
 </head>
@@ -20,12 +19,19 @@
 		<div class="container">
 			<div class="titleHolder">
 				<i class="fa fa-navicon"></i>
-				<div class="thisTitle">
-					<a href="/">
-					  <b>Home</b>
-					  <span class="oemWrap">| Open<b>EnergyMonitor</b></span>
-					</a>
-				</div>
+				<a href="/">
+        	<div class="titleIcon">
+						<i aria-hidden="true" class="fa fa-home"></i>
+					</div>
+					<div class="thisTitle">
+						<div class="thisTitle-top">
+          		<b>Home</b>
+						</div>
+						<div class="thisTitle-bottom">
+          		Open<b>EnergyMonitor</b>
+						</div>
+					</div>
+				</a>
       	<div class="blackOut"></div>
 				<div class="navigation" id="siteLinks">
 					<ul>
@@ -284,7 +290,7 @@
   					  All products are available to buy from the
   					  <a href="https://shop.openenergymonitor.com" style="color:#44b3e2">
   					  <b>Shop</b>
-  					  </a>.
+  					  </a>
 					  </p>
 					</div>
 					<div style="clear:both"></div>
@@ -370,7 +376,7 @@
 	   $("html, body").addClass("menuFreeze");
 	   $(".blackOut").show();
 	   $(".navigation").show();
-	   $(".navigation").animate({ width:'220' },"0.5s");
+	   $(".navigation").animate({ width:'180' },"0.5s");
 	}
 	$(".fa-navicon").click(function() {
 	   openButton();
