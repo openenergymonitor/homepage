@@ -6,13 +6,13 @@
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<meta content="#44b3e2" name="theme-color">
 	<title>Home | OpenEnergyMonitor</title>
-	<link href="<?php echo $path; ?>theme/favicon.ico" rel="shortcut icon"><!-- Load font locally to enable full offline use, un comment below to load font remotely-->
+	<link href="<?php echo $path; ?>theme/favicon.ico" rel="shortcut icon">
+	<!-- Load font locally to enable full offline use, un-comment below to load font remotely-->
 	<!--<link href="https://fonts.googleapis.com/css?family=ubuntufont:300" rel="stylesheet" type="text/css">-->
 	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
 	<link href="<?php echo $path; ?>theme/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link href="<?php echo $path; ?>theme/style.php" rel="stylesheet" type="text/css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
-	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
 	<div class="oemblueBar">
@@ -94,7 +94,7 @@
   </div>
 	<div style="background-color:#fff">
   	<div class="container">
-  		<div class="inner">
+  		<div class="inner tile">
   			<div class="cover" style="height:400px;background-image: url('<?php echo $path; ?>images/gwynt.jpg');">
   				<div class="oemName"><!-- Cover image -->
   					<div class="oemName-inner">
@@ -115,7 +115,7 @@
   		<div class="row">
   			<div class="column box2 left">
   				<a href="https://guide.openenergymonitor.org/applications/home-energy">
-  				  <div class="inner homeenergy" style="background-image:url('<?php echo $path; ?>images/home.png');">
+  				  <div class="inner tile homeenergy" style="background-image:url('<?php echo $path; ?>images/home.png');">
   					  <div style="padding:20px;">
   						  <img class="emoncmsappimg" src="<?php echo $path; ?>images/myelectric_app.png">
   						  <h3>Energy<br>Use</h3>
@@ -130,7 +130,7 @@
   			</div>
   			<div class="column box2 right">
   				<a href="https://guide.openenergymonitor.org/applications/solar-pv">
-  				  <div class="inner solar" style="background-image: url('<?php echo $path; ?>images/solar.jpg');">
+  				  <div class="inner tile solar" style="background-image: url('<?php echo $path; ?>images/solar.jpg');">
   					  <div style="padding:20px">
   						  <img class="emoncmsappimg" src="<?php echo $path; ?>images/mysolar_app.png">
   						  <h3>Solar<br> PV</h3>
@@ -149,7 +149,7 @@
   		<div class="row">
   			<div class="column box2">
   				<a href="https://guide.openenergymonitor.org/integrations/openevse/">
-    				<div class="inner openevse" style="background-image: url('<?php echo $path; ?>images/leaf_openevse2.jpg');">
+    				<div class="inner tile openevse" style="background-image: url('<?php echo $path; ?>images/leaf_openevse2.jpg');">
     					<div style="padding:20px;">
     						<h3>OpenEVSE<br>
     						EV Charging</h3>
@@ -165,7 +165,7 @@
   			</div>
   			<div class="column box2">
   				<a href="https://heatpumpmonitor.org/">
-    				<div class="inner heatpump" style="background-image: url('<?php echo $path; ?>images/heatpumpimage.jpg');">
+    				<div class="inner tile heatpump" style="background-image: url('<?php echo $path; ?>images/heatpumpimage.jpg');">
     					<div style="padding:20px">
     						<h3>Heat Pump<br>
     						Monitoring</h3>
@@ -188,12 +188,121 @@
 				<div class="row">
 					<div class="inner">
 						<h2 style="color:#000;margin-top:14px;">Introducing the OpenEnergyMonitor system</h2>
-						<p>Pre-assembled open-hardware electricity, temperature and humidity monitoring units based on the Arduino and Raspberry Pi platforms.</p>
-						<p>Get more information on how to set up an OpenEnergyMonitor system from the <a href="https://guide.openenergymonitor.org" style="color:#44b3e2"><b>Guide</b></a>.</p>
+						<p>Pre-assembled open-hardware electricity, temperature and humidity monitoring units<br> based on the Arduino and Raspberry Pi platforms</p>
 					</div>
+					
+<style>
+
+
+.flexParent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.flexChild {
+  height: 250px;
+  width: 190px;
+}
+				
+.flexChild-inner {
+	height: 125px;
+	font-size: 14px;
+	text-align: center;
+}
+
+.flexChild-inner ul {
+  display: inline-block;
+  width: 168px;
+  margin: 0;
+  padding: 5px 0 0 0;
+  text-align: left;
+  list-style-position: inside;
+}
+
+.emonPi {
+  background-image: url("<?php echo $path; ?>images/emonpi.jpg");
+  background-size: cover;
+}
+
+.emonTx {
+  background-image: url("<?php echo $path; ?>images/emontx.jpg");
+  background-size: cover;
+}
+
+.emonPi {
+  background-image: url("<?php echo $path; ?>images/emonpi.jpg");
+  background-size: cover;
+}
+
+.emonPi {
+  background-image: url("<?php echo $path; ?>images/emonpi.jpg");
+  background-size: cover;
+}
+
+</style>
+					
+					
+<div class="flexParent">
+  <div class="flexChild tile">
+    <div class="flexChild-inner emonPi">
+    </div>
+    <div class="flexChild-inner">
+      <ul>
+        <li>2x CT Sensor inputs</li>
+        <li>1x VRMS input</li>
+        <li>1x Pulse input</li>
+        <li>6 x Temperature</li>
+        <li>Emoncms logging</li>
+        <li>Node-RED & OpenHAB</li>
+      </ul>
+    </div>
+  </div>
+  <div class="flexChild tile">
+    <div class="flexChild-inner emonTx">
+    </div>
+    <div class="flexChild-inner">
+      <ul>
+        <li>4x CT Sensor inputs</li>
+        <li>1x VRMS input</li>
+        <li>1x Pulse input</li>
+        <li>6 x Temperature</li>
+        <li>Battery option</li>
+      </ul>
+    </div>
+  </div>
+  <div class="flexChild tile">
+    <div class="flexChild-inner">
+    </div>
+    <div class="flexChild-inner">
+      <ul>
+        <li>Internal temperature</li>
+        <li>Internal humidity</li>
+        <li>External temperature</li>
+        <li>Pulse input</li>
+        <li>Long battery life</li>
+      </ul>
+    </div>
+  </div>
+  <div class="flexChild tile">
+    <div class="flexChild-inner">
+      ssss
+    </div>
+    <div class="flexChild-inner">
+      <ul>
+  	    <li>Web application</li>
+  	    <li>Data storage</li>
+  	    <li>Data processing</li>
+  	    <li>Data visualisation</li>
+  	    <li>Cloud or self-hosted</li>
+      </ul>
+    </div>
+  </div>
+</div>
+					<!--
 					<div class="column box4">
 						<a href="https://guide.openenergymonitor.org/setup">
-  						<div class="inner" style="background-color:#e3e3e3;">
+  						<div class="inner tile" style="background-color:#e3e3e3;">
   							<img class="b4img" src="<?php echo $path; ?>images/emonpi.jpg">
   							<div class="b4dsc">
   								<div class="inner" style="color:#333">
@@ -217,7 +326,7 @@
 					</div>
 					<div class="column box4">
 						<a href="https://guide.openenergymonitor.org/setup/emontx">
-						  <div class="inner" style="background-color:#e3e3e3;">
+						  <div class="inner tile" style="background-color:#e3e3e3;">
 							  <img class="b4img" src="<?php echo $path; ?>images/emontx.jpg">
 							  <div class="b4dsc">
   								<div class="inner" style="color:#333">
@@ -240,7 +349,7 @@
 					</div>
 					<div class="column box4">
 						<a href="https://guide.openenergymonitor.org/setup/emonth">
-						  <div class="inner" style="background-color:#e3e3e3;">
+						  <div class="inner tile" style="background-color:#e3e3e3;">
 							  <img class="b4img" src="<?php echo $path; ?>images/emonth.png">
 							  <div class="b4dsc">
 								  <div class="inner" style="color:#333">
@@ -263,7 +372,7 @@
 					</div>
 					<div class="column box4">
 						<a href="https://emoncms.org">
-						  <div class="inner" style="background-color:#e3e3e3;">
+						  <div class="inner tile" style="background-color:#e3e3e3;">
 							  <img class="b4img" src="<?php echo $path; ?>images/emoncms.png">
 							  <div class="b4dsc">
 								  <div class="inner" style="color:#333">
@@ -284,14 +393,16 @@
 						  </div>
 						</a>
 					</div>
+					-->
 					<div style="clear:both"></div>
-					<div style="padding-top:7px">
+					<div class="buttonLink" style="padding-top:7px">
 					  <p>
   					  All products are available to buy from the
   					  <a href="https://shop.openenergymonitor.com" style="color:#44b3e2">
   					  <b>Shop</b>
   					  </a>
 					  </p>
+					  <p>Get more information on how to set up an OpenEnergyMonitor system from the <a href="https://guide.openenergymonitor.org" style="color:#44b3e2"><b>Guide</b></a></p>
 					</div>
 					<div style="clear:both"></div>
 				</div>

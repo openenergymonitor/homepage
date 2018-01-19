@@ -1,34 +1,42 @@
 <?php global $path; ?>
 
 <?php
+
   header("Content-type: text/css; charset: UTF-8");
 
   $oemBlue = "#44b3e2";
-  $bold = "Ubuntu-OEM-Bold";
-  $boldItalic = "Ubuntu-OEM-BoldItalic";
-  $light = "Ubuntu-OEM-Light";
-  $lightItalic = " Ubuntu-OEM-LightItalic";
-
+  $oemDarkBlue = "#368fb4";
+  $oemGray = "#e3e3e3";
+  $oemDarkGray = "#333333";
+  $oemWhite = "#ffffff";
+  $oemBlack = "#000000";
+  $oemFont = "Ubuntu-OEM";
+  $oemTileShadow = "0 0 5px 2px rgba(0,0,0,.35);";
+  
 ?>
 
 @font-face {
-  font-family: <?php echo $bold; ?>;
-  src: url(<?php echo $path; ?>../fonts/Ubuntu-OEM-Bold.ttf)
-}
-
-@font-face {
-  font-family: <?php echo $boldItalic; ?>;
-  src: url(<?php echo $path; ?>../fonts/Ubuntu-OEM-BoldItalic.ttf)
-}
-
-@font-face {
-  font-family: <?php echo $light; ?>;
+  font-family: <?php echo $oemFont; ?>;
   src: url(<?php echo $path; ?>../fonts/Ubuntu-OEM-Light.ttf)
 }
 
 @font-face {
-  font-family: <?php echo $lightItalic; ?>;
+  font-family: <?php echo $oemFont; ?>;
+  src: url(<?php echo $path; ?>../fonts/Ubuntu-OEM-Bold.ttf)
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: <?php echo $oemFont; ?>;
   src: url(<?php echo $path; ?>../fonts/Ubuntu-OEM-LightItalic.ttf)
+  font-style: italic;
+}
+
+@font-face {
+  font-family: <?php echo $oemFont; ?>;
+  src: url(<?php echo $path; ?>../fonts/Ubuntu-OEM-BoldItalic.ttf)
+  font-weight: bold;
+  font-style: italic;
 }
 
 html, body {
@@ -40,16 +48,12 @@ html {
 }
 
 body {
-  font-family: <?php echo $light; ?>, sans-serif;
+  font-family: <?php echo $oemFont; ?>, sans-serif;
   padding: 0;
-  background-color: #ffffff;
-  color: #333;
+  background-color: <?php echo $oemWhite; ?>;
+  color: <?php echo $oemDarkGray; ?>;
   width: 100%;
   text-align: center;
-}
-
-strong {
-  font-family: <?php echo $bold; ?>, sans-serif;
 }
 
 .container {
@@ -62,7 +66,7 @@ strong {
 .box {
   width: 233px;
   float: left;
-  background-color: #e3e3e3;
+  background-color: <?php echo $oemGray; ?>;
   text-align: left;
   height: 300px;
 }
@@ -74,7 +78,7 @@ strong {
 .homeenergy, .solar, .openevse, .heatpump {
   background-size: cover;
   min-height: 400px;
-  color: #fff;
+  color: <?php echo $oemWhite; ?>;
   text-align: left;
 }
 
@@ -92,11 +96,11 @@ strong {
 
 .zerocarbon {
   background-size: cover;
-  color: #fff;
+  color: <?php echo $oemWhite; ?>;
 }
 
 .cover {
-  background: #ffffff no-repeat left center;
+  background: <?php echo $oemWhite; ?> no-repeat left center;
   background-size: cover;
 }
 
@@ -111,17 +115,17 @@ h3 {
 
 a {
   text-decoration: none;
-  color: #ffffff;
+  color: <?php echo $oemWhite; ?>;
 }
 
 a:visited {
   text-decoration: none;
-  color: #ffffff;
+  color: <?php echo $oemWhite; ?>;
 }
 
 a:hover {
   text-decoration: none;
-  color: #ffffff;
+  color: <?php echo $oemWhite; ?>;
 }
 
 .fa {
@@ -130,18 +134,18 @@ a:hover {
 
 .box4 a {
   text-decoration: none;
-  color: #ffffff;
+  color: <?php echo $oemWhite; ?>;
   cursor: pointer;
 }
 
 .box4 a:visited {
   text-decoration: none;
-  color: #000;
+  color: <?php echo $oemBlack; ?>;
 }
 
 .box4 a:hover {
   text-decoration: none;
-  color: #333;
+  color: <?php echo $oemDarkGray; ?>;
 }
 
 .emoncmsappimg {
@@ -153,11 +157,11 @@ a:hover {
   color: <?php echo $oemBlue; ?>;
   font-size: 30px;
   font-weight: bold;
-  font-family:  <?php echo $light; ?>, sans-serif;
+  font-family:  <?php echo $oemFont; ?>, sans-serif;
 }
 
 .oemheading2 {
-  color: #fff;
+  color: <?php echo $oemWhite; ?>;
   padding-top: 80px;
   padding-bottom: 20px;
   font-size: 45px;
@@ -258,6 +262,7 @@ a:hover {
 }
 
 .inner { margin: 7px;}
+.tile {box-shadow: <?php echo $oemTileShadow; ?>}
 .box3 { text-align: center; }
 
 /*---------------------------------------------------------------------/
@@ -265,7 +270,7 @@ a:hover {
 /*--------------------------------------------------------------------*/
 
 .oemName {
-  color: #ffffff;
+  color: <?php echo $oemWhite; ?>;
   width: 100%;
   height: 50%;
   display: table;
@@ -279,7 +284,7 @@ a:hover {
 }
 
 .oemDescription {
-  color: #ffffff;
+  color: <?php echo $oemWhite; ?>;
   width: 100%;
   height: 50%;
   display: table;
@@ -324,18 +329,6 @@ a:hover {
   .oemName-inner {
     font-size: 50px;
   }
-}
-
-/*---------------------------------------------------------------------/
-// OEM colors
-/*--------------------------------------------------------------------*/
-
-.oemGray {
-  background-color: #777777;
-}
-
-.oemBlue {
-  background-color: <?php echo $oemBlue; ?>;
 }
 
 /*---------------------------------------------------------------------/
@@ -396,8 +389,8 @@ a:hover {
   box-sizing: border-box;
   border: 8px solid <?php echo $oemBlue; ?>;
   display: table;
-  background-color: #ffffff;
-  color: #ffffff;
+  background-color: <?php echo $oemWhite; ?>;
+  color: <?php echo $oemWhite; ?>;
   box-shadow: none;
   transition: 0.3s ease-in-out;
   margin: 0 auto;
@@ -430,9 +423,9 @@ a:hover {
   top: 0;
   height: 42px;
   background-color: <?php echo $oemBlue; ?>;
-  -webkit-box-shadow: 0 -2px 4px 2px #000;
-  -moz-box-shadow: 0 -2px 4px 2px #000;
-  box-shadow: 0 -2px 4px 2px #000;
+  -webkit-box-shadow: 0 -2px 4px 2px <?php echo $oemBlack; ?>;
+  -moz-box-shadow: 0 -2px 4px 2px <?php echo $oemBlack; ?>;
+  box-shadow: 0 -2px 4px 2px <?php echo $oemBlack; ?>;
 }
 
 @media screen and (max-width: 400px) {
@@ -448,7 +441,7 @@ a:hover {
   line-height: 42px;
   position: absolute;
   left: 0;
-  color: #ffffff;
+  color: <?php echo $oemWhite; ?>;
   padding-left: 12px;
   z-index: 1;
 }
@@ -473,11 +466,10 @@ a:hover {
   display: inline-block;
   left: 0;
   height: 42px;
-  width: 42px;
   padding: 0 0 0 7px;
   text-align: center;
   line-height: 42px;
-  color: #ffffff;
+  color: <?php echo $oemWhite; ?>;
 }
 
   .titleIcon i {
@@ -489,16 +481,16 @@ a:hover {
   position: absolute;
   display: inline-block;
   box-sizing: border-box;
-  left: 49px;
+  left: 42px;
   right: 0;
   height: 42px;
   padding: 5px 0 5px 0;
   text-align: left;
-  color: #ffffff;
+  color: <?php echo $oemWhite; ?>;
 }
 
   .thisTitle a {
-    color: #ffffff;
+    color: <?php echo $oemWhite; ?>;
   }
 
 @media screen and (max-width: 1079px) {
@@ -509,7 +501,7 @@ a:hover {
   }
 
   .thisTitle {
-    right: 49px;
+    right: 42px;
     left: 0;
     text-align: right;
   }
@@ -563,12 +555,12 @@ a:hover {
   .navigation ul li a {
     display: block;
     line-height: 42px;
-    font-family:  <?php echo $light; ?>, sans-serif;
+    font-family:  <?php echo $oemFont; ?>, sans-serif;
     font-size: 16px;
     text-align: center;
     padding-left: 10px;
     padding-right: 10px;
-    color: #ffffff;
+    color: <?php echo $oemWhite; ?>;
   }
 
 @media screen and (min-width: 1080px) {
@@ -618,7 +610,7 @@ a:hover {
   width: 0;
   font-size: 20px;
   background-color: <?php echo $oemBlue; ?>;
-  color: #ffffff;
+  color: <?php echo $oemWhite; ?>;
   box-sizing: border-box;
   overflow: auto;
   min-width: 0;
@@ -634,10 +626,10 @@ a:hover {
 
   .navigation ul li a {
     box-sizing: border-box;
-    font-family:  <?php echo $light; ?>, sans-serif;
+    font-family:  <?php echo $oemFont; ?>, sans-serif;
     font-size: 20px;
     display: block;
-    color: #ffffff;
+    color: <?php echo $oemWhite; ?>;
     padding: 0 20px 0 20px;
     height: 12.5vh;
     line-height: 12.5vh;
@@ -663,6 +655,7 @@ a:hover {
     line-height: 25px;
   }
 }
+
 /*--------------------------------------------
     grayed out overlay when menu is active...
 --------------------------------------------*/
@@ -685,11 +678,11 @@ a:hover {
 --------------------------------------------*/
 
 .actoemLink {
-  background-color: #368fb4 !important;
+  background-color: <?php echo $oemDarkBlue; ?> !important;
 }
 
   .actoemLink a {
-    color: #ffffff !important;
+    color: <?php echo $oemWhite; ?> !important;
   }
 
 /*--------------------------------------------
@@ -698,7 +691,7 @@ a:hover {
 
 footer {
   position: relative;
-  background-color: #368fb4;
+  background-color: <?php echo $oemDarkBlue; ?>;
   width: 100%;
   height: 50px;
 }
@@ -725,7 +718,7 @@ footer {
   height: 100%;
   position: absolute;
   background-color: rgba(0,0,0,0.8);
-  color: #fff;
+  color: <?php echo $oemWhite; ?>;
   display: none;
   cursor: pointer;
 }
@@ -740,17 +733,13 @@ footer {
   font-size: 20px;
   font-weight: bold;
   background-color: <?php echo $oemBlue; ?>;
-  color: #fff;
+  color: <?php echo $oemWhite; ?>;
   border: none;
   -webkit-transition: background-color 500ms linear;
   -ms-transition: background-color 500ms linear;
   transition: background-color 500ms linear;
   -webkit-appearance: none;
 }
-
-  .searchBox input[type=submit]:hover {
-    background-color: #77c8ea;
-  }
 
 .searchBox input[type=text] {
   padding: 10px;
