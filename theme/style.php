@@ -71,10 +71,6 @@ body {
   height: 300px;
 }
 
-.oem {
-  font-size: 32px;
-}
-
 .homeenergy, .solar, .openevse, .heatpump {
   background-size: cover;
   min-height: 400px;
@@ -337,6 +333,7 @@ a:hover {
 
 .flexParent {
   display: flex;
+  width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -352,14 +349,25 @@ a:hover {
   margin: 10px;
 }
 
+@media (max-width: 480px) {
+  .flexChild {
+    width: 100vw;
+  }
+}
+
 .flexChild-inner {
+  margin: 7px;
+}
+
+.flexChild-inner-inner {
 	height: 140px;
 	font-size: 14px;
 	text-align: center;
 	background-color: #eeeeee;
+	margin: 0;
 }
 
-.flexChild-inner ul {
+.flexChild-inner-inner ul {
   display: inline-block;
   width: 180px;
   margin: 0;
@@ -368,7 +376,7 @@ a:hover {
   list-style-position: inside;
 }
 
-.flexChild-inner h1 {
+.flexChild-inner-inner h1 {
   margin: 0;
   padding-top: 5px;
 }

@@ -11,7 +11,7 @@
 	<!--<link href="https://fonts.googleapis.com/css?family=ubuntufont:300" rel="stylesheet" type="text/css">-->
 	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
 	<link href="<?php echo $path; ?>theme/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link href="<?php echo $path; ?>theme/style.php?v=4.2.1" rel="stylesheet" type="text/css">
+	<link href="<?php echo $path; ?>theme/style.php?v=4.2.2" rel="stylesheet" type="text/css">
 	<script src="<?php echo $path; ?>scripts/jquery-3.3.1.min.js"></script>
 </head>
 <body>
@@ -192,30 +192,31 @@
 					</div>
 					<div class="flexParent">
 					  <a href="https://guide.openenergymonitor.org/setup/">
-					    <div class="flexChild tile">
-					      <div class="flexChild-inner emonPi">
-					      </div>
-					      <div class="flexChild-inner">
-					        <section>
-					          <h1>emonPi</h1>
-					          <ul>
-					            <li>2x CT Sensor inputs</li>
-					            <li>1x VRMS input</li>
-					            <li>1x Pulse input</li>
-					            <li>6 x Temperature</li>
-					            <li>Emoncms logging</li>
-					            <li>Node-RED & OpenHAB</li>
-					          </ul>
-					        </section>
-					      </div>
+					    <div class="flexChild">
+					      <div class="flexChild-inner tile">
+  					      <div class="flexChild-inner-inner emonPi"></div>
+  					      <div class="flexChild-inner-inner">
+  					        <section>
+  					          <h1>emonPi</h1>
+  					          <ul>
+  					            <li>2x CT Sensor inputs</li>
+  					            <li>1x VRMS input</li>
+  					            <li>1x Pulse input</li>
+  					            <li>6 x Temperature</li>
+  					            <li>Emoncms logging</li>
+  					            <li>Node-RED & OpenHAB</li>
+  					          </ul>
+  					        </section>
+  					      </div>
+  					    </div>
 					    </div>
 					  </a>
 					  <a href="https://guide.openenergymonitor.org/setup/emontx/">
-					    <div class="flexChild tile">
-					      <div class="flexChild-inner emonTx">
-					      </div>
-					      <div class="flexChild-inner">
-					        <section>
+					    <div class="flexChild">
+					      <div class="flexChild-inner tile">
+  					      <div class="flexChild-inner-inner emonTx"></div>
+  					      <div class="flexChild-inner-inner">
+  					        <section>
 					          <h1>emonTx</h1>
 					          <ul>
 					            <li>4x CT Sensor inputs</li>
@@ -223,17 +224,18 @@
 					            <li>1x Pulse input</li>
 					            <li>6 x Temperature</li>
 					            <li>Battery option</li>
-					          </ul>
-					        </section>
-					      </div>
+  					          </ul>
+  					        </section>
+  					      </div>
+  					    </div>
 					    </div>
 					  </a>
 					  <a href="https://guide.openenergymonitor.org/setup/emonth/">
-					    <div class="flexChild tile">
-					      <div class="flexChild-inner emonTH">
-					      </div>
-					      <div class="flexChild-inner">
-					        <section>
+					    <div class="flexChild">
+					      <div class="flexChild-inner tile">
+  					      <div class="flexChild-inner-inner emonTH"></div>
+  					      <div class="flexChild-inner-inner">
+  					        <section>
 					          <h1>emonTH</h1>
 					          <ul>
 					            <li>Internal temperature</li>
@@ -241,17 +243,18 @@
 					            <li>External temperature</li>
 					            <li>Pulse input</li>
 					            <li>Long battery life</li>
-					          </ul>
-					        <section>
-					      </div>
+  					          </ul>
+  					        </section>
+  					      </div>
+  					    </div>
 					    </div>
 					  </a>
 					  <a href="https://emoncms.org/">
-					    <div class="flexChild tile">
-					      <div class="flexChild-inner Emoncms">
-					      </div>
-					      <div class="flexChild-inner">
-					        <section>
+					    <div class="flexChild">
+					      <div class="flexChild-inner tile">
+  					      <div class="flexChild-inner-inner Emoncms"></div>
+  					      <div class="flexChild-inner-inner">
+  					        <section>
 					          <h1>EmonCMS</h1>
 					          <ul>
 					      	    <li>Web application</li>
@@ -259,9 +262,10 @@
 					      	    <li>Data processing</li>
 					      	    <li>Data visualisation</li>
 					      	    <li>Cloud or self-hosted</li>
-					          </ul>
-					        <section>
-					      </div>
+  					          </ul>
+  					        </section>
+  					      </div>
+  					    </div>
 					    </div>
 					  </a>
 					</div>
