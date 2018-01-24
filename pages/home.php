@@ -11,8 +11,8 @@
 	<!--<link href="https://fonts.googleapis.com/css?family=ubuntufont:300" rel="stylesheet" type="text/css">-->
 	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
 	<link href="<?php echo $path; ?>theme/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link href="<?php echo $path; ?>theme/style.php" rel="stylesheet" type="text/css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link href="<?php echo $path; ?>theme/style.php?v=4.2.1" rel="stylesheet" type="text/css">
+	<script src="<?php echo $path; ?>scripts/jquery-3.3.1.min.js"></script>
 </head>
 <body>
 	<div class="oemblueBar">
@@ -190,161 +190,101 @@
 						<h2 style="color:#000;margin-top:14px;">Introducing the OpenEnergyMonitor system</h2>
 						<p>Pre-assembled open-hardware electricity, temperature and humidity monitoring units<br> based on the Arduino and Raspberry Pi platforms</p>
 					</div>
-					
-<style>
-
-
-.flexParent {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.flexParent a {
-  color: black;
-}
-
-.flexChild {
-  height: 280px;
-  width: 220px;
-  margin: 10px;
-}
-				
-.flexChild-inner {
-	height: 140px;
-	font-size: 14px;
-	text-align: center;
-	background-color: #eeeeee;
-}
-
-.flexChild-inner ul {
-  display: inline-block;
-  width: 180px;
-  margin: 0;
-  padding: 5px 0 0 0;
-  text-align: left;
-  list-style-position: inside;
-}
-
-.flexChild-inner h1 {
-  margin: 0;
-  padding-top: 5px;
-}
-
-.emonPi {
-  background-image: url("<?php echo $path; ?>images/emonpi.jpg");
-  background-size: cover;
-}
-
-.emonTx {
-  background-image: url("<?php echo $path; ?>images/emontx.jpg");
-  background-size: cover;
-}
-
-.emonTH {
-  background-image: url("<?php echo $path; ?>images/emonth.png");
-  background-size: cover;
-}
-
-.Emoncms {
-  background-image: url("<?php echo $path; ?>images/emoncms.png");
-  background-size: cover;
-}
-
-.shopguideText {
-  margin: 20px;
-}
-
-</style>
-					
-					
-<div class="flexParent">
-  <a href="https://guide.openenergymonitor.org/setup/">
-    <div class="flexChild tile">
-      <div class="flexChild-inner emonPi">
-      </div>
-      <div class="flexChild-inner">
-        <section>
-          <h1>emonPi</h1>
-          <ul>
-            <li>2x CT Sensor inputs</li>
-            <li>1x VRMS input</li>
-            <li>1x Pulse input</li>
-            <li>6 x Temperature</li>
-            <li>Emoncms logging</li>
-            <li>Node-RED & OpenHAB</li>
-          </ul>
-        </section>
-      </div>
-    </div>
-  </a>
-  <a href="https://guide.openenergymonitor.org/setup/emontx/">
-    <div class="flexChild tile">
-      <div class="flexChild-inner emonTx">
-      </div>
-      <div class="flexChild-inner">
-        <section>
-          <h1>emonTx</h1>
-          <ul>
-            <li>4x CT Sensor inputs</li>
-            <li>1x VRMS input</li>
-            <li>1x Pulse input</li>
-            <li>6 x Temperature</li>
-            <li>Battery option</li>
-          </ul>
-        </section>
-      </div>
-    </div>
-  </a>
-  <a href="https://guide.openenergymonitor.org/setup/emonth/">
-    <div class="flexChild tile">
-      <div class="flexChild-inner emonTH">
-      </div>
-      <div class="flexChild-inner">
-        <section>
-          <h1>emonTH</h1>
-          <ul>
-            <li>Internal temperature</li>
-            <li>Internal humidity</li>
-            <li>External temperature</li>
-            <li>Pulse input</li>
-            <li>Long battery life</li>
-          </ul>
-        <section>
-      </div>
-    </div>
-  </a>
-  <a href="https://emoncms.org/">
-    <div class="flexChild tile">
-      <div class="flexChild-inner Emoncms">
-      </div>
-      <div class="flexChild-inner">
-        <section>
-          <h1>EmonCMS</h1>
-          <ul>
-      	    <li>Web application</li>
-      	    <li>Data storage</li>
-      	    <li>Data processing</li>
-      	    <li>Data visualisation</li>
-      	    <li>Cloud or self-hosted</li>
-          </ul>
-        <section>
-      </div>
-    </div>
-  </a>
-</div>
-
+					<div class="flexParent">
+					  <a href="https://guide.openenergymonitor.org/setup/">
+					    <div class="flexChild tile">
+					      <div class="flexChild-inner emonPi">
+					      </div>
+					      <div class="flexChild-inner">
+					        <section>
+					          <h1>emonPi</h1>
+					          <ul>
+					            <li>2x CT Sensor inputs</li>
+					            <li>1x VRMS input</li>
+					            <li>1x Pulse input</li>
+					            <li>6 x Temperature</li>
+					            <li>Emoncms logging</li>
+					            <li>Node-RED & OpenHAB</li>
+					          </ul>
+					        </section>
+					      </div>
+					    </div>
+					  </a>
+					  <a href="https://guide.openenergymonitor.org/setup/emontx/">
+					    <div class="flexChild tile">
+					      <div class="flexChild-inner emonTx">
+					      </div>
+					      <div class="flexChild-inner">
+					        <section>
+					          <h1>emonTx</h1>
+					          <ul>
+					            <li>4x CT Sensor inputs</li>
+					            <li>1x VRMS input</li>
+					            <li>1x Pulse input</li>
+					            <li>6 x Temperature</li>
+					            <li>Battery option</li>
+					          </ul>
+					        </section>
+					      </div>
+					    </div>
+					  </a>
+					  <a href="https://guide.openenergymonitor.org/setup/emonth/">
+					    <div class="flexChild tile">
+					      <div class="flexChild-inner emonTH">
+					      </div>
+					      <div class="flexChild-inner">
+					        <section>
+					          <h1>emonTH</h1>
+					          <ul>
+					            <li>Internal temperature</li>
+					            <li>Internal humidity</li>
+					            <li>External temperature</li>
+					            <li>Pulse input</li>
+					            <li>Long battery life</li>
+					          </ul>
+					        <section>
+					      </div>
+					    </div>
+					  </a>
+					  <a href="https://emoncms.org/">
+					    <div class="flexChild tile">
+					      <div class="flexChild-inner Emoncms">
+					      </div>
+					      <div class="flexChild-inner">
+					        <section>
+					          <h1>EmonCMS</h1>
+					          <ul>
+					      	    <li>Web application</li>
+					      	    <li>Data storage</li>
+					      	    <li>Data processing</li>
+					      	    <li>Data visualisation</li>
+					      	    <li>Cloud or self-hosted</li>
+					          </ul>
+					        <section>
+					      </div>
+					    </div>
+					  </a>
+					</div>
 					<div style="clear:both"></div>
 					<div class="buttonLink" style="padding-top:7px">
-					  <div class="shopguideText">
-  					  All products are available to buy from the
-  					  <a href="https://shop.openenergymonitor.com" style="color:#44b3e2">
-  					  <b>Shop&nbsp;<i aria-hidden="true" class="fa fa-shopping-cart"></i></b>
-  					  </a>
-					  </div>
-					  <div class="shopguideText">
-					  Get more information on how to set up an OpenEnergyMonitor system from the <a href="https://guide.openenergymonitor.org" style="color:#44b3e2"><b>Guide&nbsp;<i aria-hidden="true" class="fa fa-book"></i></b></a></div>
+						<div class="guideShop">
+							All products are available to buy from the
+							<a href="https://shop.openenergymonitor.com">
+								<div class="guideShop-buttons">
+									Shop
+									<i aria-hidden="true" class="fa fa-shopping-cart"></i>
+								</div>
+							</a>
+						</div>
+						<div class="guideShop">
+							Get more information on how to set up an OpenEnergyMonitor system from the
+							<a href="https://guide.openenergymonitor.org">
+								<div class="guideShop-buttons">
+									Guide
+									<i aria-hidden="true" class="fa fa-book"></i>
+								</div>
+							</a>
+						</div>
 					</div>
 					<div style="clear:both"></div>
 				</div>

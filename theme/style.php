@@ -12,7 +12,7 @@
   $oemBlack = "#000000";
   $oemFont = "Ubuntu-OEM";
   $oemTileShadow = "0 0 5px 2px rgba(0,0,0,.35);";
-  
+
 ?>
 
 @font-face {
@@ -332,6 +332,86 @@ a:hover {
 }
 
 /*---------------------------------------------------------------------/
+// System
+/*--------------------------------------------------------------------*/
+
+.flexParent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.flexParent a {
+  color: black;
+}
+
+.flexChild {
+  height: 280px;
+  width: 220px;
+  margin: 10px;
+}
+
+.flexChild-inner {
+	height: 140px;
+	font-size: 14px;
+	text-align: center;
+	background-color: #eeeeee;
+}
+
+.flexChild-inner ul {
+  display: inline-block;
+  width: 180px;
+  margin: 0;
+  padding: 5px 0 0 0;
+  text-align: left;
+  list-style-position: inside;
+}
+
+.flexChild-inner h1 {
+  margin: 0;
+  padding-top: 5px;
+}
+
+.emonPi {
+  background-image: url("<?php echo $path; ?>../images/emonpi.jpg");
+  background-size: cover;
+}
+
+.emonTx {
+  background-image: url("<?php echo $path; ?>../images/emontx.jpg");
+  background-size: cover;
+}
+
+.emonTH {
+  background-image: url("<?php echo $path; ?>../images/emonth.png");
+  background-size: cover;
+}
+
+.Emoncms {
+  background-image: url("<?php echo $path; ?>../images/emoncms.png");
+  background-size: cover;
+}
+
+.guideShop {
+  margin: 20px;
+}
+
+.guideShop-buttons {
+  display: inline-block;
+  font-weight: bold;
+  white-space: nowrap;
+  width: 72px;
+  margin: 2px;
+  background-color: <?php echo $oemBlue; ?>;
+  color: <?php echo $oemWhite; ?>;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: <?php echo $oemTileShadow; ?>;
+  cursor: pointer;
+}
+
+/*---------------------------------------------------------------------/
 // Learn
 /*--------------------------------------------------------------------*/
 
@@ -408,11 +488,7 @@ a:hover {
   text-shadow: none;
   color: <?php echo $oemBlue; ?>;
 }
-/*
-.inner:hover .learnpageIcons {
-  border: 12px solid <?php echo $oemBlue; ?>;
-}
-*/
+
 /*--------------------------------------------
     custom header...
 --------------------------------------------*/
