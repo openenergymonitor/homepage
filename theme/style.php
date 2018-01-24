@@ -408,11 +408,11 @@ a:hover {
   text-shadow: none;
   color: <?php echo $oemBlue; ?>;
 }
-
+/*
 .inner:hover .learnpageIcons {
   border: 12px solid <?php echo $oemBlue; ?>;
 }
-
+*/
 /*--------------------------------------------
     custom header...
 --------------------------------------------*/
