@@ -1,3 +1,44 @@
+<?php global $path; ?>
+
+<?php
+
+  header("Content-type: text/css; charset: UTF-8");
+
+  $oemBlue = "#44b3e2";
+  $oemDarkBlue = "#368fb4";
+  $oemGray = "#e3e3e3";
+  $oemDarkGray = "#333333";
+  $oemWhite = "#ffffff";
+  $oemBlack = "#000000";
+  $oemFont = "Ubuntu-OEM";
+  $oemTileShadow = "0 0 5px 2px rgba(0,0,0,.35);";
+
+?>
+
+@font-face {
+  font-family: <?php echo $oemFont; ?>;
+  src: url(<?php echo $path; ?>../fonts/Ubuntu-OEM-Light.ttf)
+}
+
+@font-face {
+  font-family: <?php echo $oemFont; ?>;
+  src: url(<?php echo $path; ?>../fonts/Ubuntu-OEM-Bold.ttf)
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: <?php echo $oemFont; ?>;
+  src: url(<?php echo $path; ?>../fonts/Ubuntu-OEM-LightItalic.ttf)
+  font-style: italic;
+}
+
+@font-face {
+  font-family: <?php echo $oemFont; ?>;
+  src: url(<?php echo $path; ?>../fonts/Ubuntu-OEM-BoldItalic.ttf)
+  font-weight: bold;
+  font-style: italic;
+}
+
 html, body {
   margin: 0; height: 100vh;
 }
@@ -7,10 +48,10 @@ html {
 }
 
 body {
-  font-family: ubuntufont, sans-serif;
+  font-family: <?php echo $oemFont; ?>, sans-serif;
   padding: 0;
-  background-color: #ffffff;
-  color: #333;
+  background-color: <?php echo $oemWhite; ?>;
+  color: <?php echo $oemDarkGray; ?>;
   width: 100%;
   text-align: center;
 }
@@ -25,19 +66,15 @@ body {
 .box {
   width: 233px;
   float: left;
-  background-color: #e3e3e3;
+  background-color: <?php echo $oemGray; ?>;
   text-align: left;
   height: 300px;
-}
-
-.oem {
-  font-size: 32px;
 }
 
 .homeenergy, .solar, .openevse, .heatpump {
   background-size: cover;
   min-height: 400px;
-  color: #fff;
+  color: <?php echo $oemWhite; ?>;
   text-align: left;
 }
 
@@ -55,11 +92,11 @@ body {
 
 .zerocarbon {
   background-size: cover;
-  color: #fff;
+  color: <?php echo $oemWhite; ?>;
 }
 
 .cover {
-  background: #ffffff no-repeat left center;
+  background: <?php echo $oemWhite; ?> no-repeat left center;
   background-size: cover;
 }
 
@@ -74,17 +111,17 @@ h3 {
 
 a {
   text-decoration: none;
-  color: #ffffff;
+  color: <?php echo $oemWhite; ?>;
 }
 
 a:visited {
   text-decoration: none;
-  color: #ffffff;
+  color: <?php echo $oemWhite; ?>;
 }
 
 a:hover {
   text-decoration: none;
-  color: #ffffff;
+  color: <?php echo $oemWhite; ?>;
 }
 
 .fa {
@@ -93,18 +130,18 @@ a:hover {
 
 .box4 a {
   text-decoration: none;
-  color: #ffffff;
+  color: <?php echo $oemWhite; ?>;
   cursor: pointer;
 }
 
 .box4 a:visited {
   text-decoration: none;
-  color: #000;
+  color: <?php echo $oemBlack; ?>;
 }
 
 .box4 a:hover {
   text-decoration: none;
-  color: #333;
+  color: <?php echo $oemDarkGray; ?>;
 }
 
 .emoncmsappimg {
@@ -113,14 +150,14 @@ a:hover {
 }
 
 .oemheading {
-  color: #44b3e2;
+  color: <?php echo $oemBlue; ?>;
   font-size: 30px;
   font-weight: bold;
-  font-family: ubuntufont, sans-serif;
+  font-family:  <?php echo $oemFont; ?>, sans-serif;
 }
 
 .oemheading2 {
-  color: #fff;
+  color: <?php echo $oemWhite; ?>;
   padding-top: 80px;
   padding-bottom: 20px;
   font-size: 45px;
@@ -166,6 +203,7 @@ a:hover {
     width: 50%;
     float: right;
     padding-top: 0;
+    height: 130px;
   }
 }
 
@@ -220,6 +258,7 @@ a:hover {
 }
 
 .inner { margin: 7px;}
+.tile {box-shadow: <?php echo $oemTileShadow; ?>}
 .box3 { text-align: center; }
 
 /*---------------------------------------------------------------------/
@@ -227,7 +266,7 @@ a:hover {
 /*--------------------------------------------------------------------*/
 
 .oemName {
-  color: #ffffff;
+  color: <?php echo $oemWhite; ?>;
   width: 100%;
   height: 50%;
   display: table;
@@ -241,7 +280,7 @@ a:hover {
 }
 
 .oemDescription {
-  color: #ffffff;
+  color: <?php echo $oemWhite; ?>;
   width: 100%;
   height: 50%;
   display: table;
@@ -289,15 +328,95 @@ a:hover {
 }
 
 /*---------------------------------------------------------------------/
-// OEM colors
+// System
 /*--------------------------------------------------------------------*/
 
-.oemGray {
-  background-color: #777777;
+.flexParent {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.oemBlue {
-  background-color: #44b3e2;
+.flexParent a {
+  color: black;
+}
+
+.flexChild {
+  height: 280px;
+  width: 220px;
+  margin: 10px;
+}
+
+@media (max-width: 480px) {
+  .flexChild {
+    width: 100vw;
+  }
+}
+
+.flexChild-inner {
+  margin: 7px;
+}
+
+.flexChild-inner-inner {
+	height: 140px;
+	font-size: 14px;
+	text-align: center;
+	background-color: #eeeeee;
+	margin: 0;
+}
+
+.flexChild-inner-inner ul {
+  display: inline-block;
+  width: 180px;
+  margin: 0;
+  padding: 5px 0 0 0;
+  text-align: left;
+  list-style-position: inside;
+}
+
+.flexChild-inner-inner h1 {
+  margin: 0;
+  padding-top: 5px;
+}
+
+.emonPi {
+  background-image: url("<?php echo $path; ?>../images/emonpi.jpg");
+  background-size: cover;
+}
+
+.emonTx {
+  background-image: url("<?php echo $path; ?>../images/emontx.jpg");
+  background-size: cover;
+}
+
+.emonTH {
+  background-image: url("<?php echo $path; ?>../images/emonth.png");
+  background-size: cover;
+}
+
+.Emoncms {
+  background-image: url("<?php echo $path; ?>../images/emoncms.png");
+  background-size: cover;
+}
+
+.guideShop {
+  margin: 20px;
+}
+
+.guideShop-buttons {
+  display: inline-block;
+  font-weight: bold;
+  white-space: nowrap;
+  width: 72px;
+  margin: 2px;
+  background-color: <?php echo $oemBlue; ?>;
+  color: <?php echo $oemWhite; ?>;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: <?php echo $oemTileShadow; ?>;
+  cursor: pointer;
 }
 
 /*---------------------------------------------------------------------/
@@ -356,10 +475,10 @@ a:hover {
   width: 180px;
   height: 180px;
   box-sizing: border-box;
-  border: 8px solid #44b3e2;
+  border: 8px solid <?php echo $oemBlue; ?>;
   display: table;
-  background-color: #ffffff;
-  color: #ffffff;
+  background-color: <?php echo $oemWhite; ?>;
+  color: <?php echo $oemWhite; ?>;
   box-shadow: none;
   transition: 0.3s ease-in-out;
   margin: 0 auto;
@@ -375,11 +494,7 @@ a:hover {
   vertical-align: middle;
   text-align: center;
   text-shadow: none;
-  color: #44b3e2;
-}
-
-.inner:hover .learnpageIcons {
-  border: 12px solid #44b3e2;
+  color: <?php echo $oemBlue; ?>;
 }
 
 /*--------------------------------------------
@@ -391,10 +506,10 @@ a:hover {
   width: 100%;
   top: 0;
   height: 42px;
-  background-color: #44b3e2;
-  -webkit-box-shadow: 0 -2px 4px 2px #000;
-  -moz-box-shadow: 0 -2px 4px 2px #000;
-  box-shadow: 0 -2px 4px 2px #000;
+  background-color: <?php echo $oemBlue; ?>;
+  -webkit-box-shadow: 0 -2px 4px 2px <?php echo $oemBlack; ?>;
+  -moz-box-shadow: 0 -2px 4px 2px <?php echo $oemBlack; ?>;
+  box-shadow: 0 -2px 4px 2px <?php echo $oemBlack; ?>;
 }
 
 @media screen and (max-width: 400px) {
@@ -410,7 +525,7 @@ a:hover {
   line-height: 42px;
   position: absolute;
   left: 0;
-  color: #ffffff;
+  color: <?php echo $oemWhite; ?>;
   padding-left: 12px;
   z-index: 1;
 }
@@ -426,36 +541,70 @@ a:hover {
   top: 0;
   width: 100%;
   height: 42px;
-  background-color: #44b3e2;
+  background-color: <?php echo $oemBlue; ?>;
   overflow: hidden;
 }
 
-.thisTitle {
-  display: inline-block;
-  color: #ffffff;
+.titleIcon {
   position: absolute;
+  display: inline-block;
   left: 0;
+  height: 42px;
+  padding: 0 0 0 7px;
+  text-align: center;
   line-height: 42px;
-  padding-left: 7px;
-  font-size: 16px;
+  color: <?php echo $oemWhite; ?>;
 }
 
-.thisTitle a {
-  color: #ffffff;
+  .titleIcon i {
+    vertical-align: middle;
+    font-size: 32px;
+  }
+
+.thisTitle {
+  position: absolute;
+  display: inline-block;
+  box-sizing: border-box;
+  left: 42px;
+  right: 0;
+  height: 42px;
+  padding: 5px 0 5px 0;
+  text-align: left;
+  color: <?php echo $oemWhite; ?>;
 }
+
+  .thisTitle a {
+    color: <?php echo $oemWhite; ?>;
+  }
 
 @media screen and (max-width: 1079px) {
+  .titleIcon {
+    left: auto;
+    right: 0;
+    padding: 0 7px 0 0;
+  }
+
   .thisTitle {
-    width: 100%;
-    position: absolute;
+    right: 42px;
+    left: 0;
     text-align: right;
-    font-size: 20px;
-    padding-left: 0;
   }
 
     .thisTitle a {
-      padding-right: 12px;
+      padding-right: 0;
     }
+}
+
+.thisTitle-top {
+  top: 0;
+  height: 60%;
+  font-size: 18px;
+}
+
+.thisTitle-bottom {
+  bottom: 0;
+  height: 40%;
+  font-size: 12px;
 }
 
 /*--------------------------------------------
@@ -484,18 +633,18 @@ a:hover {
 
   .navigation ul li {
     float: left;
-    background-color: #44b3e2;
+    background-color: <?php echo $oemBlue; ?>;
   }
 
   .navigation ul li a {
     display: block;
     line-height: 42px;
-    font-family: ubuntufont, sans-serif;
+    font-family:  <?php echo $oemFont; ?>, sans-serif;
     font-size: 16px;
     text-align: center;
     padding-left: 10px;
     padding-right: 10px;
-    color: #ffffff;
+    color: <?php echo $oemWhite; ?>;
   }
 
 @media screen and (min-width: 1080px) {
@@ -544,8 +693,8 @@ a:hover {
   margin: 0;
   width: 0;
   font-size: 20px;
-  background-color: #44b3e2;
-  color: #ffffff;
+  background-color: <?php echo $oemBlue; ?>;
+  color: <?php echo $oemWhite; ?>;
   box-sizing: border-box;
   overflow: auto;
   min-width: 0;
@@ -561,19 +710,33 @@ a:hover {
 
   .navigation ul li a {
     box-sizing: border-box;
-    font-family: ubuntufont, sans-serif;
+    font-family:  <?php echo $oemFont; ?>, sans-serif;
     font-size: 20px;
     display: block;
-    color: #ffffff;
-    padding: 0 20px 0 40px;
+    color: <?php echo $oemWhite; ?>;
+    padding: 0 20px 0 20px;
     height: 12.5vh;
     line-height: 12.5vh;
-    min-width: 220px;
+    min-width: 180px;
     text-align: left;
   }
 
   .navigation ul li .fa {
     min-width: 25px;
+  }
+}
+
+@media (max-width: 1079px) and (min-height: 550px) {
+  .navigation ul li a {
+    height: 68.75px;
+    line-height: 68.75px;
+  }
+}
+
+@media (max-width: 1079px) and (max-height: 200px) {
+  .navigation ul li a {
+    height: 25px;
+    line-height: 25px;
   }
 }
 
@@ -599,11 +762,11 @@ a:hover {
 --------------------------------------------*/
 
 .actoemLink {
-  background-color: #368fb4 !important;
+  background-color: <?php echo $oemDarkBlue; ?> !important;
 }
 
   .actoemLink a {
-    color: #ffffff !important;
+    color: <?php echo $oemWhite; ?> !important;
   }
 
 /*--------------------------------------------
@@ -612,7 +775,7 @@ a:hover {
 
 footer {
   position: relative;
-  background-color: #368fb4;
+  background-color: <?php echo $oemDarkBlue; ?>;
   width: 100%;
   height: 50px;
 }
@@ -639,7 +802,7 @@ footer {
   height: 100%;
   position: absolute;
   background-color: rgba(0,0,0,0.8);
-  color: #fff;
+  color: <?php echo $oemWhite; ?>;
   display: none;
   cursor: pointer;
 }
@@ -653,18 +816,14 @@ footer {
   padding: 10px;
   font-size: 20px;
   font-weight: bold;
-  background-color: #44b3e2;
-  color: #fff;
+  background-color: <?php echo $oemBlue; ?>;
+  color: <?php echo $oemWhite; ?>;
   border: none;
   -webkit-transition: background-color 500ms linear;
   -ms-transition: background-color 500ms linear;
   transition: background-color 500ms linear;
   -webkit-appearance: none;
 }
-
-  .searchBox input[type=submit]:hover {
-    background-color: #77c8ea;
-  }
 
 .searchBox input[type=text] {
   padding: 10px;

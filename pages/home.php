@@ -6,26 +6,32 @@
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<meta content="#44b3e2" name="theme-color">
 	<title>Home | OpenEnergyMonitor</title>
-	<link href="<?php echo $path; ?>theme/favicon.ico" rel="shortcut icon"><!-- Load font locally to enable full offline use, un comment below to load font remotely-->
+	<link href="<?php echo $path; ?>theme/favicon.ico" rel="shortcut icon">
+	<!-- Load font locally to enable full offline use, un-comment below to load font remotely-->
 	<!--<link href="https://fonts.googleapis.com/css?family=ubuntufont:300" rel="stylesheet" type="text/css">-->
 	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
-	<link href="<?php echo $path; ?>fonts/ubuntufont.css?family=ubuntufont:300" rel="stylesheet" type="text/css">
 	<link href="<?php echo $path; ?>theme/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link href="<?php echo $path; ?>theme/style.css?v=4.1" rel="stylesheet" type="text/css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
-	</script>
+	<link href="<?php echo $path; ?>theme/style.php?v=4.2.2" rel="stylesheet" type="text/css">
+	<script src="<?php echo $path; ?>scripts/jquery-3.3.1.min.js"></script>
 </head>
 <body>
 	<div class="oemblueBar">
 		<div class="container">
 			<div class="titleHolder">
 				<i class="fa fa-navicon"></i>
-				<div class="thisTitle">
-					<a href="/">
-					  <b>Home</b>
-					  <span class="oemWrap">| Open<b>EnergyMonitor</b></span>
-					</a>
-				</div>
+				<a href="/">
+        	<div class="titleIcon">
+						<i aria-hidden="true" class="fa fa-home"></i>
+					</div>
+					<div class="thisTitle">
+						<div class="thisTitle-top">
+          		<b>Home</b>
+						</div>
+						<div class="thisTitle-bottom">
+          		Open<b>EnergyMonitor</b>
+						</div>
+					</div>
+				</a>
       	<div class="blackOut"></div>
 				<div class="navigation" id="siteLinks">
 					<ul>
@@ -88,7 +94,7 @@
   </div>
 	<div style="background-color:#fff">
   	<div class="container">
-  		<div class="inner">
+  		<div class="inner tile">
   			<div class="cover" style="height:400px;background-image: url('<?php echo $path; ?>images/gwynt.jpg');">
   				<div class="oemName"><!-- Cover image -->
   					<div class="oemName-inner">
@@ -109,7 +115,7 @@
   		<div class="row">
   			<div class="column box2 left">
   				<a href="https://guide.openenergymonitor.org/applications/home-energy">
-  				  <div class="inner homeenergy" style="background-image:url('<?php echo $path; ?>images/home.png');">
+  				  <div class="inner tile homeenergy" style="background-image:url('<?php echo $path; ?>images/home.png');">
   					  <div style="padding:20px;">
   						  <img class="emoncmsappimg" src="<?php echo $path; ?>images/myelectric_app.png">
   						  <h3>Energy<br>Use</h3>
@@ -124,7 +130,7 @@
   			</div>
   			<div class="column box2 right">
   				<a href="https://guide.openenergymonitor.org/applications/solar-pv">
-  				  <div class="inner solar" style="background-image: url('<?php echo $path; ?>images/solar.jpg');">
+  				  <div class="inner tile solar" style="background-image: url('<?php echo $path; ?>images/solar.jpg');">
   					  <div style="padding:20px">
   						  <img class="emoncmsappimg" src="<?php echo $path; ?>images/mysolar_app.png">
   						  <h3>Solar<br> PV</h3>
@@ -143,7 +149,7 @@
   		<div class="row">
   			<div class="column box2">
   				<a href="https://guide.openenergymonitor.org/integrations/openevse/">
-    				<div class="inner openevse" style="background-image: url('<?php echo $path; ?>images/leaf_openevse2.jpg');">
+    				<div class="inner tile openevse" style="background-image: url('<?php echo $path; ?>images/leaf_openevse2.jpg');">
     					<div style="padding:20px;">
     						<h3>OpenEVSE<br>
     						EV Charging</h3>
@@ -159,7 +165,7 @@
   			</div>
   			<div class="column box2">
   				<a href="https://heatpumpmonitor.org/">
-    				<div class="inner heatpump" style="background-image: url('<?php echo $path; ?>images/heatpumpimage.jpg');">
+    				<div class="inner tile heatpump" style="background-image: url('<?php echo $path; ?>images/heatpumpimage.jpg');">
     					<div style="padding:20px">
     						<h3>Heat Pump<br>
     						Monitoring</h3>
@@ -182,110 +188,107 @@
 				<div class="row">
 					<div class="inner">
 						<h2 style="color:#000;margin-top:14px;">Introducing the OpenEnergyMonitor system</h2>
-						<p>Pre-assembled open-hardware electricity, temperature and humidity monitoring units based on the Arduino and Raspberry Pi platforms.</p>
-						<p>Get more information on how to set up an OpenEnergyMonitor system from the <a href="https://guide.openenergymonitor.org" style="color:#44b3e2"><b>Guide</b></a>.</p>
+						<p>Pre-assembled open-hardware electricity, temperature and humidity monitoring units<br> based on the Arduino and Raspberry Pi platforms</p>
 					</div>
-					<div class="column box4">
-						<a href="https://guide.openenergymonitor.org/setup">
-  						<div class="inner" style="background-color:#e3e3e3;">
-  							<img class="b4img" src="<?php echo $path; ?>images/emonpi.jpg">
-  							<div class="b4dsc">
-  								<div class="inner" style="color:#333">
-  									<b>emonPi</b>
-  									<br>
-  									<div style="font-size:14px; color:#333">
-  									  <ul style="margin:0;padding-left:14px;">
-    										<li>2x CT Sensor inputs</li>
-    										<li>1x VRMS input</li>
-    										<li>1x Pulse input</li>
-    										<li>6 x Temperature</li>
-    										<li>Emoncms logging</li>
-    										<li>Node-RED & OpenHAB</li>
-    									</ul>
-  									</div>
-  								</div>
-  							</div>
-							<div style="clear:both"></div>
-						  </div>
-						</a>
-					</div>
-					<div class="column box4">
-						<a href="https://guide.openenergymonitor.org/setup/emontx">
-						  <div class="inner" style="background-color:#e3e3e3;">
-							  <img class="b4img" src="<?php echo $path; ?>images/emontx.jpg">
-							  <div class="b4dsc">
-  								<div class="inner" style="color:#333">
-  									<b>emonTx</b>
-  									<br>
-  									<div style="font-size:14px; color:#333">
-  									  <ul style="margin:0;padding-left:14px;">
-    										<li>4x CT Sensor inputs</li>
-    										<li>1x VRMS input</li>
-    										<li>1x Pulse input</li>
-    										<li>6 x Temperature</li>
-    										<li>Battery option</li>
-  									  </ul>
-  									</div>
-  								</div>
-  							</div>
-							<div style="clear:both"></div>
-						  </div>
-						</a>
-					</div>
-					<div class="column box4">
-						<a href="https://guide.openenergymonitor.org/setup/emonth">
-						  <div class="inner" style="background-color:#e3e3e3;">
-							  <img class="b4img" src="<?php echo $path; ?>images/emonth.png">
-							  <div class="b4dsc">
-								  <div class="inner" style="color:#333">
-									  <b>emonTH</b>
-									  <br>
-									  <div style="font-size:14px; color:#333">
-									    <ul style="margin:0;padding-left:14px;">
-										    <li>Internal temperature</li>
-										    <li>Internal humidity</li>
-										    <li>External temperature</li>
-										    <li>Pulse input</li>
-										    <li>Long battery life</li>
-										  </ul>
-									  </div>
-								  </div>
-							  </div>
-							<div style="clear:both"></div>
-						  </div>
-						</a>
-					</div>
-					<div class="column box4">
-						<a href="https://emoncms.org">
-						  <div class="inner" style="background-color:#e3e3e3;">
-							  <img class="b4img" src="<?php echo $path; ?>images/emoncms.png">
-							  <div class="b4dsc">
-								  <div class="inner" style="color:#333">
-									  <b>Emoncms</b>
-									  <br>
-									  <div style="font-size:14px; color:#333">
-									    <ul style="margin:0;padding-left:14px;">
-										    <li>Web application</li>
-										    <li>Data storage</li>
-										    <li>Data processing</li>
-										    <li>Data visualisation</li>
-										    <li>Cloud or self-hosted</li>
-										  </ul>
-									  </div>
-								  </div>
-							  </div>
-							<div style="clear:both"></div>
-						  </div>
-						</a>
+					<div class="flexParent">
+					  <a href="https://guide.openenergymonitor.org/setup/">
+					    <div class="flexChild">
+					      <div class="flexChild-inner tile">
+  					      <div class="flexChild-inner-inner emonPi"></div>
+  					      <div class="flexChild-inner-inner">
+  					        <section>
+  					          <h1>emonPi</h1>
+  					          <ul>
+  					            <li>2x CT Sensor inputs</li>
+  					            <li>1x VRMS input</li>
+  					            <li>1x Pulse input</li>
+  					            <li>6 x Temperature</li>
+  					            <li>Emoncms logging</li>
+  					            <li>Node-RED & OpenHAB</li>
+  					          </ul>
+  					        </section>
+  					      </div>
+  					    </div>
+					    </div>
+					  </a>
+					  <a href="https://guide.openenergymonitor.org/setup/emontx/">
+					    <div class="flexChild">
+					      <div class="flexChild-inner tile">
+  					      <div class="flexChild-inner-inner emonTx"></div>
+  					      <div class="flexChild-inner-inner">
+  					        <section>
+					          <h1>emonTx</h1>
+					          <ul>
+					            <li>4x CT Sensor inputs</li>
+					            <li>1x VRMS input</li>
+					            <li>1x Pulse input</li>
+					            <li>6 x Temperature</li>
+					            <li>Battery option</li>
+  					          </ul>
+  					        </section>
+  					      </div>
+  					    </div>
+					    </div>
+					  </a>
+					  <a href="https://guide.openenergymonitor.org/setup/emonth/">
+					    <div class="flexChild">
+					      <div class="flexChild-inner tile">
+  					      <div class="flexChild-inner-inner emonTH"></div>
+  					      <div class="flexChild-inner-inner">
+  					        <section>
+					          <h1>emonTH</h1>
+					          <ul>
+					            <li>Internal temperature</li>
+					            <li>Internal humidity</li>
+					            <li>External temperature</li>
+					            <li>Pulse input</li>
+					            <li>Long battery life</li>
+  					          </ul>
+  					        </section>
+  					      </div>
+  					    </div>
+					    </div>
+					  </a>
+					  <a href="https://emoncms.org/">
+					    <div class="flexChild">
+					      <div class="flexChild-inner tile">
+  					      <div class="flexChild-inner-inner Emoncms"></div>
+  					      <div class="flexChild-inner-inner">
+  					        <section>
+					          <h1>EmonCMS</h1>
+					          <ul>
+					      	    <li>Web application</li>
+					      	    <li>Data storage</li>
+					      	    <li>Data processing</li>
+					      	    <li>Data visualisation</li>
+					      	    <li>Cloud or self-hosted</li>
+  					          </ul>
+  					        </section>
+  					      </div>
+  					    </div>
+					    </div>
+					  </a>
 					</div>
 					<div style="clear:both"></div>
-					<div style="padding-top:7px">
-					  <p>
-  					  All products are available to buy from the
-  					  <a href="https://shop.openenergymonitor.com" style="color:#44b3e2">
-  					  <b>Shop</b>
-  					  </a>.
-					  </p>
+					<div class="buttonLink" style="padding-top:7px">
+						<div class="guideShop">
+							All products are available to buy from the
+							<a href="https://shop.openenergymonitor.com">
+								<div class="guideShop-buttons">
+									Shop
+									<i aria-hidden="true" class="fa fa-shopping-cart"></i>
+								</div>
+							</a>
+						</div>
+						<div class="guideShop">
+							Get more information on how to set up an OpenEnergyMonitor system from the
+							<a href="https://guide.openenergymonitor.org">
+								<div class="guideShop-buttons">
+									Guide
+									<i aria-hidden="true" class="fa fa-book"></i>
+								</div>
+							</a>
+						</div>
 					</div>
 					<div style="clear:both"></div>
 				</div>
@@ -370,7 +373,7 @@
 	   $("html, body").addClass("menuFreeze");
 	   $(".blackOut").show();
 	   $(".navigation").show();
-	   $(".navigation").animate({ width:'220' },"0.5s");
+	   $(".navigation").animate({ width:'180' },"0.5s");
 	}
 	$(".fa-navicon").click(function() {
 	   openButton();

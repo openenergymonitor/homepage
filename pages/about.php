@@ -2,32 +2,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#44b3e2" />
-  <title>Home | OpenEnergyMonitor</title>
-  <link rel="shortcut icon" href="<?php echo $path; ?>theme/favicon.ico" />
+	<meta content="text/html; charset=utf-8" http-equiv="content-type">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="#44b3e2" name="theme-color">
+	<title>Home | OpenEnergyMonitor</title>
+	<link href="<?php echo $path; ?>theme/favicon.ico" rel="shortcut icon">
   <!-- Load font locally to enable full offline use, un comment below to load font remotely-->
   <!--<link href="https://fonts.googleapis.com/css?family=ubuntufont:300" rel="stylesheet" type="text/css">-->
   <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
-  <link rel="stylesheet" type="text/css" href="<?php echo $path; ?>fonts/ubuntufont.css?family=ubuntufont:300">
-  <link rel="stylesheet" type="text/css" href="<?php echo $path; ?>theme/font-awesome.min.css" />
-  <link rel="stylesheet" type="text/css" href="<?php echo $path; ?>theme/style.css?v=4.1" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link href="<?php echo $path; ?>theme/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo $path; ?>theme/style.php" rel="stylesheet" type="text/css">
+	<script src="<?php echo $path; ?>scripts/jquery-3.3.1.min.js"></script>
 </head>
 <body>
   <div class="oemblueBar">
-    <div class= "container">
+    <div class="container">
       <div class="titleHolder">
         <i class="fa fa-navicon"></i>
-        <div class="thisTitle">
-          <a href="/">
-            <strong>Home</strong>
-            <span class="oemWrap">
-            | Open<strong>EnergyMonitor</strong>
-            </span>
-          </a>
-        </div>
+        <a href="/">
+        	<div class="titleIcon">
+						<i aria-hidden="true" class="fa fa-home"></i>
+					</div>
+					<div class="thisTitle">
+						<div class="thisTitle-top">
+          		<b>Home</b>
+						</div>
+						<div class="thisTitle-bottom">
+          		Open<b>EnergyMonitor</b>
+						</div>
+					</div>
+				</a>
         <div class="blackOut"></div>
         <div id="siteLinks" class="navigation">
           <ul>
