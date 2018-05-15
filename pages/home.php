@@ -151,10 +151,11 @@
   				<a href="https://guide.openenergymonitor.org/integrations/openevse/">
     				<div class="inner tile openevse" style="background-image: url('<?php echo $path; ?>images/leaf_openevse2.jpg');">
     					<div style="padding:20px;">
-    						<h3>OpenEVSE<br>
-    						EV Charging</h3>
+    						<h3>EV Charging</h3>
     						<ul>
     							<li>WiFi connectivity</li>
+							<li>Web app interface</li>
+							<li>Real-time solar PV diversion</li>
     							<li>Adjustable charge rate</li>
     							<li>Emoncms data logging</li>
     							<li>Open API</li>
