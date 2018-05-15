@@ -119,11 +119,11 @@
   					  <div style="padding:20px;">
   						  <img class="emoncmsappimg" src="<?php echo $path; ?>images/myelectric_app.png">
   						  <h3>Energy<br>Use</h3>
-  						  <ul>
+  						  <ul><b>
   							  <li>Monitor electricity, temperature and humidity</li>
   							  <li>View historic and real-time data</li>
   							  <li>Local and/or remote data logging</li>
-  						  </ul>
+  						  </b></ul>
   					  </div>
   				  </div>
   				</a>
@@ -134,12 +134,12 @@
   					  <div style="padding:20px">
   						  <img class="emoncmsappimg" src="<?php echo $path; ?>images/mysolar_app.png">
   						  <h3>Solar<br> PV</h3>
-  						  <ul>
+  						  <ul><b>
   							  <li>Explore solar PV generation</li>
   							  <li>Compare consumption</li>
   							  <li>Calculate on-site use</li>
   							  <li>Optimise demand matching</li>
-  						  </ul>
+  						  </b></ul>
   					  </div>
   				  </div>
   				</a>
@@ -148,18 +148,18 @@
   		<div style="clear:both"></div>
   		<div class="row">
   			<div class="column box2">
-  				<a href="https://guide.openenergymonitor.org/integrations/openevse/">
-    				<div class="inner tile openevse" style="background-image: url('<?php echo $path; ?>images/leaf_openevse2.jpg');">
+  				<a href="https://guide.openenergymonitor.org/applications/evcharging">
+    				<div class="inner tile openevse" style="background-image: url('<?php echo $path; ?>images/evsolardark.png');">
     					<div style="padding:20px;">
     						<h3>EV Charging</h3>
-    						<ul>
-    							<li>WiFi connectivity</li>
-							<li>Web app interface</li>
-							<li>Real-time solar PV diversion</li>
+    						<ul><b>
+    							<li>WiFi connected</li>
+							    <li>Web app interface</li>
+							    <li>Real-time solar PV diversion</li>
     							<li>Adjustable charge rate</li>
     							<li>Emoncms data logging</li>
     							<li>Open API</li>
-    						</ul>
+    						</b></ul>
     					</div>
     				</div>
     			</a>
@@ -170,11 +170,11 @@
     					<div style="padding:20px">
     						<h3>Heat Pump<br>
     						Monitoring</h3>
-    						<ul>
+    						<ul><b>
     							<li>Electricity and heat monitoring</li>
     							<li>Track heat pump performance</li>
     							<li>Remote diagnostics</li>
-    						</ul>
+    						</b></ul>
     					</div>
     				</div>
     			</a>
