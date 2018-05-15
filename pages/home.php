@@ -156,8 +156,9 @@
     							<li>WiFi connected</li>
 							    <li>Web app interface</li>
 							    <li>Real-time solar PV diversion</li>
-    							<li>Adjustable charge rate</li>
+    							<li>Variable charge rate</li>
     							<li>Emoncms data logging</li>
+                  <li>Advanced safety features</li>
     							<li>Open API</li>
     						</b></ul>
     					</div>
