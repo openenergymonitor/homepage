@@ -148,7 +148,7 @@
   		<div style="clear:both"></div>
   		<div class="row">
   			<div class="column box2">
-  				<a href="https://guide.openenergymonitor.org/applications/evcharging">
+  				<a href="https://guide.openenergymonitor.org/applications/ev-charging">
     				<div class="inner tile openevse" style="background-image: url('<?php echo $path; ?>images/evsolardark.png');">
     					<div style="padding:20px;">
     						<h3>EV Charging</h3>
