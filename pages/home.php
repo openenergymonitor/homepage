@@ -166,7 +166,7 @@
     			</a>
   			</div>
   			<div class="column box2">
-  				<a href="https://heatpumpmonitor.org/">
+  				<a href="https://guide.openenergymonitor.org/applications/heatpump">
     				<div class="inner tile heatpump" style="background-image: url('<?php echo $path; ?>images/heatpumpimage.jpg');">
     					<div style="padding:20px">
     						<h3>Heat Pump<br>
@@ -206,7 +206,7 @@
   					            <li>1x Pulse input</li>
   					            <li>6 x Temperature</li>
   					            <li>Emoncms logging</li>
-  					            <li>Node-RED & OpenHAB</li>
+  					            <li>Home Assistant</li>
   					          </ul>
   					        </section>
   					      </div>
