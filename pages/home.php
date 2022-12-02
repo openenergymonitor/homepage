@@ -11,7 +11,7 @@
 	<!--<link href="https://fonts.googleapis.com/css?family=ubuntufont:300" rel="stylesheet" type="text/css">-->
 	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
 	<link href="<?php echo $path; ?>theme/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link href="<?php echo $path; ?>theme/style.php?v=4.2.2" rel="stylesheet" type="text/css">
+	<link href="<?php echo $path; ?>theme/style.php?v=4.2.3" rel="stylesheet" type="text/css">
 	<script src="<?php echo $path; ?>scripts/jquery-3.3.1.min.js"></script>
 </head>
 <body>
@@ -51,7 +51,7 @@
 							</a>
 						</li>
 						<li title="a definitive list of resources for OpenEnergyMonitor hardware">
-							<a href="https://guide.openenergymonitor.org/technical/resources/">
+							<a href="https://docs.openenergymonitor.org/resources.html">
 							  <i aria-hidden="true" class="fa fa-list-alt"></i>&nbsp;Resources
 							</a>
 						</li>
@@ -60,11 +60,12 @@
 							  <i aria-hidden="true" class="fa fa-comments"></i>&nbsp;Community
 							</a>
 						</li>
+                                                <!--
 						<li title="keep up with new developments at OpenEnergyMonitor">
 							<a href="https://blog.openenergymonitor.org">
 							  <i aria-hidden="true" class="fa fa-bullhorn"></i>&nbsp;Blog
 							</a>
-						</li>
+						</li>-->
 						<li title="the official OpenEnergyMonitor online store">
 							<a href="https://shop.openenergymonitor.com">
 							  <i aria-hidden="true" class="fa fa-shopping-cart"></i>&nbsp;Shop

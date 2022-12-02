@@ -663,13 +663,13 @@ a:hover {
   .navigation ul li:nth-child(5) {
     width: 133px;
   }
-  .navigation ul li:nth-child(6) {
+  /*.navigation ul li:nth-child(6) {
     width: 76px;
-  }
-  .navigation ul li:nth-child(7) {
+  }*/
+  .navigation ul li:nth-child(6) {
     width: 80px;
   }
-  .navigation ul li:nth-child(8) {
+  .navigation ul li:nth-child(7) {
     width: 96px;
   }
 }
