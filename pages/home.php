@@ -40,14 +40,14 @@
 							  <i aria-hidden="true" class="fa fa-home"></i>&nbsp;Home
 							</a>
 						</li>
-						<li title="a user guide for the OpenEnergyMonitor system">
-							<a href="https://guide.openenergymonitor.org">
-							  <i aria-hidden="true" class="fa fa-book"></i>&nbsp;Guide
+						<li title="OpenEnergyMonitor system documentation">
+							<a href="https://docs.openenergymonitor.org">
+							  <i aria-hidden="true" class="fa fa-book"></i>&nbsp;Docs
 							</a>
 						</li>
-						<li title="general information about energy monitoring, diversion and sustainability">
-							<a href="https://learn.openenergymonitor.org">
-							  <i aria-hidden="true" class="fa fa-mortar-board"></i>&nbsp;Learn
+						<li title="the original OpenEnergyMonitor Guide">
+							<a href="https://guide.openenergymonitor.org">
+							  <i aria-hidden="true" class="fa fa-book"></i>&nbsp;Guide
 							</a>
 						</li>
 						<li title="a definitive list of resources for OpenEnergyMonitor hardware">
@@ -106,7 +106,7 @@
   						<strong>Open source monitoring for understanding energy</strong>
   						<br>
   						<div class="oemDescription-inner-second">
-  							Exploring the context of renewable energy and zero carbon
+  							Exploring zero carbon energy systems
   						</div>
   					</div>
   				</div>
@@ -114,7 +114,7 @@
   		</div>
   		<div class="row">
   			<div class="column box2 left">
-  				<a href="https://guide.openenergymonitor.org/applications/home-energy">
+  				<a href="https://docs.openenergymonitor.org/applications/home-energy.html">
   				  <div class="inner tile homeenergy" style="background-image:url('<?php echo $path; ?>images/home.png');">
   					  <div style="padding:20px;">
   						  <img class="emoncmsappimg" src="<?php echo $path; ?>images/myelectric_app.png">
@@ -129,7 +129,7 @@
   				</a>
   			</div>
   			<div class="column box2 right">
-  				<a href="https://guide.openenergymonitor.org/applications/solar-pv">
+  				<a href="https://docs.openenergymonitor.org/applications/solar-pv.html">
   				  <div class="inner tile solar" style="background-image: url('<?php echo $path; ?>images/solar.jpg');">
   					  <div style="padding:20px">
   						  <img class="emoncmsappimg" src="<?php echo $path; ?>images/mysolar_app.png">
@@ -166,7 +166,7 @@
     			</a>
   			</div>
   			<div class="column box2">
-  				<a href="https://guide.openenergymonitor.org/applications/heatpump">
+  				<a href="https://docs.openenergymonitor.org/applications/heatpump.html">
     				<div class="inner tile heatpump" style="background-image: url('<?php echo $path; ?>images/heatpumpimage.jpg');">
     					<div style="padding:20px">
     						<h3>Heat Pump<br>
@@ -193,7 +193,7 @@
 						<p>Pre-assembled open-hardware electricity, temperature and humidity monitoring units<br> based on the Arduino and Raspberry Pi platforms</p>
 					</div>
 					<div class="flexParent">
-					  <a href="https://guide.openenergymonitor.org/setup/">
+					  <a href="https://docs.openenergymonitor.org/emonpi">
 					    <div class="flexChild">
 					      <div class="flexChild-inner tile">
   					      <div class="flexChild-inner-inner emonPi"></div>
@@ -213,7 +213,7 @@
   					    </div>
 					    </div>
 					  </a>
-					  <a href="https://guide.openenergymonitor.org/setup/emontx/">
+					  <a href="https://docs.openenergymonitor.org/emontx3">
 					    <div class="flexChild">
 					      <div class="flexChild-inner tile">
   					      <div class="flexChild-inner-inner emonTx"></div>
@@ -284,9 +284,9 @@
 						</div>
 						<div class="guideShop">
 							Get more information on how to set up an OpenEnergyMonitor system from the
-							<a href="https://guide.openenergymonitor.org">
+							<a href="https://docs.openenergymonitor.org/overview.html">
 								<div class="guideShop-buttons">
-									Guide
+									Docs
 									<i aria-hidden="true" class="fa fa-book"></i>
 								</div>
 							</a>
@@ -314,7 +314,7 @@
 			</div>
 			<div class="column box3">
 				<div class="inner learnP">
-					<a href="https://learn.openenergymonitor.org/electricity-monitoring/ac-power-theory/introduction">
+					<a href="https://docs.openenergymonitor.org/electricity-monitoring/index.html">
 					  <div class='learnpageIcons'>
 						  <i class='fa fa-bolt fa-3x'></i>
 						  <div class='iconCircle'></div>
@@ -329,7 +329,7 @@
 			</div>
 			<div class="column box3">
 				<div class="inner learnP">
-					<a href="https://learn.openenergymonitor.org/sustainable-energy/energy/introduction">
+					<a href="https://docs.openenergymonitor.org/sustainable-energy/introduction.html">
 					  <div class='learnpageIcons'>
 						  <i class='fa fa-globe fa-3x'></i>
 						  <div class='iconCircle'></div>
@@ -344,7 +344,7 @@
 			</div>
 			<div class="column box3">
 				<div class="inner learnP">
-					<a href="https://learn.openenergymonitor.org/pv-diversion/introduction/choosing-an-energy-diverter">
+					<a href="https://docs.openenergymonitor.org/pv-diversion/index.html">
 					  <div class='learnpageIcons'>
 						  <i class='fa fa-random fa-3x' style="padding: 10px 0 0 5px"></i>
 						  <div class='iconCircle'></div>
