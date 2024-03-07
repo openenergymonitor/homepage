@@ -387,7 +387,7 @@ a:hover {
 }
 
 .emonTx {
-  background-image: url("<?php echo $path; ?>../images/emontx.jpg");
+  background-image: url("<?php echo $path; ?>../images/emontx4_2.png");
   background-size: cover;
 }
 
@@ -655,21 +655,12 @@ a:hover {
     width: 86px;
   }
   .navigation ul li:nth-child(3) {
-    width: 92px;
-  }
-  .navigation ul li:nth-child(4) {
-    width: 123px;
-  }
-  .navigation ul li:nth-child(5) {
     width: 133px;
   }
-  /*.navigation ul li:nth-child(6) {
-    width: 76px;
-  }*/
-  .navigation ul li:nth-child(6) {
+  .navigation ul li:nth-child(4) {
     width: 80px;
   }
-  .navigation ul li:nth-child(7) {
+  .navigation ul li:nth-child(5) {
     width: 96px;
   }
 }

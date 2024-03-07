@@ -40,21 +40,11 @@
                 <i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home
               </a>
             </li>
-            <li title="a user guide for the OpenEnergyMonitor system">
-              <a href="https://guide.openenergymonitor.org">
-                <i class="fa fa-book" aria-hidden="true"></i>&nbsp;Guide
-              </a>
-            </li>
-            <li title="general information about energy monitoring, diversion and sustainability">
-              <a href="https://learn.openenergymonitor.org">
-                <i class="fa fa-mortar-board" aria-hidden="true"></i>&nbsp;Learn
-              </a>
-            </li>
-            <li title="a definitive list of resources for OpenEnergyMonitor hardware">
-              <a href="https://guide.openenergymonitor.org/technical/resources/">
-                <i class="fa fa-list-alt" aria-hidden="true"></i>&nbsp;Resources
-              </a>
-            </li>
+<li title="OpenEnergyMonitor system documentation">
+<a href="https://docs.openenergymonitor.org">
+<i aria-hidden="true" class="fa fa-book"></i>&nbsp;Docs
+</a>
+</li>
             <li title="the openenergymonitor forum">
               <a href="https://community.openenergymonitor.org">
                 <i class="fa fa-comments" aria-hidden="true"></i>&nbsp;Community

@@ -45,16 +45,6 @@
 							  <i aria-hidden="true" class="fa fa-book"></i>&nbsp;Docs
 							</a>
 						</li>
-						<li title="the original OpenEnergyMonitor Guide">
-							<a href="https://guide.openenergymonitor.org">
-							  <i aria-hidden="true" class="fa fa-book"></i>&nbsp;Guide
-							</a>
-						</li>
-						<li title="a definitive list of resources for OpenEnergyMonitor hardware">
-							<a href="https://docs.openenergymonitor.org/resources.html">
-							  <i aria-hidden="true" class="fa fa-list-alt"></i>&nbsp;Resources
-							</a>
-						</li>
 						<li title="the openenergymonitor forum">
 							<a href="https://community.openenergymonitor.org">
 							  <i aria-hidden="true" class="fa fa-comments"></i>&nbsp;Community
@@ -149,7 +139,7 @@
   		<div style="clear:both"></div>
   		<div class="row">
   			<div class="column box2">
-  				<a href="https://guide.openenergymonitor.org/integrations/ev-charging/">
+  				<a href="https://docs.openenergymonitor.org/emonevse/overview.html">
     				<div class="inner tile openevse" style="background-image: url('<?php echo $path; ?>images/evsolardark.png');">
     					<div style="padding:20px;">
     						<h3>EV Charging</h3>
@@ -194,6 +184,25 @@
 						<p>Pre-assembled open-hardware electricity, temperature and humidity monitoring units<br> based on the Arduino and Raspberry Pi platforms</p>
 					</div>
 					<div class="flexParent">
+					  <a href="https://docs.openenergymonitor.org/emontx4/overview.html">
+					    <div class="flexChild">
+					      <div class="flexChild-inner tile">
+  					      <div class="flexChild-inner-inner emonTx"></div>
+  					      <div class="flexChild-inner-inner">
+  					        <section>
+					          <h1>emonTx4 (New)</h1>
+					          <ul>
+					            <li>6x CT Sensor inputs</li>
+					            <li>1x VRMS input</li>
+					            <li>Pulse input</li>
+					            <li>Temperature sensing</li>
+					            <li>Higher accuracy</li>
+  					          </ul>
+  					        </section>
+  					      </div>
+  					    </div>
+					    </div>
+					  </a>
 					  <a href="https://docs.openenergymonitor.org/emonpi">
 					    <div class="flexChild">
 					      <div class="flexChild-inner tile">
@@ -208,25 +217,6 @@
   					            <li>6 x Temperature</li>
   					            <li>Emoncms logging</li>
   					            <li>Home Assistant</li>
-  					          </ul>
-  					        </section>
-  					      </div>
-  					    </div>
-					    </div>
-					  </a>
-					  <a href="https://docs.openenergymonitor.org/emontx3">
-					    <div class="flexChild">
-					      <div class="flexChild-inner tile">
-  					      <div class="flexChild-inner-inner emonTx"></div>
-  					      <div class="flexChild-inner-inner">
-  					        <section>
-					          <h1>emonTx</h1>
-					          <ul>
-					            <li>4x CT Sensor inputs</li>
-					            <li>1x VRMS input</li>
-					            <li>1x Pulse input</li>
-					            <li>6 x Temperature</li>
-					            <li>Battery option</li>
   					          </ul>
   					        </section>
   					      </div>
