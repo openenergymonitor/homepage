@@ -110,6 +110,7 @@
     </p>
     -->	  
   </div>
+  <!--	
   <footer>
     <div class="footer-wrapper">
       <a href="/">
@@ -120,6 +121,7 @@
       </a>
     </div>
   </footer>
+  -->	
   <script>
   var closeStatus = false;
   function openButton() {
