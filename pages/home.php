@@ -289,7 +289,7 @@
 		</div>
 		<div style="margin:14px;"></div>
 	</div>
-	<div style="background-color: #44b3e2; padding: 20px;">
+	<!-- <div style="background-color: #44b3e2; padding: 20px;">
 		<div class="container" style="color:#fff; background-color:#44b3e2;">
 			<div class="learnDesc">
 				<div class="learnDesc-book">
@@ -349,7 +349,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<footer>
 		<div class="footer-wrapper">
 			<a href="about">
