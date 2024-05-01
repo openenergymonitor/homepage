@@ -386,6 +386,11 @@ a:hover {
   background-size: cover;
 }
 
+.emonpi2 {
+  background-image: url("<?php echo $path; ?>../images/emonpi2.jpg");
+  background-size: cover;
+}
+
 .emonTx {
   background-image: url("<?php echo $path; ?>../images/emontx4_2.png");
   background-size: cover;
