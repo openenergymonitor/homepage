@@ -186,13 +186,13 @@
 						<p>Pre-assembled open-hardware electricity, temperature and humidity monitoring units<br> based on the Arduino and Raspberry Pi platforms</p>
 					</div>
 					<div class="flexParent">
-					  <a href="https://docs.openenergymonitor.org/emontx4/overview.html">
+					  <a href="https://docs.openenergymonitor.org/emonpi2/overview.html">
 					    <div class="flexChild">
 					      <div class="flexChild-inner tile">
   					      <div class="flexChild-inner-inner emonTx"></div>
   					      <div class="flexChild-inner-inner">
   					        <section>
-					          <h1>emonTx4 (New)</h1>
+					          <h1>emonPi 2</h1>
 					          <ul>
 					            <li>6x CT Sensor inputs</li>
 					            <li>1x VRMS input</li>
@@ -205,13 +205,14 @@
   					    </div>
 					    </div>
 					  </a>
-					  <a href="https://docs.openenergymonitor.org/emonpi">
+					  <a href="https://docs.openenergymonitor.org">
 					    <div class="flexChild">
 					      <div class="flexChild-inner tile">
   					      <div class="flexChild-inner-inner emonPi"></div>
   					      <div class="flexChild-inner-inner">
   					        <section>
-  					          <h1>emonPi</h1>
+  					          <h1>emonTx 5</h1>
+						<!--	
   					          <ul>
   					            <li>2x CT Sensor inputs</li>
   					            <li>1x VRMS input</li>
@@ -220,6 +221,7 @@
   					            <li>Emoncms logging</li>
   					            <li>Home Assistant</li>
   					          </ul>
+						-->
   					        </section>
   					      </div>
   					    </div>
