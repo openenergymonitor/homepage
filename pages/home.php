@@ -189,7 +189,7 @@
 					  <a href="https://docs.openenergymonitor.org/emonpi2/overview.html">
 					    <div class="flexChild">
 					      <div class="flexChild-inner tile">
-  					      <div class="flexChild-inner-inner"></div>
+  					      <div class="flexChild-inner-inner emonpi2"></div>
   					      <div class="flexChild-inner-inner">
   					        <section>
 					          <h1>emonPi 2</h1>
