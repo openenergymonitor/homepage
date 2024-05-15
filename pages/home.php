@@ -203,23 +203,17 @@
   					    </div>
 					    </div>
 					  </a>
-					  <a href="https://docs.openenergymonitor.org">
+					  <a href="https://docs.openenergymonitor.org/emontx5/overview.html">
 					    <div class="flexChild">
 					      <div class="flexChild-inner tile">
   					      <div class="flexChild-inner-inner"></div>
   					      <div class="flexChild-inner-inner">
   					        <section>
   					          <h1>emonTx 5</h1>
-						<!--	
   					          <ul>
-  					            <li>2x CT Sensor inputs</li>
-  					            <li>1x VRMS input</li>
-  					            <li>1x Pulse input</li>
-  					            <li>6 x Temperature</li>
-  					            <li>Emoncms logging</li>
-  					            <li>Home Assistant</li>
+  					            <li>6x CT Sensor inputs</li>
+					            <li>1x VRMS input</li>
   					          </ul>
-						-->
   					        </section>
   					      </div>
   					    </div>
