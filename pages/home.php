@@ -138,7 +138,6 @@
   		</div>
   		<div style="clear:both"></div>
   		<div class="row">
-			<!--
   			<div class="column box2">
   				<a href="https://docs.openenergymonitor.org/emonevse/overview.html">
     				<div class="inner tile openevse" style="background-image: url('<?php echo $path; ?>images/evsolardark.png');">
@@ -157,7 +156,6 @@
     				</div>
     			</a>
   			</div>
-			-->
   			<div class="column box2">
   				<a href="https://docs.openenergymonitor.org/applications/heatpump.html">
     				<div class="inner tile heatpump" style="background-image: url('<?php echo $path; ?>images/heatpumpimage.jpg');">
