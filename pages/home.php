@@ -180,7 +180,7 @@
 			<div>
 				<div class="row">
 					<div class="inner">
-						<h2 style="color:#000;margin-top:14px;">Introducing the OpenEnergyMonitor system</h2>
+						<h2 style="color:#000;margin-top:14px;">Introducing the OpenEnergyMonitor System</h2>
 						<p>Pre-assembled open-hardware electricity, temperature and humidity monitoring units<br> based on the Arduino and Raspberry Pi platforms</p>
 					</div>
 					<div class="flexParent">
