@@ -92,15 +92,25 @@
 							Open<strong>EnergyMonitor</strong>
 						</div>
 					</div>
-					<div class="oemDescription" style="background-color:rgba(0,0,0,0.2)">
+					<div class="oemDescription">
 						<div class="oemDescription-inner">
 							<strong>Open source monitoring for understanding energy</strong>
-							<p style="font-size:16px">Monitoring for home electricity, solar, battery storage, electric vehicle charging and heat pumps.<br>A versitile and expandable system of sensors and integrations built on the Raspberry Pi and Arduino platforms.</p>
-
 						</div>
 					</div>
 				</div>
 			<div style="clear:both"></div>
+	</div>
+	<div style="background-color:whitesmoke">
+		<div class="container">
+			<div>
+				<div class="row" >
+					<div class="inner">
+					<p><span style="font-size:18px">Monitoring for home electricity, solar, battery storage, electric vehicle charging and heat pumps.</span><br>A versitile and expandable system of sensors and integrations built on the Raspberry Pi and Arduino platforms.</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div>
 		<div class="container">
