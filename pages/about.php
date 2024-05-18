@@ -95,8 +95,7 @@
     <p>To learn more about our research into zero carbon energy systems see the sustainable energy section of <a href="https://learn.openenergymonitor.org" style="color:#44b3e2;">Learn</a>.
     </p>
     <p>All of our work is open source (hardware & software). We believe open source is a better way of doing things where we can learn from and build upon each others work, creating better solutions to the challenges we face.
-    </p>
-    <!--	  
+    </p>	  
     <h2>People</h2>
     <p>The Megni / OpenEnergyMonitor shop team (left to right): Gwil, Glyn, Trystan, Kate, Claire and Amy.
     </p>
@@ -108,7 +107,6 @@
     <h2>Eryri/Snowdonia</h2>
     <p>The OpenEnergyMonitor shop is based in Eryri (Snowdonia) North Wales. We are keen climbers, walkers and mountain bikers.
     </p>
-    -->	  
   </div>
   <!--	
   <footer>
