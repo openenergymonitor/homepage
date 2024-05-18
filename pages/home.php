@@ -86,7 +86,7 @@
 	<div style="height:40px;top:0;">
 	</div>
 	<div style="background-color:#fff">
-				<div class="cover" style="height:280px;background-image: url('<?php echo $path; ?>images/gwynt.jpg');">
+				<div class="cover" style="height:240px;background-image: url('<?php echo $path; ?>images/gwynt.jpg');">
 					<div class="oemName">
 						<div class="oemName-inner">
 							Open<strong>EnergyMonitor</strong>
@@ -105,7 +105,8 @@
 			<div>
 				<div class="row" >
 					<div class="inner">
-					<p><span style="font-size:18px">Monitoring for home electricity, solar, battery storage, electric vehicle charging and heat pumps.</span><br>A versitile and expandable system of sensors and integrations built on the Raspberry Pi and Arduino platforms.</p>
+					<p><span style="font-size:18px">Monitoring for home electricity, solar, storage, heat pumps and electric vehicle charging.</span></p>
+					<p>A versitile and expandable system of sensors and integrations built on the Raspberry Pi and Arduino platforms.</p>
 
 					</div>
 				</div>
@@ -119,8 +120,8 @@
 					<div class="inner">
 						<br>
 						<h2 style="color:#000;margin-top:14px;">Introducing the emonPi2</h2>
-						<p>A 6 channel electricity monitor as standard (12 channel with expansion board) with an integrated Raspberry Pi in the same enclosure. 
-					    Supports single or three-phase, wired temperature sensing, pulse counting, analog input. Can be used as a base-station receiving data from further electricity monitoring and temperature nodes. 
+						<p>A 6 channel electricity monitor (12 channel with expansion board) with an integrated Raspberry Pi. 
+					    Supports single or three-phase monitoring, wired temperature sensing & pulse counting. Can be used as a base-station for further electricity monitoring and temperature nodes. 
 						Full local or remote data logging and visualisation capability via EmonCMS. Integrates with HomeAssistant and uses MQTT.</p>
 
 
@@ -131,7 +132,7 @@
 						<div style="text-align:left">
 						<p>
 							<a href="https://docs.openenergymonitor.org/emontx5/overview.html"><img src="<?php echo $path; ?>images/emontx5-min.png" style="float:left; width:50px; margin-right:20px"/></a>
-							<b>emonTx5 (available soon):</b> A 6x channel electricity monitoring node. Transmits data via an inbuilt 433MHz radio to an emonPi or emonBase. Great for expanding an emonPi2 monitoring setup where more CT inputs are required either in the same location or in a different part of the building.
+							<b>emonTx5 (available soon):</b> A 6x channel electricity monitoring node. Transmits data via 433MHz radio to an emonPi or emonBase. Great for expanding an emonPi2 monitoring setup where more CT inputs are required either in the same location or in a different part of the building.
 						</p><br>
 						<p>
 							<a href="https://docs.openenergymonitor.org/emonth2/overview.html"><img src="<?php echo $path; ?>images/emonth-min.png" style="float:left; width:50px; margin-right:20px" /></a>
@@ -139,10 +140,10 @@
 						</p><br>
 						<p>
 							<a href="https://docs.openenergymonitor.org/applications/heatpump.html"><img src="<?php echo $path; ?>images/heatmeter-min.png" style="float:left; width:50px; margin-right:20px" /></a>
-							<b>Heat metering:</b> Plug in a M-BUS reader to the emonPi2 USB ports to read from heat meters for heat pump monitoring. See also pre-provisioned level 3 heat pump monitor bundle.</p><br>
+							<b>Heat metering:</b> Plug in a M-BUS reader and Modbus reader to the emonPi2 USB ports to read from heat meters and other electricity meters for heat pump monitoring. See also pre-provisioned level 3 heat pump monitor bundle.</p><br>
 						<p>
 							<a href="https://docs.openenergymonitor.org/emonbase/rfm69-spi.html"><img src="<?php echo $path; ?>images/emonbase-min.png" style="float:left; width:50px; margin-right:20px" /></a>
-							<b>emonBase:</b> A Raspberry Pi base-station that receives data sent from an emonTx and emonTH radio nodes. Can be used instead of an emonPi2 where the installation favours locating these in different parts of a building.
+							<b>emonBase:</b> A Raspberry Pi base-station that receives data sent from emonTx and emonTH radio nodes. Can be used instead of an emonPi2 where the installation favours locating these in different parts of a building.
 						</p><br>
 						</div>
 					</div>
