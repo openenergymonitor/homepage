@@ -144,7 +144,7 @@
 						</p><br>
 						<p>
 							<a href="https://shop.openenergymonitor.com/heat-pump-monitoring/"><img src="<?php echo $path; ?>images/heatmeter-min.png" style="float:left; width:50px; margin-right:20px" /></a>
-							<b>Heat metering:</b> Plug in a M-BUS reader and Modbus reader to the emonPi2 USB ports to read from heat meters and other electricity meters for heat pump monitoring. See also pre-provisioned level 3 heat pump monitor bundle.</p><br>
+							<b>Heat metering:</b> Plug in a M-BUS reader and Modbus reader to the emonPi2 USB ports to read from heat meters and other electricity meters for heat pump monitoring. See also pre-provisioned level 3 heat pump monitor bundle and our <a href="https://heatpumpmonitor.org/"  style="color:#2379d6">heatpumpmonitor.org</a> initiative.</p><br>
 						<p>
 							<a href="https://shop.openenergymonitor.com/emonbase-433mhz-rfm69spi/"><img src="<?php echo $path; ?>images/emonbase-min.png" style="float:left; width:50px; margin-right:20px" /></a>
 							<b>emonBase:</b> A Raspberry Pi base-station that receives data sent from emonTx and emonTH radio nodes. Can be used instead of an emonPi2 where the installation favours locating these in different parts of a building.
@@ -155,7 +155,9 @@
 						</p><br>-->
 						</div>
 
-						<!--<h4 style="color:#000;margin-top:14px;">Data logging and visualisation with EmonCMS</h4>-->
+						<h4 style="color:#000;margin-top:14px;">Data logging and visualisation with EmonCMS</h4>
+						<p>Local on the emonPi2/emonBase. Remote on <a href="https://emoncms.org" style="color:#2379d6">EmonCMS.org</a></p><p>Pre built dashboards, advanced graphing tools, flexible input processing.</p>
+						<a href="https://docs.openenergymonitor.org/emoncms/apps.html"> <img src="<?php echo $path; ?>images/myheatpump.png" style="width:100%"></a>
 
 						
 					</div>
