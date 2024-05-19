@@ -136,7 +136,7 @@
 						</p><br>
 						<p>
 							<a href="https://docs.openenergymonitor.org/emontx5/overview.html"><img src="<?php echo $path; ?>images/emontx5-min.png" style="float:left; width:50px; margin-right:20px"/></a>
-							<b>emonTx5 (available soon):</b> A 6x channel electricity monitoring node. Transmits data via 433MHz radio to an emonPi or emonBase. Great for expanding an emonPi2 monitoring setup where more CT inputs are required either in the same location or in a different part of the building.
+							<b>emonTx5 (available soon):</b> A 6 channel* electricity monitoring node. Transmits data via 433MHz radio to an emonPi or emonBase. Great for expanding an emonPi2 monitoring setup where more CT inputs are required either in the same location or in a different part of the building.
 						</p><br>
 						<p>
 							<a href="https://shop.openenergymonitor.com/emonth-temperature-humidity-node/"><img src="<?php echo $path; ?>images/emonth-min.png" style="float:left; width:50px; margin-right:20px" /></a>
