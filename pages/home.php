@@ -149,11 +149,15 @@
 							<a href="https://shop.openenergymonitor.com/emonbase-433mhz-rfm69spi/"><img src="<?php echo $path; ?>images/emonbase-min.png" style="float:left; width:50px; margin-right:20px" /></a>
 							<b>emonBase:</b> A Raspberry Pi base-station that receives data sent from emonTx and emonTH radio nodes. Can be used instead of an emonPi2 where the installation favours locating these in different parts of a building.
 						</p><br>
-						<p>
+						<!--<p>
 							<a href="https://shop.openenergymonitor.com/emonbase-433mhz-rfm69spi/"><img src="<?php echo $path; ?>images/emonbase-min.png" style="float:left; width:50px; margin-right:20px" /></a>
 							<b>emonBase:</b> A Raspberry Pi base-station that receives data sent from emonTx and emonTH radio nodes. Can be used instead of an emonPi2 where the installation favours locating these in different parts of a building.
-						</p><br>
+						</p><br>-->
 						</div>
+
+						<!--<h4 style="color:#000;margin-top:14px;">Data logging and visualisation with EmonCMS</h4>-->
+
+						
 					</div>
 				</div>
 			</div>
