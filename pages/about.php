@@ -86,7 +86,7 @@
     <h2>About</h2>
     <p>The OpenEnergyMonitor project was founded out of a desire for open-source tools to help us relate to our use of energy, our energy systems and the challenge of sustainable energy.
     </p>
-    <p>The next 20 years will see a revolution in our energy systems as we switch our energy systems away from fossil fuels to a zero carbon energy supply.
+    <p>Over the next few decades we will see a revolution in our energy systems as we switch our energy systems away from fossil fuels to a zero carbon energy supply.
     </p>
     <p>By using energy monitoring, modelling and assessment tools we can take an informed approach to working out what are the best measures to apply. We can then check to ensure solutions meet their expected performance and continue to work well over time.
     </p>
@@ -102,7 +102,7 @@
     <img src="<?php echo $path; ?>images/megniteam.jpg" style="width:100%">
     <p><strong>Project founders and maintainers:</strong> Trystan Lea and Glyn Hudson.
     </p>
-    <p><strong>We would like to give a special thank you to community forum moderators:</strong> Robert Wall, Brian Orpin, Paul Burnell (pb66), Bill Thomson, Jon Murphy, Paul Reed, Eric Wouters (bidouilleur) – for all of their hard work supporting the project and helping out on the <a href="https://community.openenergymonitor.org" style="color:#44b3e2;">forums</a>.
+    <p><strong>We would like to give a special thank you to community forum moderators:</strong> Robert Wall, Brian Orpin, Paul Burnell, Bill Thomson, Jon Murphy, Paul Reed, Eric Wouters (bidouilleur) – for all of their hard work supporting the project and helping out on the <a href="https://community.openenergymonitor.org" style="color:#44b3e2;">forums</a>.
     </p>
     <h2>Eryri/Snowdonia</h2>
     <p>The OpenEnergyMonitor shop is based in Eryri (Snowdonia) North Wales. We are keen climbers, walkers and mountain bikers.
