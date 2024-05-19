@@ -149,14 +149,25 @@
 							<a href="https://shop.openenergymonitor.com/emonbase-433mhz-rfm69spi/"><img src="<?php echo $path; ?>images/emonbase-min.png" style="float:left; width:50px; margin-right:20px" /></a>
 							<b>emonBase:</b> A Raspberry Pi base-station that receives data sent from emonTx and emonTH radio nodes. Can be used instead of an emonPi2 where the installation favours locating these in different parts of a building.
 						</p><br>
+						<p>
+							<a href="https://shop.openenergymonitor.com/emonbase-433mhz-rfm69spi/"><img src="<?php echo $path; ?>images/emonbase-min.png" style="float:left; width:50px; margin-right:20px" /></a>
+							<b>emonBase:</b> A Raspberry Pi base-station that receives data sent from emonTx and emonTH radio nodes. Can be used instead of an emonPi2 where the installation favours locating these in different parts of a building.
+						</p><br>
 						</div>
 					</div>
-
-
-					<div style="clear:both"></div>
-					<div class="buttonLink" style="padding-top:7px">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="background-color:whitesmoke">
+		<div class="container">
+			<div>
+				<div class="row">
+					<div class="inner">
+					<div class="buttonLink">
 						<div class="guideShop">
-							All products are available to buy from the
+							<p>All products are available to buy from the shop.</p>
+
 							<a href="https://shop.openenergymonitor.com">
 								<div class="guideShop-buttons">
 									Shop
@@ -165,7 +176,7 @@
 							</a>
 						</div>
 						<div class="guideShop">
-							Get more information on how to set up an OpenEnergyMonitor system from the
+							<p>Get more information on how to set up an OpenEnergyMonitor system.</p>
 							<a href="https://docs.openenergymonitor.org/overview.html">
 								<div class="guideShop-buttons">
 									Docs
