@@ -22,7 +22,7 @@
     <div class="container">
         <div class="row">
             <div class="inner">
-                <p><span style="font-size:18px">Open source monitoring for home electricity, solar, storage, heat pumps and electric vehicle charging.</span></p>
+                <p><span style="font-size:18px">Open source monitoring for electricity, solar, storage, heat pumps and electric vehicle charging.</span></p>
                 <p>A versatile and expandable system of sensors and integrations built on the Raspberry Pi and Arduino platforms.</p>
 
             </div>
