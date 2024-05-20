@@ -43,7 +43,7 @@
 
             <a href="https://shop.openenergymonitor.com/energy-monitoring/"> <img src="<?php echo $path; ?>pages/img/emonPi2_complete_kit__77966.jpg" style="width:100%"></a>
             <br>
-            <h4 style="color:#000;margin-top:14px;">Expand your system with</h4>
+            <h4 style="color:#000;margin-top:14px;">Expand your system with:</h4>
 
             <div style="text-align:left">
                 <p>
@@ -72,7 +72,7 @@
                 </p><br>-->
             </div>
 
-            <h4 style="color:#000;margin-top:14px;">Data logging and visualisation with EmonCMS</h4>
+            <h4 style="color:#000;margin-top:14px;">Data logging and visualisation with EmonCMS:</h4>
             <p>Local on the emonPi2/emonBase. Remote on <a href="https://emoncms.org" style="color:#2379d6">EmonCMS.org</a></p>
             <p>Pre built dashboards, advanced graphing tools, flexible input processing.</p>
             <a href="https://docs.openenergymonitor.org/emoncms/apps.html"> <img src="<?php echo $path; ?>pages/img/myheatpump.png" style="width:100%"></a>
