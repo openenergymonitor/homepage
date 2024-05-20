@@ -17,7 +17,7 @@
     <h2>People</h2>
     <p>The Megni / OpenEnergyMonitor shop team (left to right): Gwil, Glyn, Trystan, Kate, Claire and Amy.
     </p>
-    <img src="<?php echo $path; ?>images/megniteam.jpg" style="width:100%">
+    <img src="<?php echo $path; ?>pages/img/megniteam.jpg" style="width:100%">
     <p><strong>Project founders and maintainers:</strong> Trystan Lea and Glyn Hudson.
     </p>
     <p><strong>We would like to give a special thank you to community forum moderators:</strong> Robert Wall, Brian Orpin, Paul Burnell, Bill Thomson, Jon Murphy, Paul Reed, Eric Wouters (bidouilleur) – for all of their hard work supporting the project and helping out on the <a href="https://community.openenergymonitor.org" style="color:#44b3e2;">forums</a>.

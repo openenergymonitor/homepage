@@ -35,29 +35,6 @@ function get_application_path()
     return $path;
 }
 
-function controller($controller_name)
-{
-    $output = array('content'=>"#UNDEFINED#");
-
-    if ($controller_name)
-    {
-        $controller = $controller_name."_controller";
-        $controllerScript = "Modules/".$controller_name."/".$controller.".php";
-        if (is_file($controllerScript))
-        {
-            // Load language files for module
-            $domain = "messages";
-            bindtextdomain($domain, "Modules/".$controller_name."/locale");
-            bind_textdomain_codeset($domain, 'UTF-8');
-            textdomain($domain);
-
-            require_once $controllerScript;
-            $output = $controller();
-        }
-    }
-    return $output;
-}
-
 function view($filepath, array $args)
 {
     extract($args);
@@ -67,47 +44,11 @@ function view($filepath, array $args)
     return $content;
 }
 
-function get($index)
-{
-    $val = null;
-    if (isset($_GET[$index])) $val = $_GET[$index];
-    
-    if (get_magic_quotes_gpc()) $val = stripslashes($val);
-    return $val;
-}
-
-function post($index)
-{
-    $val = null;
-    if (isset($_POST[$index])) $val = $_POST[$index];
-    
-    if (get_magic_quotes_gpc()) $val = stripslashes($val);
-    return $val;
-}
-
-function prop($index)
-{
-    $val = null;
-    if (isset($_GET[$index])) $val = $_GET[$index];
-    if (isset($_POST[$index])) $val = $_POST[$index];
-    
-    if (get_magic_quotes_gpc()) $val = stripslashes($val);
-    return $val;
-}
-
 function server($index)
 {
     $val = null;
-    if (isset($_SERVER[$index])) $val = $_SERVER[$index];
-    return $val;
-}
-
-function t($s) {
-    global $translation,$lang;
-    
-    if (isset($translation->$lang) && isset($translation->$lang->$s)) {
-        echo $translation->$lang->$s;
-    } else { 
-        echo $s;
+    if (isset($_SERVER[$index])) {
+        $val = $_SERVER[$index];
     }
+    return $val;
 }

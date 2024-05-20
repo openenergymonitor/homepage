@@ -13,7 +13,7 @@
 	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
 	<link href="<?php echo $path; ?>theme/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link href="<?php echo $path; ?>theme/style.php?v=4.2.3" rel="stylesheet" type="text/css">
-	<script src="<?php echo $path; ?>scripts/jquery-3.3.1.min.js"></script>
+	<script src="<?php echo $path; ?>lib/jquery-3.3.1.min.js"></script>
 </head>
 
 <body>
