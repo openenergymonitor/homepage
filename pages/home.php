@@ -51,8 +51,8 @@
                     <b>Expand the emonPi2 to 12 CT channels:</b> Add a further 6 CT channels to the emonPi2 (Pi Zero 2W option only).
                 </p><br>
                 <p>
-                    <a href="https://docs.openenergymonitor.org/emontx5/overview.html"><img src="<?php echo $path; ?>pages/img/emontx5-min.png" style="float:left; width:50px; margin-right:20px" /></a>
-                    <b>emonTx5 (available soon):</b> A 6 channel electricity monitoring node. Transmits data via 433MHz radio to an emonPi or emonBase. Great for expanding an emonPi2 monitoring setup where more CT inputs are required either in the same location or in a different part of the building. Expand the emonTx5 to 12 CT channels with an optional expansion board.
+                    <a href="https://shop.openenergymonitor.com/emontx5-6-channel-energy-monitoring-transmitter-node/"><img src="<?php echo $path; ?>pages/img/emontx5-min.png" style="float:left; width:50px; margin-right:20px" /></a>
+                    <b>emonTx5:</b> A 6 channel electricity monitoring node. Transmits data via 433MHz radio to an emonPi or emonBase. Great for expanding an emonPi2 monitoring setup where more CT inputs are required either in the same location or in a different part of the building. Expand the emonTx5 to 12 CT channels with an optional expansion board.
                 </p><br>
                 <p>
                     <a href="https://shop.openenergymonitor.com/emonth-temperature-humidity-node/"><img src="<?php echo $path; ?>pages/img/emonth-min.png" style="float:left; width:50px; margin-right:20px" /></a>
