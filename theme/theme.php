@@ -10,8 +10,10 @@
 	<link href="<?php echo $path; ?>theme/favicon.ico" rel="shortcut icon">
 	<!-- Load font locally to enable full offline use, un-comment below to load font remotely-->
 	<!--<link href="https://fonts.googleapis.com/css?family=ubuntufont:300" rel="stylesheet" type="text/css">-->
-	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
-	<link href="<?php echo $path; ?>theme/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" 
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+	<!-- <link href="<?php echo $path; ?>theme/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
 	<link href="<?php echo $path; ?>theme/style.php?v=4.2.3" rel="stylesheet" type="text/css">
 	<script src="<?php echo $path; ?>theme/jquery-3.3.1.min.js"></script>
 </head>
@@ -90,12 +92,15 @@
 
 	<footer>
 		<div class="footer-wrapper">
-			<a href="about">
+			<a href="homepage/about">
 				<i aria-hidden="true" class="fa fa-info-circle"></i>&nbsp;About Us
 			</a>
 			<a href="https://twitter.com/Openenergymon">
-				<i class="fa fa-twitter"></i>&nbsp;Twitter
+				<i class="fa-brands fa-twitter"></i>&nbsp;Twitter
 			</a>
+			<a href="https://bsky.app/profile/openenergymon.bsky.social">
+				<i class="fa-brands fa-bluesky"></i>&nbsp;Bluesky
+		    </a>
 		</div>
 	</footer>
 	<script>
