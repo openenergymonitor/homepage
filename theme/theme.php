@@ -15,7 +15,7 @@
 
 	<!-- <link href="<?php echo $path; ?>theme/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
 	<link href="<?php echo $path; ?>theme/style.php?v=4.2.3" rel="stylesheet" type="text/css">
-	<script src="<?php echo $path; ?>theme/jquery-3.3.1.min.js"></script>
+	<script src="<?php echo $path; ?>theme/jquery-3.7.1.min.js"></script>
 </head>
 
 <body>
