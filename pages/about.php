@@ -34,7 +34,7 @@
     Gwynedd<br>
     LL55 3NR
     </p>
-    <p>Email: hello@openenergymonitor.zendesk.org</p>
+    <p>Email: hello@openenergymonitor.zendesk.com</p>
     <p>Tell: +44(0)1286 800870</p>
         
     
