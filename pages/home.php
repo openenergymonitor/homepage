@@ -60,7 +60,7 @@
                 </p><br>
                 <p>
                     <a href="https://shop.openenergymonitor.com/heat-pump-monitoring/"><img src="<?php echo $path; ?>pages/img/heatmeter-min.png" style="float:left; width:50px; margin-right:20px" /></a>
-                    <b>Heat metering:</b> Plug in a M-BUS reader and Modbus reader to the emonPi2 USB ports to read from heat meters and other electricity meters for heat pump monitoring. See also pre-provisioned level 3 heat pump monitor bundle and the <a href="https://heatpumpmonitor.org/" style="color:#2379d6">heatpumpmonitor.org</a> initiative.
+                    <b>Heat Pump:</b> See <a href="https://shop.openenergymonitor.com/level-3-heat-pump-monitoring-bundle-emonhp/"  style="color:#2379d6"> pre-provisioned level 3 heat pump monitor bundle</a> and the <a href="https://heatpumpmonitor.org/" style="color:#2379d6">heatpumpmonitor.org</a> initiative.
                 </p><br>
         
             </div>
