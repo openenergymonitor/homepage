@@ -2,7 +2,7 @@
 
 <div class="container" style="text-align:left;padding:0 10px 0 10px;">
     <h2>About</h2>
-    <p>The OpenEnergyMonitor project was founded out of a desire for open-source tools to help us relate to our use of energy, our energy systems and the challenge of sustainable energy.
+    <p>The OpenEnergyMonitor project was founded in 2009 out of a desire for open-source tools to help us relate to our use of energy, our energy systems and the challenge of sustainable energy.
     </p>
     <p>Over the next few decades we will see a revolution in our energy systems as we switch our energy systems away from fossil fuels to a zero carbon energy supply.
     </p>
