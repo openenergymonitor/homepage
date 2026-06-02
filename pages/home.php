@@ -64,7 +64,7 @@
             <h4 style="color:#000;margin-top:14px;">Data logging and visualisation with EmonCMS:</h4>
             <p>Local on the emonPi3. Remote on <a href="https://emoncms.org" style="color:#2379d6">EmonCMS.org</a></p>
             <p>Pre built dashboards, advanced graphing tools, flexible input processing.</p>
-            <a href="https://docs.openenergymonitor.org/emoncms/apps.html"> <img src="<?php echo $path; ?>pages/img/myheatpump.png" style="width:100%"></a>
+            <a href="https://docs.openenergymonitor.org/emoncms/apps.html"> <img src="<?php echo $path; ?>pages/img/myheatpump2.png" style="width:100%"></a>
 
 
         </div>
