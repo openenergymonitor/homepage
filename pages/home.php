@@ -52,7 +52,7 @@
                 </p><br>
                 <p>
                     <a href="https://shop.openenergymonitor.com/emonth-temperature-humidity-node/"><img src="<?php echo $path; ?>pages/img/emonth-min.png" style="float:left; width:50px; margin-right:20px" /></a>
-                    <b>emonTH2:</b> A battery powered, wireless, room based temperature & humidity monitoring node. Transmits data via 433.92MHz radio to an emonPi3.
+                    <b>emonTH3:</b> A battery powered, wireless, room based temperature, humidity & Co2 monitoring node. Transmits data via 433.92MHz radio to an emonPi3.
                 </p><br>
                 <p>
                     <a href="https://shop.openenergymonitor.com/heat-pump-monitoring/"><img src="<?php echo $path; ?>pages/img/heatmeter-min.png" style="float:left; width:50px; margin-right:20px" /></a>
