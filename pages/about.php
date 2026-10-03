@@ -24,7 +24,7 @@
     <p>The OpenEnergyMonitor shop is based in Eryri (Snowdonia) North Wales. We are keen climbers, walkers and mountain bikers.
     <h2>Contact Us</h2>
     <p>
-    OpenEnergyMonitor<br>
+    OpenEnergyMonitor Ltd<br>
     Caban Cyf<br>
     Brynrefail<br>
     Caernarfon<br>
